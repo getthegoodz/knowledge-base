@@ -1,0 +1,248 @@
+September 2024
+We connect digital content to the physical world
+
+-- 1 of 15 --
+
+THE BUSINESS OPPORTUNITY
+❖ 	Content Overload
+Americans spend 13hrs a day interacting with digital content
+❖ 	Growing Demand for Physical
+Growth of vinyl sales is outpacing streaming
+❖ 	Rise of Superfandom
+A $4.2B opportunity, according to Goldman Sachs
+• Content: https://www.forbes.com/home-improvement/internet/streaming-stats/
+• Physical: https://www.statista.com/chart/7699/lp-sales-in-the-united-states/
+• Superfans: https://www.goldmansachs.com/insights/articles/music-streaming-services-are-on-the-cusp-of-major-structural-change
+
+-- 2 of 15 --
+
+CURRENT SOLUTIONS
+❖ 	Content Overload
+❖ 	Growing Demand for Physical
+❖ 	Rise of Superfandom
+- Algorithms
+Do not cater to active fans
+- 	- Outdated Media
+Fails to solve actual user problems
+- New Platforms
+Lack a differentiated product
+
+-- 3 of 15 --
+
+GOODZ OVERVIEW
+❖ 	Physical objects that
+connect to digital
+content
+❖ 	Gateway to exclusive
+experiences for fans
+❖ 	Eco-friendly,
+collectible, affordable
+
+-- 4 of 15 --
+
+THE ECOSYSTEM
+❖ 	Near Field Communication (NFC)
+Enabled Physical Objects
+❖ 	SaaS Platform for Partners
+❖ 	SaaS Platform for Users
+
+-- 5 of 15 --
+
+OUR NETWORK EFFECTS
+CREATORS
+We offer a physical product that lets
+them:
+● Engage and activate fans
+● Collect first party data
+● Monetize existing content
+In return they bring their fans to our
+platform.
+FANS
+We provide a platform where they can:
+● Be rewarded for having a deeper
+relationship with their favorite creators
+● Develop bonds within their fan
+communities
+● Access exclusive merch & content from
+their favorite creators
+In return they promote the platform and
+grow the community.
+
+-- 6 of 15 --
+
+MARKET SIZE
+Launch Category: Music
+• TAM: https://www.mordorintelligence.com/industry-reports/music-market-landscape
+• SAM: https://luminatedata.com/blog/why-are-super-fans-so-valuable/ (assuming 15% are super fans)
+• SOM: Assuming 15%
+$30.7
+billion All music sales globally
+TAM
+$4.5
+billion
+Music superfans that can be
+reached by our marketing
+and engagement strategies
+SAM
+$679
+million
+Music superfans who can be
+realistically captured and
+converted by our efforts
+SOM
+Phase 1:
+$278M
+US = 41% of global
+Target Market:
+US Music
+Superfans
+
+-- 7 of 15 --
+
+GO-TO-MARKET
+2024 H1
+Prototype & Test
+● 	Manufactured V1
+physical product
+● 	Launched D2C website
+● 	Conduct user
+interviews
+● 	Built V1 of SaaS User
+Platform
+● 	Launched D2C store
+● 	Tested D2C advertising
+(IG/FB)
+US Music Industry
+2024 H2
+Iterate & Partner
+● Release new D2C product
+● Pilot Programs
+○ They Might Be Giants
+○ Concord Music (Miles
+Davis, John Coltrane,
+Charlie Parker)
+○ Warner Music Group
+(Osamason, Bristol
+Maroney)
+○ Cascade Equinox,
+Elements, & Hulaween
+Music Festivals
+2025
+Develop & Expand
+● Launch expanded sales
+programs with artists
+● Implement advanced
+NFC capabilities
+● Build V1 of Content
+Aggregation Platform
+● Expand brand awareness
+through marketing &
+advertising
+
+-- 8 of 15 --
+
+TRACTION
+❖ 	Five pilot programs launched with music industry partners
+❖ 	10,000 Goodz sold B2B
+❖ 	Patent filed
+❖ 	21,000 website visitors
+❖ 	MVP of user SaaS platform built
+❖ 	Three product lines launched
+❖ 	300+ D2C orders ($37 avg order value)
+
+-- 9 of 15 --
+
+BUSINESS MODEL
+Cost of Goods
+(decreases at scale)
+$1.16
+Price (B2B) 	$3.34
+Gross Profit 	$2.18
+Profit Margin 	65%
+Physical Product - Current
+Y1 	Y2 	Y3
+# of paid
+subscribers
+0 	22,000 	76,000
+SaaS - Projected @ $5/month
+
+-- 10 of 15 --
+
+KitBetter - Physical
+objects for music
+distribution
+Vinylkey - Vinyl records
+accompanied by NFC
+chips
+Yoto - NFC enabled
+audiobooks for
+children
+IYK - NFC/NFT
+enabled fashion
+Amiibo - NFC enabled
+figures that unlock video
+game features
+Broad Target
+Market
+Low Cost (<$20)
+Eco-Friendly
+No App or External
+Hardware Required
+Compatible With Any
+Streaming Service
+COMPETITORS
+
+-- 11 of 15 --
+
+MIKE ROSENTHAL 	CHRIS CERRITO
+● 	Second time startup founder /
+Techstars Alum
+● 	15yrs music industry executive / leading
+strategy and marketing expert
+● 	15+yrs Creative Technologist & UX Expert
+● 	Extensive manufacturing, sourcing, and
+prototyping experience
+TEAM
+
+-- 12 of 15 --
+
+ADVISORS
+DAWN TRENSON
+DIGITAL COMMERCE EXECUTIVE
+LAUREN BLITZER
+MUSIC INDUSTRY EXECUTIVE
+ACHIM MATTHES
+MUSIC INDUSTRY EXECUTIVE
+NICOLE MARINAKE
+BRAND PARTNERSHIPS EXECUTIVE
+THERESA CAFFREY
+BRAND & CONTENT EXECUTIVE
+CAROLINE GEIGERICH
+VP DIGITAL INNOVATION, WMG
+
+-- 13 of 15 --
+
+Raise Target: $500,000
+Terms:
+● SAFE
+● Discount: 20%
+● Valuation Cap: $3M Post Money
+Estimated Runway: 12 months
+Use of Funds:
+● Tech - 50% - Develop partner SaaS platform MVP
+● BD - 30% - Expand music industry sales programs
+● Marketing - 20% - Build brand awareness
+INVESTMENT ROUND
+
+-- 14 of 15 --
+
+Thanks
+Chris Cerrito
+chris@getthegoodz.com
+617-480-3705
+Mike Rosenthal
+mike@getthegoodz.com
+917-620-4299
+
+-- 15 of 15 --
+

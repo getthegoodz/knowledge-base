@@ -1,0 +1,26 @@
+# OpenClaw internals — never push these
+.openclaw/
+skills/
+tmp/
+agent-starter-pack/
+projects/
+openclaw-agent-ops-guidance.md
+
+# Environment and secrets
+.env
+.env.*
+*.env
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Large binaries and PDFs not needed in repos
+*.pdf
+*.docx
+*.zip
+*.tar
+*.gz

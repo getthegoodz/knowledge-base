@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-03-23T17:59:17.722139+00:00",
+  "api_version": "v22.0",
+  "ad_account_id": "act_1023869745517716",
+  "counts": {
+    "campaigns": 21,
+    "adsets": 52,
+    "ads": 180,
+    "insights_monthly_adset": 85
+  },
+  "since": "2023-03-01",
+  "until": "2026-03-23"
+}

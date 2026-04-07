@@ -23,6 +23,34 @@ Project-specific durable memory for Goodz.
 - **B2B / custom:** wholesale or project-based orders for artists, labels, weddings, conferences, private events, agencies, and brands.
 - **SaaS/platform (in development / strategic direction):** tools for creators/partners to manage linked content, microsites, analytics, and user experiences themselves.
 
+### Current operational reality from Mike
+
+- Main marketing website is live and functional at `www.getthegoodz.com`.
+- Buy buttons route into a functioning Shopify storefront skinned to match the main site.
+- Inventory is in place.
+- Even without ads running, occasional organic/stumble-in purchases still happen and the flow works.
+- Fulfillment process exists and orders can typically be fulfilled in a few days.
+- Manufacturing pipeline is active for stock reorders.
+- Custom Goodz can be ordered in bulk with MOQ 50.
+- B2B custom orders can be delivered in roughly 4 weeks.
+- The landing-page / tap experience infrastructure is stable and works.
+- Goodz currently uses Ixkio (`www.ixkio.com`) as the backend system for managing NFC cards; it costs about `$100/month`.
+- Ixkio is responsive and has an API, giving Goodz the option to build deeper integrations later or eventually replace it.
+- Google Analytics and Meta pixels are in place and track through to Shopify purchases.
+- Current weak point operationally is not infrastructure but active outreach/sales execution, which Mike will handle with Janet's help once the plan is clear.
+
+### B2B segment reality from Mike
+
+- So far, **major record labels have been among the least reliable / least scalable B2B paths**.
+- Main blocker: rights/category issues. Labels may have rights structures for selling CDs or vinyl, but Goodz sits awkwardly as merch that links to streaming, which creates friction.
+- The big-label deals that have happened were often marketing-budget purchases for promotional giveaways / superfan events.
+- Those projects are cool but tend to be sporadic, last-minute, and unreliable.
+- Licensing artwork directly and selling to consumers is possible, but expensive and not broad enough to support a wide fan catalog strategy.
+- Smaller labels and indie artists remain strategically attractive because the merch logic is cleaner and the use case is stronger.
+- Weddings feel promising and underdeveloped; Mike believes Goodz could do more there with better access via wedding planners or trade shows.
+- Luxury real estate has produced a couple repeat buyers and seems more repeatable than some other custom categories.
+- Trade shows and other industries that rely on memorable leave-behinds also seem promising even if they are not the purest brand-expression fit.
+
 ### Core product lines
 
 - **Mixtape Goodz**
@@ -75,6 +103,9 @@ Project-specific durable memory for Goodz.
   - B2B custom orders for record labels and other clients (including weddings and luxury real estate)
 - Historically, D2C performance could be strong seasonally, with ROAS around 4–5x during certain holiday periods.
 - Occasional legacy B2B orders from Sony Music still happen, but only a few in the last year.
+- Mike says the historical D2C best-seller was **Mixtape Goodz**.
+- The licensed / official-album Goodz business never made that much headway; Mixtape Goodz was the practical workaround that let the business get moving.
+- The gift use case was especially strong, with peak demand around **Valentine's Day** and **Christmas**.
 
 ### Strategic opportunities repeatedly suggested by internal materials
 
@@ -108,6 +139,28 @@ Goodz is simultaneously:
 
 That multi-use-case flexibility is a strength, but it can also create positioning ambiguity if the shopping and product flows do not clarify which problem is being solved for which buyer.
 
+### Customer/use-case truth from Mike
+
+- The strongest Mixtape D2C buyers were probably buying for:
+  - a romantic partner
+  - family member or friend
+  - then a smaller but important self-purchase cohort
+- The self-purchase cohort is especially interesting: these customers are excited by the idea of physically "owning" their music while keeping streaming habits.
+- However, the post-purchase ownership experience has historically not been fluid or cool enough to fully satisfy that cohort, which likely hurt repeat purchase / collector behavior.
+
+### Mixtape product truth
+
+- The clearest proven D2C product is the Mixtape Goodz offering.
+- Customers order a crate of roughly 5 or 6 Goodz that arrive effectively blank.
+- On first tap, the customer sets the playlist for each Good.
+- This made the product especially compelling as a gift: people could load them with personalized playlists and give them to a boyfriend, girlfriend, or loved one.
+- The emotional gifting angle appears stronger and more proven than the official-licensed-album angle on the D2C side.
+- Mike says the blank-on-arrival / set-on-first-tap model generally worked well in practice and was not a major product problem.
+- Goodz invested meaningful effort in FAQ/support pages and included package instructions, which helped the flow land.
+- The bigger product weakness may be the ownership / playback experience after purchase, not the initial setup.
+- Current owned-Goodz flow is somewhat cludgy: tap -> landing page -> click button -> open Spotify/Apple Music/etc.
+- Improving the tap-to-experience flow could materially improve delight, collector identity, and repeat purchase behavior.
+
 ### Mike's current strategic read
 
 - The business was paused, so recent revenue does not reflect demand ceilings as much as lack of focus.
@@ -116,7 +169,40 @@ That multi-use-case flexibility is a strength, but it can also create positionin
 - A self-serve B2B/custom web flow could be a major unlock if it reduces sales friction and makes paid acquisition feasible.
 - A more sophisticated sales website is likely required for that path.
 - Indie bands / tour merch is another plausible self-serve B2B-ish wedge worth exploring.
-- Next high-value missing context to ask Mike: among the historical D2C products, which sold best, had the best margins, worked best in ads, and were easiest for customers to understand.
+- On the D2C side, the strongest proven wedge appears to be personalized playlist gifting via Mixtape Goodz.
+- Mike remembers that influencer-made 30-second videos performed well as ads, and explainer videos also performed well.
+- Once connected to the Meta Ads backend, Janet should examine historical ad performance to validate which creative angles worked best.
+- Mike believes conversion can likely be improved with a more enticing landing/checkout page rather than by changing the core Mixtape mechanic.
+- Mike specifically likes an optional Spotify OAuth flow that would let buyers load favorite playlists/albums into the page, choose which should arrive on the Goodz, and then hand off that preloaded intent to manufacturing.
+- Manufacturing can already support that preloaded/preselected-content flow operationally.
+- There is also a deeper product opportunity beyond gifting: make ownership itself feel cool, fluid, collectible, and identity-expressive.
+- Mike is explicitly interested in ideas like:
+  - richer owned-Goodz landing pages with embedded playlist/media context
+  - album art, lyrics, YouTube/video context, or other ambient metadata
+  - personalized art/notes on owned pages
+  - an account-based collection view showing all owned Goodz visually
+  - social browsing of collections
+  - a "Discogs for the streaming generation" concept
+- Mike believes younger users who never had physical music collections may be a strong target if Goodz becomes a status/style/personality layer rather than just a playlist utility.
+- For B2B, Mike's current read is roughly:
+  - big labels = strategically interesting but operationally frustrating and unreliable
+  - weddings = promising if Goodz can crack planner/channel access
+  - luxury real estate = already has some repeat-buyer validation
+  - trade shows / branded leave-behinds = commercially plausible even if less brand-romantic
+  - smaller labels / indie artists = highly attractive if the workflow can be simplified and marketed well
+- Bandcamp / indie-artist merch remains a particularly interesting route: bands could bulk-order Goodz, sell them on Bandcamp or on tour, and load them with Bandcamp download codes as an environmentally friendlier, functional alternative to vinyl.
+- Mike's current practical prioritization is to focus first on indie artists.
+- Reason: timing. With April 1 arriving and build + ad setup likely taking at least several weeks, weddings are less attractive as the immediate first wedge because much of the near-term season may already be spoken for.
+- Better sequencing may be:
+  - build for indie artists first
+  - then ramp weddings and other B2B/event verticals during summer
+  - target fall/winter events after that
+- Within the indie-artist wedge, the most appealing subsegments currently include:
+  - DJs (especially because they can sell mixes on Goodz)
+  - touring indie bands
+  - artists with strong Bandcamp audiences
+  - small labels (attractive for repeatability/scale, but possibly harder to reach)
+- A major unresolved practical question is not just which segment is attractive, but which segment can actually be found and targeted efficiently through ads, outreach, or platform-specific channels.
 
 ### Terminology to remember
 
@@ -137,6 +223,21 @@ That multi-use-case flexibility is a strength, but it can also create positionin
 - The system should bias toward practical revenue-producing work over generic business theater.
 - A key part of the operating model is regularly asking Mike compact, high-value onboarding questions so strategy stays grounded in the actual business.
 - Current onboarding prompts live in `ONBOARDING_QUESTIONS.md`.
+
+## Current strategic documents
+
+- Indie artist go-to-market mapping memo created at `research/indie-artist-gtm-map-2026-03-31.md`.
+- Current recommendation from that memo: start with touring indie bands / Bandcamp-adjacent artists as the first practical B2B wedge, with DJs as a secondary branch worth testing and small labels as a later repeatability play.
+- Next queued deliverables:
+  1. one-page artist wedge strategy
+  2. PRD for the first artist self-serve flow
+  3. landing page / funnel outline
+- Additional high-priority track: revisit the B2C checkout/landing flow, since restarting D2C ads may be the fastest path to near-term revenue.
+- First browser-reviewable B2C prototype concept now exists at `prototypes/b2c-mixtape-landing-v1/index.html` and is intended to be published under the Goodz hub at `/b2c-mixtape-landing-v1`.
+- Meta Ads historical performance is strategically important for this; Janet should reconnect/validate Meta Ads access in OpenClaw and inspect historical ad data before making strong creative/funnel recommendations.
+- Live Meta Ads API access is now working again via the local secrets file.
+- Mike noted that Goodz has not run ads in months (possibly over a year), so lack of recent live-report rows should not be misread as a pipeline failure.
+- While Mike is away, Janet should keep advancing the B2C relaunch path: historical ad analysis, checkout/landing-page upgrade concepts, and prototype directions for a more enticing Shopify-facing sales flow.
 
 ## Current continuity
 

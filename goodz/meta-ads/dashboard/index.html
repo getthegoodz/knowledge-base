@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goodz Meta Ads Historical Dashboard</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #131a2f;
+      --muted: #98a2b3;
+      --text: #eef2ff;
+      --accent: #7c9cff;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+      --border: #253053;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 28px auto;
+      padding: 0 16px 36px;
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .sub { color: var(--muted); margin-bottom: 18px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(140px, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+    }
+    .k-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+    .k-value { margin-top: 6px; font-size: 28px; font-weight: 700; }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .title { font-size: 16px; margin: 0 0 10px; }
+    .badge {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .badge.ok { color: var(--ok); border-color: #1f6f3f; }
+    .badge.warn { color: var(--warn); border-color: #7c5417; }
+    .bar-list { display: flex; flex-direction: column; gap: 8px; }
+    .bar-item { display: grid; grid-template-columns: 160px 1fr 40px; gap: 8px; align-items: center; font-size: 13px; }
+    .bar-track { height: 10px; background: #0d1429; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+    .bar-fill { height: 100%; background: linear-gradient(90deg, #4f7cff, #7c9cff); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    th, td {
+      padding: 8px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    th { color: var(--muted); font-weight: 600; }
+    .muted { color: var(--muted); }
+    .footer {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .hidden { display: none; }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: repeat(2, minmax(140px, 1fr)); }
+      .row { grid-template-columns: 1fr; }
+      .bar-item { grid-template-columns: 120px 1fr 40px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Goodz Meta Ads Historical Dashboard</h1>
+    <div class="sub">Overview dashboard. For copy/media leaderboards, open <a href="/dashboard/creatives.html" style="color:#7c9cff">Creative Intelligence</a>.</div>
+
+    <div class="grid">
+      <div class="card"><div class="k-label">Campaigns</div><div id="k-campaigns" class="k-value">-</div></div>
+      <div class="card"><div class="k-label">Ad Sets</div><div id="k-adsets" class="k-value">-</div></div>
+      <div class="card"><div class="k-label">Ads</div><div id="k-ads" class="k-value">-</div></div>
+      <div class="card"><div class="k-label">Insights Rows</div><div id="k-insights" class="k-value">-</div></div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <h2 class="title">Account Status Snapshot</h2>
+        <div id="status-pill" class="badge warn">Waiting for data</div>
+        <p id="status-text" class="muted" style="margin-top:10px;">Loading...</p>
+        <div class="footer" id="run-meta">Run metadata pending</div>
+      </div>
+      <div class="card">
+        <h2 class="title">Objective Mix</h2>
+        <div id="objectives" class="bar-list"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <h2 class="title">Campaign Status Mix</h2>
+        <div id="statuses" class="bar-list"></div>
+      </div>
+      <div class="card">
+        <h2 class="title">Performance (coming next)</h2>
+        <table>
+          <thead>
+            <tr><th>Metric</th><th>Current</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Total Spend</td><td id="m-spend">Pending</td><td class="muted">Needs insights backfill</td></tr>
+            <tr><td>Impressions</td><td id="m-impressions">Pending</td><td class="muted">Needs insights backfill</td></tr>
+            <tr><td>Clicks</td><td id="m-clicks">Pending</td><td class="muted">Needs insights backfill</td></tr>
+            <tr><td>CTR</td><td id="m-ctr">Pending</td><td class="muted">Needs insights backfill</td></tr>
+            <tr><td>CPC</td><td id="m-cpc">Pending</td><td class="muted">Needs insights backfill</td></tr>
+            <tr><td>Tracked Purchase Value</td><td id="m-purchase-value">Pending</td><td class="muted">From action_values purchase fields</td></tr>
+            <tr><td>Calculated ROAS</td><td id="m-roas">Pending</td><td class="muted">Purchase value / spend</td></tr>
+            <tr><td>Rows with Purchase ROAS</td><td id="m-roas-rows">Pending</td><td class="muted">Rows where Meta reported purchase_roas</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:12px;">
+      <h2 class="title">Top Ad Sets by Tracked Purchase Value</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Ad Set</th>
+            <th>Spend</th>
+            <th>Purchase Value</th>
+            <th>Calc ROAS</th>
+            <th>Clicks</th>
+          </tr>
+        </thead>
+        <tbody id="top-roas-adsets"></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2 class="title">Most Recently Updated Campaigns</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Campaign</th>
+            <th>Status</th>
+            <th>Objective</th>
+            <th>Updated</th>
+          </tr>
+        </thead>
+        <tbody id="recent-campaigns"></tbody>
+      </table>
+    </div>
+
+    <div class="footer">Tip: run this from a local web server (not file://), e.g. <code>python3 -m http.server 8080</code> in <code>Goodz/meta-ads</code>.</div>
+  </div>
+
+  <script>
+    const RAW_BASE_CANDIDATES = ['../data/raw', './data/raw', '../../data/raw'];
+
+    const el = (id) => document.getElementById(id);
+
+    async function getJson(path) {
+      const res = await fetch(path, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`Failed: ${path}`);
+      return res.json();
+    }
+
+    function countBy(arr, key) {
+      const out = {};
+      for (const x of arr || []) {
+        const k = (x?.[key] ?? 'UNKNOWN') || 'UNKNOWN';
+        out[k] = (out[k] || 0) + 1;
+      }
+      return out;
+    }
+
+    function renderBars(targetId, counts) {
+      const target = el(targetId);
+      target.innerHTML = '';
+      const entries = Object.entries(counts).sort((a,b) => b[1]-a[1]);
+      const max = entries[0]?.[1] || 1;
+      for (const [name, value] of entries) {
+        const row = document.createElement('div');
+        row.className = 'bar-item';
+        row.innerHTML = `
+          <div title="${name}">${name}</div>
+          <div class="bar-track"><div class="bar-fill" style="width:${(value/max)*100}%"></div></div>
+          <div>${value}</div>
+        `;
+        target.appendChild(row);
+      }
+      if (!entries.length) target.innerHTML = '<div class="muted">No data yet</div>';
+    }
+
+    function fmtDate(s) {
+      if (!s) return '—';
+      const d = new Date(s);
+      if (Number.isNaN(d.getTime())) return s;
+      return d.toLocaleString();
+    }
+
+    function parseNum(v) {
+      const n = Number(v);
+      return Number.isFinite(n) ? n : 0;
+    }
+
+    function parseActionMap(arr) {
+      const out = {};
+      if (!Array.isArray(arr)) return out;
+      for (const item of arr) {
+        const key = item?.action_type;
+        const val = parseNum(item?.value);
+        if (!key) continue;
+        out[key] = (out[key] || 0) + val;
+      }
+      return out;
+    }
+
+    // Canonical purchase-value extraction to avoid double-counting mirrored action types.
+    // Prefer omni_purchase, then purchase, then offsite pixel purchase.
+    function extractPurchaseValue(actionValuesMap) {
+      if (actionValuesMap.omni_purchase) return parseNum(actionValuesMap.omni_purchase);
+      if (actionValuesMap.purchase) return parseNum(actionValuesMap.purchase);
+      return parseNum(actionValuesMap['offsite_conversion.fb_pixel_purchase']);
+    }
+
+    async function resolveRawBase() {
+      for (const base of RAW_BASE_CANDIDATES) {
+        try {
+          const latest = await getJson(`${base}/LATEST.json`);
+          if (latest?.latest_run) return { base, latest };
+        } catch (e) {}
+      }
+      throw new Error('Could not find data/raw via known relative paths.');
+    }
+
+    async function main() {
+      try {
+        if (location.protocol === 'file:') {
+          el('status-pill').textContent = 'Needs local web server';
+          el('status-pill').className = 'badge warn';
+          el('status-text').textContent = 'This dashboard uses fetch() and will not load via file://. Start a local server in Goodz/meta-ads and open /dashboard/.';
+          return;
+        }
+
+        const resolved = await resolveRawBase();
+        const RAW_BASE = resolved.base;
+        const latest = resolved.latest;
+        const run = latest.latest_run;
+        const runBase = `${RAW_BASE}/${run}`;
+
+        const [manifest, campaigns, adsets, ads] = await Promise.all([
+          getJson(`${runBase}/manifest.json`),
+          getJson(`${runBase}/campaigns.json`),
+          getJson(`${runBase}/adsets.json`),
+          getJson(`${runBase}/ads.json`),
+        ]);
+
+        el('k-campaigns').textContent = campaigns.length;
+        el('k-adsets').textContent = adsets.length;
+        el('k-ads').textContent = ads.length;
+
+        const insightKey = Object.keys(manifest.counts).find(k => k.startsWith('insights_'));
+        const insightRows = insightKey ? manifest.counts[insightKey] : 0;
+        el('k-insights').textContent = insightRows;
+
+        const statuses = countBy(campaigns, 'status');
+        const objectives = countBy(campaigns, 'objective');
+        renderBars('statuses', statuses);
+        renderBars('objectives', objectives);
+
+        const allPaused = Object.keys(statuses).length === 1 && statuses.PAUSED === campaigns.length;
+        const pill = el('status-pill');
+        const st = el('status-text');
+        if (allPaused) {
+          pill.textContent = 'Historical review mode';
+          pill.className = 'badge ok';
+          st.textContent = 'All campaigns in this snapshot are paused. Good setup for retrospective analysis before relaunch.';
+        } else {
+          pill.textContent = 'Mixed active status';
+          pill.className = 'badge warn';
+          st.textContent = 'Some campaigns are not paused. We should validate current activity before making recommendations.';
+        }
+
+        el('run-meta').textContent = `Run: ${run} | API ${manifest.api_version} | Account ${manifest.ad_account_id}`;
+
+        const rec = [...campaigns]
+          .sort((a, b) => new Date(b.updated_time || 0) - new Date(a.updated_time || 0))
+          .slice(0, 10);
+        const tbody = el('recent-campaigns');
+        tbody.innerHTML = '';
+        for (const c of rec) {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td>${c.name || '—'}</td>
+            <td>${c.status || '—'}</td>
+            <td>${c.objective || '—'}</td>
+            <td>${fmtDate(c.updated_time)}</td>
+          `;
+          tbody.appendChild(tr);
+        }
+
+        // Best-effort performance fill if insights file exists and has rows
+        if (insightRows > 0 && insightKey) {
+          const insightsFile = `${runBase}/${insightKey}.json`;
+          try {
+            const rows = await getJson(insightsFile);
+            const totals = rows.reduce((acc, r) => {
+              acc.spend += parseNum(r.spend);
+              acc.impressions += parseNum(r.impressions);
+              acc.clicks += parseNum(r.clicks || r.inline_link_clicks);
+
+              const actionValues = parseActionMap(r.action_values);
+              const purchaseValue = extractPurchaseValue(actionValues);
+              acc.purchaseValue += purchaseValue;
+
+              const proas = Array.isArray(r.purchase_roas) ? r.purchase_roas : [];
+              if (proas.length) acc.purchaseRoasRows += 1;
+              return acc;
+            }, { spend: 0, impressions: 0, clicks: 0, purchaseValue: 0, purchaseRoasRows: 0 });
+
+            const ctr = totals.impressions ? (totals.clicks / totals.impressions) * 100 : 0;
+            const cpc = totals.clicks ? (totals.spend / totals.clicks) : 0;
+            const roas = totals.spend ? (totals.purchaseValue / totals.spend) : 0;
+
+            el('m-spend').textContent = `$${totals.spend.toFixed(2)}`;
+            el('m-impressions').textContent = totals.impressions.toLocaleString();
+            el('m-clicks').textContent = totals.clicks.toLocaleString();
+            el('m-ctr').textContent = `${ctr.toFixed(2)}%`;
+            el('m-cpc').textContent = totals.clicks ? `$${cpc.toFixed(2)}` : '—';
+            el('m-purchase-value').textContent = `$${totals.purchaseValue.toFixed(2)}`;
+            el('m-roas').textContent = totals.spend ? roas.toFixed(2) : '—';
+            el('m-roas-rows').textContent = `${totals.purchaseRoasRows.toLocaleString()} / ${rows.length.toLocaleString()}`;
+
+            const adsetAgg = {};
+            for (const r of rows) {
+              const key = r.adset_id || r.adset_name || r.campaign_id || r.campaign_name || 'unknown';
+              const av = parseActionMap(r.action_values);
+              const purchaseValue = extractPurchaseValue(av);
+
+              if (!adsetAgg[key]) {
+                adsetAgg[key] = {
+                  name: r.adset_name || r.campaign_name || '(unknown)',
+                  spend: 0,
+                  purchaseValue: 0,
+                  clicks: 0,
+                };
+              }
+              adsetAgg[key].spend += parseNum(r.spend);
+              adsetAgg[key].purchaseValue += purchaseValue;
+              adsetAgg[key].clicks += parseNum(r.clicks || r.inline_link_clicks);
+            }
+
+            const top = Object.values(adsetAgg)
+              .filter(x => x.spend > 0 && x.purchaseValue > 0)
+              .map(x => ({ ...x, roas: x.purchaseValue / x.spend }))
+              .sort((a, b) => b.purchaseValue - a.purchaseValue)
+              .slice(0, 10);
+
+            const topBody = el('top-roas-adsets');
+            topBody.innerHTML = '';
+            if (!top.length) {
+              topBody.innerHTML = '<tr><td colspan="5" class="muted">No purchase-value rows in this insights file.</td></tr>';
+            } else {
+              for (const t of top) {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                  <td>${t.name}</td>
+                  <td>$${t.spend.toFixed(2)}</td>
+                  <td>$${t.purchaseValue.toFixed(2)}</td>
+                  <td>${t.roas.toFixed(2)}</td>
+                  <td>${Math.round(t.clicks).toLocaleString()}</td>
+                `;
+                topBody.appendChild(tr);
+              }
+            }
+          } catch (e) {
+            console.warn('Insights parse skipped', e);
+          }
+        }
+      } catch (e) {
+        console.error(e);
+        el('status-pill').textContent = 'Load error';
+        el('status-pill').className = 'badge warn';
+        el('status-text').textContent = 'Could not load dashboard data. Start a local server and confirm data files exist.';
+      }
+    }
+
+    main();
+  </script>
+</body>
+</html>

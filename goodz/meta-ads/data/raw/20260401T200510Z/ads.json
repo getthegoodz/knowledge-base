@@ -1,0 +1,2342 @@
+[
+  {
+    "id": "120214027802870180",
+    "name": "vid-ZoeUGC_tree_1_LP-home (out of stock)",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2024-11-29T12:51:18-0500",
+    "updated_time": "2025-10-31T14:40:48-0400",
+    "creative": {
+      "id": "1492816165106304"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120236630658840180",
+    "name": "Versus",
+    "status": "ACTIVE",
+    "campaign_id": "120236623914750180",
+    "adset_id": "120236623914760180",
+    "created_time": "2025-10-31T14:34:07-0400",
+    "updated_time": "2025-10-31T14:38:15-0400",
+    "creative": {
+      "id": "1607327150254449"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120236629792850180",
+    "name": "Problem Solution",
+    "status": "ACTIVE",
+    "campaign_id": "120236623914750180",
+    "adset_id": "120236623914760180",
+    "created_time": "2025-10-31T14:23:35-0400",
+    "updated_time": "2025-10-31T14:33:28-0400",
+    "creative": {
+      "id": "3780665145570963"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120236623914740180",
+    "name": "Benefits",
+    "status": "ACTIVE",
+    "campaign_id": "120236623914750180",
+    "adset_id": "120236623914760180",
+    "created_time": "2025-10-31T13:01:04-0400",
+    "updated_time": "2025-10-31T14:24:18-0400",
+    "creative": {
+      "id": "706664072452956"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120217638039480180",
+    "name": "vid-doyoumiss_hook1-home- Evergreen - Copy",
+    "status": "ACTIVE",
+    "campaign_id": "120217256878000180",
+    "adset_id": "120217256877980180",
+    "created_time": "2025-02-26T18:19:25-0500",
+    "updated_time": "2025-03-27T03:34:35-0400",
+    "creative": {
+      "id": "994022389355933"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120217638039470180",
+    "name": "vid-tasteismusic_hook1-home- Evergreen - Copy",
+    "status": "PAUSED",
+    "campaign_id": "120217256878000180",
+    "adset_id": "120217256877980180",
+    "created_time": "2025-02-26T18:19:25-0500",
+    "updated_time": "2025-03-27T03:34:35-0400",
+    "creative": {
+      "id": "1358396682178639"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120217638039460180",
+    "name": "vid-tasteisagift_hook1-home- Evergreen",
+    "status": "PAUSED",
+    "campaign_id": "120217256878000180",
+    "adset_id": "120217256877980180",
+    "created_time": "2025-02-26T18:19:25-0500",
+    "updated_time": "2025-03-27T03:34:35-0400",
+    "creative": {
+      "id": "1766578710552699"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120217638039450180",
+    "name": "vid-awesometaste_hook1-home- Evergreen",
+    "status": "ACTIVE",
+    "campaign_id": "120217256878000180",
+    "adset_id": "120217256877980180",
+    "created_time": "2025-02-26T18:19:25-0500",
+    "updated_time": "2025-03-27T03:34:35-0400",
+    "creative": {
+      "id": "1758075418096515"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120217257936330180",
+    "name": "vid-NickUGC_hook1-home- Evergreen",
+    "status": "PAUSED",
+    "campaign_id": "120217256878000180",
+    "adset_id": "120217256877980180",
+    "created_time": "2025-02-23T19:13:58-0500",
+    "updated_time": "2025-03-27T03:34:35-0400",
+    "creative": {
+      "id": "120215200133200180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120214130510700180",
+    "name": "vid-NickUGC_hook1-home- Evergreen",
+    "status": "ACTIVE",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2024-12-03T17:50:12-0500",
+    "updated_time": "2025-02-14T03:17:10-0500",
+    "creative": {
+      "id": "120215200133200180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120214130510710180",
+    "name": "vid-NickUGC_hook2-home - Evergreen",
+    "status": "ACTIVE",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2024-12-03T17:50:12-0500",
+    "updated_time": "2025-02-14T03:17:09-0500",
+    "creative": {
+      "id": "120215200069960180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120216148327560180",
+    "name": "img-win-static-textoverlay-1",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-02-07T09:11:27-0500",
+    "updated_time": "2025-02-14T03:16:56-0500",
+    "creative": {
+      "id": "1604762287094185"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120215923175320180",
+    "name": "img-PXL_20250128_044210764 (1)_1-LP-home - LOVE15",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-02-01T06:30:00-0500",
+    "updated_time": "2025-02-14T03:16:56-0500",
+    "creative": {
+      "id": "1137166215075453"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120215923175310180",
+    "name": "img-PXL_20250118_011439737.MP-LP-home - LOVE15",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-02-01T06:30:00-0500",
+    "updated_time": "2025-02-14T03:16:56-0500",
+    "creative": {
+      "id": "2998339916996458"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120215787454110180",
+    "name": "vid-trueLoveDeserves-Static-PXL_20250128_044210764 (1)",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-01-28T20:24:24-0500",
+    "updated_time": "2025-02-14T03:16:56-0500",
+    "creative": {
+      "id": "620387543686996"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120215413022630180",
+    "name": "vid-trueLoveDeserves - Copy",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-01-20T19:03:04-0500",
+    "updated_time": "2025-02-14T03:16:56-0500",
+    "creative": {
+      "id": "1795181211258253"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120216148433610180",
+    "name": "img-fall-static-textoverlay-1",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-02-07T09:14:06-0500",
+    "updated_time": "2025-02-14T03:16:49-0500",
+    "creative": {
+      "id": "9153458748064975"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120216148492420180",
+    "name": "img-becauseoflove-static-textoverlay-1",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-02-07T09:16:05-0500",
+    "updated_time": "2025-02-14T03:16:42-0500",
+    "creative": {
+      "id": "9670376092996504"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120215787878510180",
+    "name": "vid-trueLoveDeserves-Static-PXL_20250128_043857771 (1) - Copy",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-01-28T20:37:01-0500",
+    "updated_time": "2025-02-07T09:09:14-0500",
+    "creative": {
+      "id": "591063913818760"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120215787524660180",
+    "name": "vid-trueLoveDeserves-Static-PXL_20250118_011439737 - Copy",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-01-28T20:24:24-0500",
+    "updated_time": "2025-02-04T04:38:57-0500",
+    "creative": {
+      "id": "624625123355726"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120215411609980180",
+    "name": "vid-loveishard-1",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-01-20T19:00:15-0500",
+    "updated_time": "2025-01-31T14:16:49-0500",
+    "creative": {
+      "id": "1269086451043120"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120215413117150180",
+    "name": "vday25_raw_1_1",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2025-01-20T19:05:46-0500",
+    "updated_time": "2025-01-31T14:16:37-0500",
+    "creative": {
+      "id": "1286213782499620"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120215787660790180",
+    "name": "img-PXL_20250128_044210764 (1)_1-LP-home",
+    "status": "ACTIVE",
+    "campaign_id": "120214027846010180",
+    "adset_id": "120214027846030180",
+    "created_time": "2025-01-28T20:31:13-0500",
+    "updated_time": "2025-01-28T20:47:12-0500",
+    "creative": {
+      "id": "1137166215075453"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120215787747060180",
+    "name": "img-PXL_20250118_011439737.MP-LP-home",
+    "status": "ACTIVE",
+    "campaign_id": "120214027846010180",
+    "adset_id": "120214027846030180",
+    "created_time": "2025-01-28T20:34:01-0500",
+    "updated_time": "2025-01-28T20:46:46-0500",
+    "creative": {
+      "id": "2998339916996458"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120214304999560180",
+    "name": "img-playlists_presents_3_1-LP-home - Copy",
+    "status": "PAUSED",
+    "campaign_id": "120214027846010180",
+    "adset_id": "120214027846030180",
+    "created_time": "2024-12-10T19:03:09-0500",
+    "updated_time": "2025-01-28T20:26:51-0500",
+    "creative": {
+      "id": "120214489383010180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120214027846040180",
+    "name": "img-playlists_presents_1_1-LP-home",
+    "status": "PAUSED",
+    "campaign_id": "120214027846010180",
+    "adset_id": "120214027846030180",
+    "created_time": "2024-11-29T13:04:03-0500",
+    "updated_time": "2025-01-28T20:26:51-0500",
+    "creative": {
+      "id": "120214489383140180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120214304987650180",
+    "name": "img-playlists_presents_2_1-LP-home",
+    "status": "PAUSED",
+    "campaign_id": "120214027846010180",
+    "adset_id": "120214027846030180",
+    "created_time": "2024-12-10T19:01:53-0500",
+    "updated_time": "2025-01-28T20:26:48-0500",
+    "creative": {
+      "id": "120214489382890180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120214305008740180",
+    "name": "img-playlists_presents_1_1-LP-home - Copy",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2024-12-10T19:03:30-0500",
+    "updated_time": "2025-01-14T12:28:07-0500",
+    "creative": {
+      "id": "120215200082580180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120214305008730180",
+    "name": "img-playlists_presents_2_1-LP-home - Copy",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2024-12-10T19:03:30-0500",
+    "updated_time": "2025-01-14T12:12:38-0500",
+    "creative": {
+      "id": "120214489358940180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120214305008720180",
+    "name": "img-playlists_presents_3_1-LP-home - Copy 2",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2024-12-10T19:03:30-0500",
+    "updated_time": "2025-01-14T12:11:23-0500",
+    "creative": {
+      "id": "120214489376740180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120214027781170180",
+    "name": "img-winterymix_tree_1_LP-home",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2024-11-29T12:46:53-0500",
+    "updated_time": "2025-01-14T11:57:23-0500",
+    "creative": {
+      "id": "120214489326300180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120214027739700180",
+    "name": "img-winterymix_tap_1_LP-home",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2024-11-29T12:45:04-0500",
+    "updated_time": "2025-01-14T11:57:07-0500",
+    "creative": {
+      "id": "120214489315770180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120214025202160180",
+    "name": "winterymix_1_LP-home",
+    "status": "PAUSED",
+    "campaign_id": "120214025202170180",
+    "adset_id": "120214025202150180",
+    "created_time": "2024-11-29T12:40:52-0500",
+    "updated_time": "2025-01-14T11:57:03-0500",
+    "creative": {
+      "id": "120214489260640180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120213829760330180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436527860180",
+    "created_time": "2024-11-22T10:14:13-0500",
+    "updated_time": "2024-11-22T12:38:21-0500",
+    "creative": {
+      "id": "120213857673470180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829760320180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213630331460180",
+    "created_time": "2024-11-22T10:14:13-0500",
+    "updated_time": "2024-11-22T12:33:10-0500",
+    "creative": {
+      "id": "120213857673420180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829760300180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436527860180",
+    "created_time": "2024-11-22T10:14:13-0500",
+    "updated_time": "2024-11-22T12:30:32-0500",
+    "creative": {
+      "id": "120213857673920180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829760360180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213630331460180",
+    "created_time": "2024-11-22T10:14:13-0500",
+    "updated_time": "2024-11-22T12:12:30-0500",
+    "creative": {
+      "id": "120213857673120180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829760310180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213713591520180",
+    "created_time": "2024-11-22T10:14:13-0500",
+    "updated_time": "2024-11-22T12:12:06-0500",
+    "creative": {
+      "id": "120213857673230180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829760370180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213713591520180",
+    "created_time": "2024-11-22T10:14:13-0500",
+    "updated_time": "2024-11-22T12:06:24-0500",
+    "creative": {
+      "id": "120213857673720180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829760340180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213630331460180",
+    "created_time": "2024-11-22T10:14:13-0500",
+    "updated_time": "2024-11-22T10:27:02-0500",
+    "creative": {
+      "id": "120213857673790180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829760350180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213713591520180",
+    "created_time": "2024-11-22T10:14:13-0500",
+    "updated_time": "2024-11-22T10:24:31-0500",
+    "creative": {
+      "id": "120213857673480180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829760290180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436527860180",
+    "created_time": "2024-11-22T10:14:13-0500",
+    "updated_time": "2024-11-22T10:21:08-0500",
+    "creative": {
+      "id": "120213857673110180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829048080180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213829048070180",
+    "created_time": "2024-11-21T12:13:59-0500",
+    "updated_time": "2024-11-21T12:27:09-0500",
+    "creative": {
+      "id": "120213829190450180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829048050180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213829048070180",
+    "created_time": "2024-11-21T12:13:59-0500",
+    "updated_time": "2024-11-21T12:27:08-0500",
+    "creative": {
+      "id": "120213829190770180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213829048060180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213829048070180",
+    "created_time": "2024-11-21T12:13:59-0500",
+    "updated_time": "2024-11-21T12:26:42-0500",
+    "creative": {
+      "id": "120213829190890180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213713591510180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213713591520180",
+    "created_time": "2024-11-17T00:51:58-0500",
+    "updated_time": "2024-11-17T00:58:52-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213713591530180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213713591520180",
+    "created_time": "2024-11-17T00:51:58-0500",
+    "updated_time": "2024-11-17T00:58:36-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213713591540180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213713591520180",
+    "created_time": "2024-11-17T00:51:58-0500",
+    "updated_time": "2024-11-17T00:58:32-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213713106560180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213713106540180",
+    "created_time": "2024-11-17T00:45:38-0500",
+    "updated_time": "2024-11-17T00:53:03-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213713106530180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213713106540180",
+    "created_time": "2024-11-17T00:45:38-0500",
+    "updated_time": "2024-11-17T00:52:18-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213713106550180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213713106540180",
+    "created_time": "2024-11-17T00:45:38-0500",
+    "updated_time": "2024-11-17T00:52:15-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213713078110180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213713078120180",
+    "created_time": "2024-11-17T00:43:42-0500",
+    "updated_time": "2024-11-17T00:51:00-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213713078100180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213713078120180",
+    "created_time": "2024-11-17T00:43:42-0500",
+    "updated_time": "2024-11-17T00:50:13-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213713078130180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213713078120180",
+    "created_time": "2024-11-17T00:43:42-0500",
+    "updated_time": "2024-11-17T00:50:11-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213630276000180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213630275930180",
+    "created_time": "2024-11-13T12:41:21-0500",
+    "updated_time": "2024-11-13T12:54:22-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213630276030180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213630275910180",
+    "created_time": "2024-11-13T12:41:21-0500",
+    "updated_time": "2024-11-13T12:54:15-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213630276040180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213630275960180",
+    "created_time": "2024-11-13T12:41:21-0500",
+    "updated_time": "2024-11-13T12:54:04-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213630275940180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213630275910180",
+    "created_time": "2024-11-13T12:41:21-0500",
+    "updated_time": "2024-11-13T12:53:30-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213630275980180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213630275960180",
+    "created_time": "2024-11-13T12:41:21-0500",
+    "updated_time": "2024-11-13T12:53:16-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213630276050180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213630275960180",
+    "created_time": "2024-11-13T12:41:21-0500",
+    "updated_time": "2024-11-13T12:53:12-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213630276060180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213630275930180",
+    "created_time": "2024-11-13T12:41:21-0500",
+    "updated_time": "2024-11-13T12:53:02-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213630331450180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213630331460180",
+    "created_time": "2024-11-13T12:42:45-0500",
+    "updated_time": "2024-11-13T12:51:36-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213630331470180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213630331460180",
+    "created_time": "2024-11-13T12:42:45-0500",
+    "updated_time": "2024-11-13T12:51:23-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213630275950180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213630275910180",
+    "created_time": "2024-11-13T12:41:21-0500",
+    "updated_time": "2024-11-13T12:50:36-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213630331480180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213630331460180",
+    "created_time": "2024-11-13T12:42:45-0500",
+    "updated_time": "2024-11-13T12:49:14-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213630275900180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "adset_id": "120213630275930180",
+    "created_time": "2024-11-13T12:41:21-0500",
+    "updated_time": "2024-11-13T12:49:03-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213436527870180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436527860180",
+    "created_time": "2024-11-06T03:48:31-0500",
+    "updated_time": "2024-11-06T03:56:46-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213436488350180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436488900180",
+    "created_time": "2024-11-06T03:47:11-0500",
+    "updated_time": "2024-11-06T03:56:22-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213436527850180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436527860180",
+    "created_time": "2024-11-06T03:48:31-0500",
+    "updated_time": "2024-11-06T03:55:48-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213436488340180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436488900180",
+    "created_time": "2024-11-06T03:47:11-0500",
+    "updated_time": "2024-11-06T03:55:44-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213436488360180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436488900180",
+    "created_time": "2024-11-06T03:47:11-0500",
+    "updated_time": "2024-11-06T03:55:25-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213436527830180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436527860180",
+    "created_time": "2024-11-06T03:48:31-0500",
+    "updated_time": "2024-11-06T03:55:18-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213436433250180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436433260180",
+    "created_time": "2024-11-06T03:46:25-0500",
+    "updated_time": "2024-11-06T03:53:50-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213436433280180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436433260180",
+    "created_time": "2024-11-06T03:46:25-0500",
+    "updated_time": "2024-11-06T03:53:25-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213436415060180",
+    "name": "Taste Is A Gift",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436415050180",
+    "created_time": "2024-11-06T03:45:44-0500",
+    "updated_time": "2024-11-06T03:53:24-0500",
+    "creative": {
+      "id": "120213434284590180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213436415070180",
+    "name": "Awesome Taste",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436415050180",
+    "created_time": "2024-11-06T03:45:44-0500",
+    "updated_time": "2024-11-06T03:53:12-0500",
+    "creative": {
+      "id": "120213434105790180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120213436433270180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436433260180",
+    "created_time": "2024-11-06T03:46:25-0500",
+    "updated_time": "2024-11-06T03:53:07-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120213436415040180",
+    "name": "Do You Miss",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "adset_id": "120213436415050180",
+    "created_time": "2024-11-06T03:45:44-0500",
+    "updated_time": "2024-11-06T03:52:15-0500",
+    "creative": {
+      "id": "120213432939860180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120208396623420180",
+    "name": "03292024_Reel w/ text_PP URL",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120208396623400180",
+    "created_time": "2024-04-26T13:42:38-0400",
+    "updated_time": "2024-10-01T17:56:15-0400",
+    "creative": {
+      "id": "120212482893950180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120208396623430180",
+    "name": "04222024_a mix tape for you_static",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120208396623400180",
+    "created_time": "2024-04-26T13:42:41-0400",
+    "updated_time": "2024-10-01T17:51:20-0400",
+    "creative": {
+      "id": "120212482841940180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120211202521840180",
+    "name": "River Jams - Hold, Collect, & Share",
+    "status": "ACTIVE",
+    "campaign_id": "120210745414070180",
+    "adset_id": "120211202521830180",
+    "created_time": "2024-08-14T13:05:14-0400",
+    "updated_time": "2024-08-14T19:42:33-0400",
+    "creative": {
+      "id": "120211202668280180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120211202597210180",
+    "name": "River Jams - Real World Keepsakes",
+    "status": "ACTIVE",
+    "campaign_id": "120210745414070180",
+    "adset_id": "120211202597220180",
+    "created_time": "2024-08-14T13:05:14-0400",
+    "updated_time": "2024-08-14T13:10:29-0400",
+    "creative": {
+      "id": "120211202668170180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120211202552650180",
+    "name": "River Jams - Hold in Your Hands",
+    "status": "ACTIVE",
+    "campaign_id": "120210745414070180",
+    "adset_id": "120211202552660180",
+    "created_time": "2024-08-14T13:05:20-0400",
+    "updated_time": "2024-08-14T13:10:03-0400",
+    "creative": {
+      "id": "120211202670030180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120211201658150180",
+    "name": "River Jams - No Caption",
+    "status": "ACTIVE",
+    "campaign_id": "120210745414070180",
+    "adset_id": "120211201657070180",
+    "created_time": "2024-08-14T13:05:14-0400",
+    "updated_time": "2024-08-14T13:09:47-0400",
+    "creative": {
+      "id": "120211202668470180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120211019789170180",
+    "name": "I Miss You - In Your Hands",
+    "status": "ACTIVE",
+    "campaign_id": "120211019683530180",
+    "adset_id": "120211019789160180",
+    "created_time": "2024-08-07T09:47:14-0400",
+    "updated_time": "2024-08-07T09:51:45-0400",
+    "creative": {
+      "id": "120211019857030180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120211019683520180",
+    "name": "I Miss You - Hold, Collect, & Share",
+    "status": "ACTIVE",
+    "campaign_id": "120211019683530180",
+    "adset_id": "120211019683510180",
+    "created_time": "2024-08-07T09:47:14-0400",
+    "updated_time": "2024-08-07T09:51:30-0400",
+    "creative": {
+      "id": "120211019857060180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120211018678730180",
+    "name": "Carousel 2",
+    "status": "ACTIVE",
+    "campaign_id": "120211018678040180",
+    "adset_id": "120211018678420180",
+    "created_time": "2024-08-07T09:38:53-0400",
+    "updated_time": "2024-08-07T09:44:51-0400",
+    "creative": {
+      "id": "120211019668560180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120210745693600180",
+    "name": "Chromatic Carousel",
+    "status": "ACTIVE",
+    "campaign_id": "120210745693580180",
+    "adset_id": "120210745693590180",
+    "created_time": "2024-07-26T17:23:03-0400",
+    "updated_time": "2024-08-02T11:18:20-0400",
+    "creative": {
+      "id": "120210909345230180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120210745414180180",
+    "name": "River Jams",
+    "status": "ACTIVE",
+    "campaign_id": "120210745414070180",
+    "adset_id": "120210745414160180",
+    "created_time": "2024-07-26T17:07:24-0400",
+    "updated_time": "2024-08-02T11:16:54-0400",
+    "creative": {
+      "id": "120210909316370180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120210132903050180",
+    "name": "Mix Tape Static",
+    "status": "ACTIVE",
+    "campaign_id": "120209793699190180",
+    "adset_id": "120210132589190180",
+    "created_time": "2024-07-01T09:23:03-0400",
+    "updated_time": "2024-07-17T12:54:42-0400",
+    "creative": {
+      "id": "120210132926930180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120210132637200180",
+    "name": "Grab Tap Play Video",
+    "status": "ACTIVE",
+    "campaign_id": "120209793699190180",
+    "adset_id": "120210132589190180",
+    "created_time": "2024-07-01T09:18:56-0400",
+    "updated_time": "2024-07-17T12:54:01-0400",
+    "creative": {
+      "id": "120210132821040180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120210132850230180",
+    "name": "Gold Static",
+    "status": "PAUSED",
+    "campaign_id": "120209793699190180",
+    "adset_id": "120210132589190180",
+    "created_time": "2024-07-01T09:20:53-0400",
+    "updated_time": "2024-07-17T12:52:39-0400",
+    "creative": {
+      "id": "120210132888110180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120209793699320180",
+    "name": "Jazz Crate Desk - Modern Twist",
+    "status": "PAUSED",
+    "campaign_id": "120209793699190180",
+    "adset_id": "120209793699360180",
+    "created_time": "2024-06-12T17:10:11-0400",
+    "updated_time": "2024-06-25T13:33:26-0400",
+    "creative": {
+      "id": "120209793634420180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120209793699350180",
+    "name": "Jazz Albums - In Your Hands",
+    "status": "PAUSED",
+    "campaign_id": "120209793699190180",
+    "adset_id": "120209793699360180",
+    "created_time": "2024-06-12T17:10:11-0400",
+    "updated_time": "2024-06-24T09:19:31-0400",
+    "creative": {
+      "id": "120209793633040180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120209793699340180",
+    "name": "Jazz Crate - Modern Twist",
+    "status": "ACTIVE",
+    "campaign_id": "120209793699190180",
+    "adset_id": "120209793699360180",
+    "created_time": "2024-06-12T17:10:05-0400",
+    "updated_time": "2024-06-24T09:19:31-0400",
+    "creative": {
+      "id": "120209793717340180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120209793699330180",
+    "name": "Jazz Crate Carousel",
+    "status": "ACTIVE",
+    "campaign_id": "120209793699190180",
+    "adset_id": "120209793699360180",
+    "created_time": "2024-06-12T17:10:05-0400",
+    "updated_time": "2024-06-24T09:19:31-0400",
+    "creative": {
+      "id": "120209793635610180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120209115613580180",
+    "name": "05172024_VIdeo_HP",
+    "status": "ACTIVE",
+    "campaign_id": "120209114745420180",
+    "adset_id": "120209114745630180",
+    "created_time": "2024-05-17T12:22:31-0400",
+    "updated_time": "2024-06-21T11:07:10-0400",
+    "creative": {
+      "id": "120209968650930180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120209115416220180",
+    "name": "05172024__static_HP_gold",
+    "status": "PAUSED",
+    "campaign_id": "120209114745420180",
+    "adset_id": "120209114745630180",
+    "created_time": "2024-05-17T12:16:08-0400",
+    "updated_time": "2024-06-21T10:26:49-0400",
+    "creative": {
+      "id": "120209968442670180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120205883485420180",
+    "name": "Ad 5",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120205883485380180",
+    "created_time": "2024-06-18T14:29:53-0400",
+    "updated_time": "2024-06-18T14:36:22-0400",
+    "creative": {
+      "id": "120209901794620180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120209114745670180",
+    "name": "05172024_a mix tape for you_static_HP",
+    "status": "PAUSED",
+    "campaign_id": "120209114745420180",
+    "adset_id": "120209114745630180",
+    "created_time": "2024-05-17T12:05:58-0400",
+    "updated_time": "2024-06-18T14:20:14-0400",
+    "creative": {
+      "id": "120209899314450180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120209746418790180",
+    "name": "Jazz Crate",
+    "status": "ACTIVE",
+    "campaign_id": "120209530536800180",
+    "adset_id": "120209746418780180",
+    "created_time": "2024-06-10T15:34:44-0400",
+    "updated_time": "2024-06-12T16:56:36-0400",
+    "creative": {
+      "id": "120209552527240180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120209746418770180",
+    "name": "Jazz Crate Desk",
+    "status": "PAUSED",
+    "campaign_id": "120209530536800180",
+    "adset_id": "120209746418780180",
+    "created_time": "2024-06-10T15:34:44-0400",
+    "updated_time": "2024-06-12T16:56:36-0400",
+    "creative": {
+      "id": "120209552527190180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120209531365440180",
+    "name": "Jazz Crate Desk",
+    "status": "PAUSED",
+    "campaign_id": "120209530536800180",
+    "adset_id": "120209531365450180",
+    "created_time": "2024-05-31T15:11:11-0400",
+    "updated_time": "2024-06-12T16:56:15-0400",
+    "creative": {
+      "id": "120209552527360180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120209531365430180",
+    "name": "Jazz Crate",
+    "status": "ACTIVE",
+    "campaign_id": "120209530536800180",
+    "adset_id": "120209531365450180",
+    "created_time": "2024-05-31T15:11:10-0400",
+    "updated_time": "2024-06-12T16:56:15-0400",
+    "creative": {
+      "id": "120209552527040180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120209531342630180",
+    "name": "Jazz Crate Desk",
+    "status": "PAUSED",
+    "campaign_id": "120209530536800180",
+    "adset_id": "120209530536810180",
+    "created_time": "2024-05-31T15:11:10-0400",
+    "updated_time": "2024-06-10T15:33:57-0400",
+    "creative": {
+      "id": "120209552527190180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120209530536820180",
+    "name": "Jazz Crate",
+    "status": "ACTIVE",
+    "campaign_id": "120209530536800180",
+    "adset_id": "120209530536810180",
+    "created_time": "2024-05-31T15:11:11-0400",
+    "updated_time": "2024-05-31T15:22:41-0400",
+    "creative": {
+      "id": "120209552527240180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120209531393030180",
+    "name": "Jazz Crate Desk",
+    "status": "ACTIVE",
+    "campaign_id": "120209530536800180",
+    "adset_id": "120209531393020180",
+    "created_time": "2024-05-31T15:11:19-0400",
+    "updated_time": "2024-05-31T15:21:46-0400",
+    "creative": {
+      "id": "120209552531280180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120209531393010180",
+    "name": "Jazz Crate",
+    "status": "ACTIVE",
+    "campaign_id": "120209530536800180",
+    "adset_id": "120209531393020180",
+    "created_time": "2024-05-31T15:11:19-0400",
+    "updated_time": "2024-05-31T15:17:28-0400",
+    "creative": {
+      "id": "120209552531250180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120209115349560180",
+    "name": "05172024_video_PP",
+    "status": "ACTIVE",
+    "campaign_id": "120209115257120180",
+    "adset_id": "120209115257130180",
+    "created_time": "2024-05-17T12:13:56-0400",
+    "updated_time": "2024-05-24T08:47:13-0400",
+    "creative": {
+      "id": "120209388574050180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120209115308320180",
+    "name": "05172024__static_gold_PP",
+    "status": "ACTIVE",
+    "campaign_id": "120209115257120180",
+    "adset_id": "120209115257130180",
+    "created_time": "2024-05-17T12:11:26-0400",
+    "updated_time": "2024-05-17T12:27:00-0400",
+    "creative": {
+      "id": "120209115678170180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120209115257110180",
+    "name": "05172024_a mix tape for you_static_PP",
+    "status": "ACTIVE",
+    "campaign_id": "120209115257120180",
+    "adset_id": "120209115257130180",
+    "created_time": "2024-05-17T12:07:07-0400",
+    "updated_time": "2024-05-17T12:23:35-0400",
+    "creative": {
+      "id": "120209115573260180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120208723941450180",
+    "name": "05072024_Mother's Day Promo",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207588446550180",
+    "created_time": "2024-05-07T16:12:04-0400",
+    "updated_time": "2024-05-07T16:16:37-0400",
+    "creative": {
+      "id": "120208723966130180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120207588446600180",
+    "name": "Ad 4",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207588446550180",
+    "created_time": "2024-04-01T13:58:50-0400",
+    "updated_time": "2024-05-07T16:00:00-0400",
+    "creative": {
+      "id": "120205884249070180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120208723635580180",
+    "name": "04222024_a mix tape for you_static - Copy",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207588446550180",
+    "created_time": "2024-05-07T15:54:26-0400",
+    "updated_time": "2024-05-07T15:59:22-0400",
+    "creative": {
+      "id": "120208336590440180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120207588446580180",
+    "name": "04012024_Static ad 2",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207588446550180",
+    "created_time": "2024-04-01T13:58:45-0400",
+    "updated_time": "2024-05-07T15:58:43-0400",
+    "creative": {
+      "id": "120207793874900180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120207588446570180",
+    "name": "03292024_Static_no text_ HP URL",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207588446550180",
+    "created_time": "2024-04-01T13:58:48-0400",
+    "updated_time": "2024-05-07T15:57:46-0400",
+    "creative": {
+      "id": "120207495566620180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120207588446590180",
+    "name": "03292024_Reel w/ text_PP URL",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207588446550180",
+    "created_time": "2024-04-01T13:58:45-0400",
+    "updated_time": "2024-05-07T15:56:41-0400",
+    "creative": {
+      "id": "120208723614430180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120207588446560180",
+    "name": "03292024_Reel_Mixtape w/ text_PP URL",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207588446550180",
+    "created_time": "2024-04-01T13:58:48-0400",
+    "updated_time": "2024-05-07T15:56:18-0400",
+    "creative": {
+      "id": "120207495316020180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120207589671570180",
+    "name": "04012024_Lifestyle Caro",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207588446550180",
+    "created_time": "2024-04-01T15:05:13-0400",
+    "updated_time": "2024-05-07T15:55:46-0400",
+    "creative": {
+      "id": "120207793867470180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120208396623410180",
+    "name": "04222024_new static ad",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120208396623400180",
+    "created_time": "2024-04-26T13:42:38-0400",
+    "updated_time": "2024-05-06T12:57:46-0400",
+    "creative": {
+      "id": "120208365049190180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120208553045100180",
+    "name": "05022024_Mother's Day static 1",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120208553045070180",
+    "created_time": "2024-05-02T11:52:10-0400",
+    "updated_time": "2024-05-02T17:08:18-0400",
+    "creative": {
+      "id": "120208553299620180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120208553142100180",
+    "name": "05022024_Mother's Day static 2",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120208553045070180",
+    "created_time": "2024-05-02T11:53:19-0400",
+    "updated_time": "2024-05-02T17:08:14-0400",
+    "creative": {
+      "id": "120208553230760180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120208396665090180",
+    "name": "04222024_a mix tape for you_static",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120208396665080180",
+    "created_time": "2024-04-26T13:42:50-0400",
+    "updated_time": "2024-04-26T13:52:06-0400",
+    "creative": {
+      "id": "120208396669510180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120208396665070180",
+    "name": "04222024_new static ad",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120208396665080180",
+    "created_time": "2024-04-26T13:42:56-0400",
+    "updated_time": "2024-04-26T13:48:42-0400",
+    "creative": {
+      "id": "120208396674180180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120208396665100180",
+    "name": "03292024_Reel w/ text_PP URL",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120208396665080180",
+    "created_time": "2024-04-26T13:42:50-0400",
+    "updated_time": "2024-04-26T13:46:57-0400",
+    "creative": {
+      "id": "120208396670760180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120208245369550180",
+    "name": "04222024_Static ad 2",
+    "status": "ACTIVE",
+    "campaign_id": "120208242028910180",
+    "adset_id": "120208242028900180",
+    "created_time": "2024-04-22T12:45:05-0400",
+    "updated_time": "2024-04-25T13:34:23-0400",
+    "creative": {
+      "id": "120208365067960180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120208248426160180",
+    "name": "04222024_new static ad",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207909277780180",
+    "created_time": "2024-04-22T13:07:07-0400",
+    "updated_time": "2024-04-25T13:18:29-0400",
+    "creative": {
+      "id": "120208365049190180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120207909277810180",
+    "name": "03292024_Reel w/ text_PP URL",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207909277780180",
+    "created_time": "2024-04-12T13:45:48-0400",
+    "updated_time": "2024-04-25T13:18:23-0400",
+    "creative": {
+      "id": "120208365055600180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120208248062300180",
+    "name": "04222024_Video",
+    "status": "ACTIVE",
+    "campaign_id": "120208242028910180",
+    "adset_id": "120208242028900180",
+    "created_time": "2024-04-22T12:47:15-0400",
+    "updated_time": "2024-04-24T20:59:19-0400",
+    "creative": {
+      "id": "120208287306720180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120208242028890180",
+    "name": "0422024_Static Crerative1",
+    "status": "ACTIVE",
+    "campaign_id": "120208242028910180",
+    "adset_id": "120208242028900180",
+    "created_time": "2024-04-22T11:18:13-0400",
+    "updated_time": "2024-04-24T20:59:15-0400",
+    "creative": {
+      "id": "120208336458800180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120208241981690180",
+    "name": "04222024_a mix tape for you_static",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120207909277780180",
+    "created_time": "2024-04-22T11:04:37-0400",
+    "updated_time": "2024-04-24T16:52:59-0400",
+    "creative": {
+      "id": "120208336590440180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120207588043360180",
+    "name": "04012024_Static ad 2",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120205883485380180",
+    "created_time": "2024-04-01T13:47:26-0400",
+    "updated_time": "2024-04-08T16:38:44-0400",
+    "creative": {
+      "id": "120207793878890180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120207495235740180",
+    "name": "03292024_Reel_Mixtape w/ text_PP URL",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120205883485380180",
+    "created_time": "2024-03-29T14:50:47-0400",
+    "updated_time": "2024-04-01T13:39:28-0400",
+    "creative": {
+      "id": "120207495316020180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120207495136960180",
+    "name": "03292024_Reel w/ text_PP URL",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120205883485380180",
+    "created_time": "2024-03-29T14:47:13-0400",
+    "updated_time": "2024-04-01T13:39:17-0400",
+    "creative": {
+      "id": "120207495204770180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120207495321860180",
+    "name": "03292024_Static_no text_ HP URL",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120205883485380180",
+    "created_time": "2024-03-29T14:56:46-0400",
+    "updated_time": "2024-03-29T15:03:20-0400",
+    "creative": {
+      "id": "120207495566620180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120205883485470180",
+    "name": "Ad 4",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120205883485380180",
+    "created_time": "2024-02-24T10:58:00-0500",
+    "updated_time": "2024-02-24T11:01:30-0500",
+    "creative": {
+      "id": "120205884249070180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204384304090180",
+    "name": "Ad 5",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384304080180",
+    "created_time": "2024-01-26T10:00:56-0500",
+    "updated_time": "2024-02-10T18:06:03-0500",
+    "creative": {
+      "id": "120204384818910180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204384304120180",
+    "name": "Ad 3",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384304080180",
+    "created_time": "2024-01-26T10:00:51-0500",
+    "updated_time": "2024-02-10T18:05:37-0500",
+    "creative": {
+      "id": "120204384267900180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120205049700010180",
+    "name": "Ad 4 - Mike Copy",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384304080180",
+    "created_time": "2024-02-06T09:56:27-0500",
+    "updated_time": "2024-02-10T18:05:35-0500",
+    "creative": {
+      "id": "120205049897810180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204384304100180",
+    "name": "Ad 4",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384304080180",
+    "created_time": "2024-01-26T10:00:54-0500",
+    "updated_time": "2024-02-10T18:05:29-0500",
+    "creative": {
+      "id": "120204384778440180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204384304070180",
+    "name": "Ad 2",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384304080180",
+    "created_time": "2024-01-26T10:00:51-0500",
+    "updated_time": "2024-02-10T18:05:23-0500",
+    "creative": {
+      "id": "120204384247510180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204384304110180",
+    "name": "Ad 1",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384304080180",
+    "created_time": "2024-01-26T10:00:54-0500",
+    "updated_time": "2024-02-10T18:04:39-0500",
+    "creative": {
+      "id": "120204384220580180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204692180980180",
+    "name": "Ad 2",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204692181000180",
+    "created_time": "2024-01-31T01:22:24-0500",
+    "updated_time": "2024-01-31T01:25:50-0500",
+    "creative": {
+      "id": "120204384247510180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204692181010180",
+    "name": "Ad 3",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204692181000180",
+    "created_time": "2024-01-31T01:22:21-0500",
+    "updated_time": "2024-01-31T01:25:36-0500",
+    "creative": {
+      "id": "120204384267900180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204692181030180",
+    "name": "Ad 5",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204692181000180",
+    "created_time": "2024-01-31T01:22:27-0500",
+    "updated_time": "2024-01-31T01:25:34-0500",
+    "creative": {
+      "id": "120204384818910180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204692181020180",
+    "name": "Ad 4",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204692181000180",
+    "created_time": "2024-01-31T01:22:21-0500",
+    "updated_time": "2024-01-31T01:25:34-0500",
+    "creative": {
+      "id": "120204384778440180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204692180990180",
+    "name": "Ad 1",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204692181000180",
+    "created_time": "2024-01-31T01:22:24-0500",
+    "updated_time": "2024-01-31T01:24:46-0500",
+    "creative": {
+      "id": "120204384220580180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204384328910180",
+    "name": "Ad 5",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384328880180",
+    "created_time": "2024-01-26T10:03:09-0500",
+    "updated_time": "2024-01-26T10:23:16-0500",
+    "creative": {
+      "id": "120204384915760180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204384328920180",
+    "name": "Ad 4",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384328880180",
+    "created_time": "2024-01-26T10:03:06-0500",
+    "updated_time": "2024-01-26T10:22:18-0500",
+    "creative": {
+      "id": "120204384885620180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204381500090180",
+    "name": "Ad 4",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204380338180180",
+    "created_time": "2024-01-26T09:58:30-0500",
+    "updated_time": "2024-01-26T10:18:55-0500",
+    "creative": {
+      "id": "120204384726060180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204381514390180",
+    "name": "Ad 5",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204380338180180",
+    "created_time": "2024-01-26T09:59:05-0500",
+    "updated_time": "2024-01-26T10:18:18-0500",
+    "creative": {
+      "id": "120204384690320180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204384328870180",
+    "name": "Ad 2",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384328880180",
+    "created_time": "2024-01-26T10:03:06-0500",
+    "updated_time": "2024-01-26T10:07:03-0500",
+    "creative": {
+      "id": "120204384247510180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204384328890180",
+    "name": "Ad 3",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384328880180",
+    "created_time": "2024-01-26T10:03:11-0500",
+    "updated_time": "2024-01-26T10:06:55-0500",
+    "creative": {
+      "id": "120204384267900180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204381252980180",
+    "name": "Ad 3",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204380338180180",
+    "created_time": "2024-01-26T09:57:57-0500",
+    "updated_time": "2024-01-26T10:06:17-0500",
+    "creative": {
+      "id": "120204384267900180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204384328900180",
+    "name": "Ad 1",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204384328880180",
+    "created_time": "2024-01-26T10:03:09-0500",
+    "updated_time": "2024-01-26T10:05:46-0500",
+    "creative": {
+      "id": "120204384220580180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204381202330180",
+    "name": "Ad 2",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204380338180180",
+    "created_time": "2024-01-26T09:56:26-0500",
+    "updated_time": "2024-01-26T10:04:49-0500",
+    "creative": {
+      "id": "120204384247510180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204380338230180",
+    "name": "Ad 1",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "adset_id": "120204380338180180",
+    "created_time": "2024-01-26T09:54:32-0500",
+    "updated_time": "2024-01-26T09:58:20-0500",
+    "creative": {
+      "id": "120204384220580180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120204142352990180",
+    "name": "Parents - Traffic Store",
+    "status": "ACTIVE",
+    "campaign_id": "120204142182080180",
+    "adset_id": "120204142182120180",
+    "created_time": "2024-01-18T16:07:16-0500",
+    "updated_time": "2024-01-18T16:38:39-0500",
+    "creative": {
+      "id": "120204142364260180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120204142182150180",
+    "name": "Taste is a Gift - Traffic Store",
+    "status": "ACTIVE",
+    "campaign_id": "120204142182080180",
+    "adset_id": "120204142182120180",
+    "created_time": "2024-01-18T16:06:23-0500",
+    "updated_time": "2024-01-18T16:10:09-0500",
+    "creative": {
+      "id": "120204142350610180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120204139538450180",
+    "name": "Remember Your First - Store Page",
+    "status": "ACTIVE",
+    "campaign_id": "120204099753870180",
+    "adset_id": "120204099754200180",
+    "created_time": "2024-01-18T13:25:17-0500",
+    "updated_time": "2024-01-18T13:29:03-0500",
+    "creative": {
+      "id": "120204139545260180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120204139467210180",
+    "name": "Parents - Store Page",
+    "status": "ACTIVE",
+    "campaign_id": "120204099753870180",
+    "adset_id": "120204099754200180",
+    "created_time": "2024-01-18T13:23:09-0500",
+    "updated_time": "2024-01-18T13:27:03-0500",
+    "creative": {
+      "id": "120204139526330180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120204099754310180",
+    "name": "Taste is a Gift - Crate Page",
+    "status": "PAUSED",
+    "campaign_id": "120204099753870180",
+    "adset_id": "120204099754200180",
+    "created_time": "2024-01-17T09:50:30-0500",
+    "updated_time": "2024-01-18T13:25:34-0500",
+    "creative": {
+      "id": "120204099938130180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120204100106640180",
+    "name": "Some Else's Words - Crate Page",
+    "status": "PAUSED",
+    "campaign_id": "120204099753870180",
+    "adset_id": "120204099754200180",
+    "created_time": "2024-01-17T09:58:37-0500",
+    "updated_time": "2024-01-18T13:23:52-0500",
+    "creative": {
+      "id": "120204100142850180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120204104600250180",
+    "name": "Some Else's Words - Store Page",
+    "status": "ACTIVE",
+    "campaign_id": "120204099753870180",
+    "adset_id": "120204099754200180",
+    "created_time": "2024-01-17T13:58:10-0500",
+    "updated_time": "2024-01-17T14:02:27-0500",
+    "creative": {
+      "id": "120204104610000180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120204104581880180",
+    "name": "Taste is a Gift - Store Page",
+    "status": "ACTIVE",
+    "campaign_id": "120204099753870180",
+    "adset_id": "120204099754200180",
+    "created_time": "2024-01-17T13:57:03-0500",
+    "updated_time": "2024-01-17T14:00:38-0500",
+    "creative": {
+      "id": "120204104590480180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201721355890180",
+    "name": "Holidaze Video Ad",
+    "status": "PAUSED",
+    "campaign_id": "120201721354540180",
+    "adset_id": "120201721355260180",
+    "created_time": "2023-12-07T15:07:13-0500",
+    "updated_time": "2023-12-18T13:59:43-0500",
+    "creative": {
+      "id": "120201948215710180"
+    },
+    "effective_status": "PAUSED"
+  },
+  {
+    "id": "120202563237620180",
+    "name": "Holidaze Video Ad - Store Link",
+    "status": "ACTIVE",
+    "campaign_id": "120201721354540180",
+    "adset_id": "120201721355260180",
+    "created_time": "2023-12-14T09:29:22-0500",
+    "updated_time": "2023-12-18T13:59:22-0500",
+    "creative": {
+      "id": "120202563672420180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120202053404570180",
+    "name": "Holidaze Video Ad",
+    "status": "ACTIVE",
+    "campaign_id": "120201721354540180",
+    "adset_id": "120202053404560180",
+    "created_time": "2023-12-09T15:37:41-0500",
+    "updated_time": "2023-12-09T15:41:08-0500",
+    "creative": {
+      "id": "120201948215710180"
+    },
+    "effective_status": "ADSET_PAUSED"
+  },
+  {
+    "id": "120201181834150180",
+    "name": "Miss Making Mixtapes",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201181241350180",
+    "created_time": "2023-11-27T09:56:12-0500",
+    "updated_time": "2023-11-29T20:36:35-0500",
+    "creative": {
+      "id": "120201181883180180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201181780960180",
+    "name": "Music You Can Touch",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201181241350180",
+    "created_time": "2023-11-27T09:55:25-0500",
+    "updated_time": "2023-11-29T20:36:35-0500",
+    "creative": {
+      "id": "120201181819180180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201181665480180",
+    "name": "No Tape Deck Required",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201181241350180",
+    "created_time": "2023-11-27T09:53:29-0500",
+    "updated_time": "2023-11-29T20:36:35-0500",
+    "creative": {
+      "id": "120201181726150180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201181242170180",
+    "name": "IRL Playlists",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201181241350180",
+    "created_time": "2023-11-27T09:51:24-0500",
+    "updated_time": "2023-11-29T20:36:35-0500",
+    "creative": {
+      "id": "120201181568940180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201181739100180",
+    "name": "Make Playlists Real",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201181241350180",
+    "created_time": "2023-11-27T10:09:05-0500",
+    "updated_time": "2023-11-29T20:35:08-0500",
+    "creative": {
+      "id": "120201182415350180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201180898240180",
+    "name": "Music You Can Touch",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201179005170180",
+    "created_time": "2023-11-27T09:45:20-0500",
+    "updated_time": "2023-11-29T20:35:08-0500",
+    "creative": {
+      "id": "120201188166720180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201180367470180",
+    "name": "IRL Playlists",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201179005170180",
+    "created_time": "2023-11-27T09:42:25-0500",
+    "updated_time": "2023-11-29T20:35:08-0500",
+    "creative": {
+      "id": "120201188166690180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201180793160180",
+    "name": "No Tape Deck Required",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201179005170180",
+    "created_time": "2023-11-27T09:46:59-0500",
+    "updated_time": "2023-11-29T20:31:02-0500",
+    "creative": {
+      "id": "120201188166770180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201180139710180",
+    "name": "Miss Making Mixtapes",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201179005170180",
+    "created_time": "2023-11-27T09:37:37-0500",
+    "updated_time": "2023-11-29T20:31:02-0500",
+    "creative": {
+      "id": "120201188168910180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201179005210180",
+    "name": "Make Playlists Real",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201179005170180",
+    "created_time": "2023-11-27T09:35:06-0500",
+    "updated_time": "2023-11-29T20:31:02-0500",
+    "creative": {
+      "id": "120201188166660180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201181959790180",
+    "name": "Wedding Mixtape",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "adset_id": "120201181959620180",
+    "created_time": "2023-11-27T10:03:58-0500",
+    "updated_time": "2023-11-29T20:30:28-0500",
+    "creative": {
+      "id": "120201208202440180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  },
+  {
+    "id": "120201166876260180",
+    "name": "Advantage+ shopping campaign 11/26/2023 Ad",
+    "status": "ACTIVE",
+    "campaign_id": "120201166876270180",
+    "adset_id": "120201166876280180",
+    "created_time": "2023-11-26T21:00:33-0500",
+    "updated_time": "2023-11-26T21:04:13-0500",
+    "creative": {
+      "id": "120201167151910180"
+    },
+    "effective_status": "CAMPAIGN_PAUSED"
+  }
+]

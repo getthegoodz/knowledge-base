@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goodz Creative Intelligence</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#131a2f; --text:#eef2ff; --muted:#98a2b3; --border:#253053; --accent:#7c9cff; }
+    body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text)}
+    .wrap{max-width:1280px;margin:24px auto;padding:0 16px 32px}
+    a{color:var(--accent)}
+    .nav{margin-bottom:12px;font-size:14px}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));gap:12px;margin-bottom:12px}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:12px}
+    .k{font-size:12px;color:var(--muted);text-transform:uppercase}.v{font-size:24px;font-weight:700;margin-top:4px}
+    .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+    input,select{background:#0d1429;border:1px solid var(--border);color:var(--text);padding:8px;border-radius:8px}
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    th,td{padding:8px;border-bottom:1px solid var(--border);vertical-align:top;text-align:left}
+    th{color:var(--muted)}
+    .chips{display:flex;gap:6px;flex-wrap:wrap}.chip{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(180px,1fr));gap:10px}
+    .thumb{height:140px;width:100%;object-fit:cover;border-radius:8px;border:1px solid var(--border);background:#0d1429}
+    .muted{color:var(--muted)}
+    @media (max-width:960px){.grid{grid-template-columns:repeat(2,minmax(140px,1fr))}.gallery{grid-template-columns:repeat(2,minmax(160px,1fr))}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav"><a href="/dashboard/">← Overview</a></div>
+    <h1>Creative Intelligence</h1>
+    <p class="muted">Ad-level performance joined with creative metadata (copy, media, CTA, tagging).</p>
+
+    <div class="grid">
+      <div class="card"><div class="k">Creatives with spend</div><div id="k-total" class="v">-</div></div>
+      <div class="card"><div class="k">Top-value set (>= $100 spend)</div><div id="k-top" class="v">-</div></div>
+      <div class="card"><div class="k">Avg copy completeness</div><div id="k-copy" class="v">-</div></div>
+      <div class="card"><div class="k">Most common angle</div><div id="k-angle" class="v">-</div></div>
+    </div>
+
+    <div class="controls card">
+      <label>Min spend <input id="minSpend" type="number" value="100" step="10" /></label>
+      <label>Sort
+        <select id="sortBy">
+          <option value="purchase_value">Purchase Value</option>
+          <option value="roas">ROAS</option>
+          <option value="ctr">CTR</option>
+        </select>
+      </label>
+      <label>Angle
+        <select id="angleFilter"><option value="">All</option></select>
+      </label>
+      <input id="q" placeholder="Search ad/campaign/copy" style="min-width:280px" />
+    </div>
+
+    <div class="card" style="margin-bottom:12px">
+      <h3>Leaderboard</h3>
+      <table>
+        <thead><tr><th>Ad</th><th>Spend</th><th>Purchase Value</th><th>ROAS</th><th>CTR</th><th>CPC</th><th>Copy</th><th>Angles</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>Creative Gallery (Top 12 current filter)</h3>
+      <div id="gallery" class="gallery"></div>
+    </div>
+  </div>
+
+  <script>
+    const CANDIDATES = ['../data/creative_intelligence_latest.json','./data/creative_intelligence_latest.json','../../data/creative_intelligence_latest.json'];
+    const el = (id) => document.getElementById(id);
+    async function getJson(path){ const r=await fetch(path,{cache:'no-store'}); if(!r.ok) throw new Error(path); return r.json(); }
+    async function load(){ for(const p of CANDIDATES){ try{return await getJson(p);}catch(e){} } throw new Error('creative intelligence not found'); }
+
+    function fmtMoney(n){ return `$${(Number(n)||0).toFixed(2)}`; }
+    function fmtPct(n){ return `${(Number(n)||0).toFixed(2)}%`; }
+
+    let DATA=[];
+
+    function filtered(){
+      const minSpend = Number(el('minSpend').value || 0);
+      const sortBy = el('sortBy').value;
+      const angle = el('angleFilter').value;
+      const q = (el('q').value || '').toLowerCase().trim();
+
+      let rows = DATA.filter(r => r.spend >= minSpend);
+      if (angle) rows = rows.filter(r => (r.angles||[]).includes(angle));
+      if (q) rows = rows.filter(r => [r.ad_name,r.adset_name,r.campaign_name,r.copy?.body,r.copy?.headline].join(' ').toLowerCase().includes(q));
+
+      rows.sort((a,b)=> (Number(b[sortBy])||0) - (Number(a[sortBy])||0));
+      return rows;
+    }
+
+    function render(){
+      const rows = filtered();
+      const tbody = el('rows');
+      tbody.innerHTML='';
+      rows.slice(0,50).forEach(r=>{
+        const tr=document.createElement('tr');
+        tr.innerHTML = `
+          <td><div><strong>${r.ad_name || '—'}</strong></div><div class="muted">${r.campaign_name || ''}</div></td>
+          <td>${fmtMoney(r.spend)}</td>
+          <td>${fmtMoney(r.purchase_value)}</td>
+          <td>${Number(r.roas||0).toFixed(2)}</td>
+          <td>${fmtPct(r.ctr)}</td>
+          <td>${fmtMoney(r.cpc)}</td>
+          <td><div>${(r.copy?.body || '[no body]').slice(0,120)}</div><div class="muted">${(r.copy?.headline||'').slice(0,80)}</div></td>
+          <td><div class="chips">${(r.angles||[]).map(a=>`<span class='chip'>${a}</span>`).join('')}</div></td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      const gal = el('gallery'); gal.innerHTML='';
+      rows.slice(0,12).forEach(r=>{
+        const card=document.createElement('div'); card.className='card';
+        const img = r.copy?.image_url ? `<img class='thumb' src='${r.copy.image_url}' alt='${r.ad_name||''}' />` : `<div class='thumb'></div>`;
+        card.innerHTML = `${img}<div style='margin-top:8px'><strong>${(r.ad_name||'').slice(0,40)}</strong><div class='muted'>ROAS ${Number(r.roas||0).toFixed(2)} · ${fmtMoney(r.purchase_value)}</div></div>`;
+        gal.appendChild(card);
+      });
+    }
+
+    load().then(payload=>{
+      DATA = payload.creatives || [];
+      el('k-total').textContent = DATA.length;
+      el('k-top').textContent = (payload.leaderboards?.top_by_purchase_value || []).length;
+      const avgCopy = DATA.length ? (DATA.reduce((a,b)=>a+Number(b.copy_completeness_score||0),0)/DATA.length) : 0;
+      el('k-copy').textContent = `${avgCopy.toFixed(2)} / 4`;
+
+      const angleCounts = {};
+      DATA.forEach(r => (r.angles||[]).forEach(a => angleCounts[a]=(angleCounts[a]||0)+1));
+      const anglePairs = Object.entries(angleCounts).sort((a,b)=>b[1]-a[1]);
+      el('k-angle').textContent = anglePairs[0]?.[0] || 'n/a';
+
+      const af = el('angleFilter');
+      anglePairs.forEach(([a])=>{
+        const opt=document.createElement('option'); opt.value=a; opt.textContent=a; af.appendChild(opt);
+      });
+
+      ['minSpend','sortBy','angleFilter','q'].forEach(id=> el(id).addEventListener('input', render));
+      render();
+    }).catch(err=>{
+      console.error(err);
+      document.body.innerHTML = `<div style='padding:24px;color:white'>Failed to load creative intelligence JSON.</div>`;
+    });
+  </script>
+</body>
+</html>

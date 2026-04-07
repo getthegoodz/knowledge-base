@@ -14,6 +14,8 @@ _Learn about the person you're helping. Update this as you go._
 - He wants memory to be journal-like and rich, while still keeping normal response context lightweight.
 - Preferred organization: one main workspace with separate subfolders for each project/business, each with its own memory file and any project-specific documents.
 - Mike plans to drop business docs into `assets/` subfolders for project review later.
+- Mike tends to work on one project at a time and may explicitly switch context by saying things like "let's go back to the Goodz website migration project now and pick up where we left off."
+- At the end of a work block, Mike may ask Janet to commit the most important parts of the day's work to memory and prepare a next-steps list for easy resumption later.
 
 ---
 

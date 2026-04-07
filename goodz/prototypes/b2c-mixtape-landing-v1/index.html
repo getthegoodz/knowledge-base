@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Goodz — Build them a mixtape they can hold</title>
+  <style>
+    :root {
+      --bg: #f7f0e8;
+      --paper: #fffaf5;
+      --ink: #1d1b1a;
+      --muted: #6e625a;
+      --line: rgba(29,27,26,.10);
+      --accent: #d55c3d;
+      --accent-dark: #a53c21;
+      --gold: #c58b2d;
+      --shadow: 0 16px 40px rgba(0,0,0,.08);
+      --radius: 20px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #fbf5ef 0%, #f2e6d8 100%);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 34px;
+      align-items: center;
+      padding: 36px 0 28px;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(213,92,61,.10);
+      color: var(--accent-dark);
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 4.5rem);
+      line-height: .97;
+      margin: 0 0 16px;
+      letter-spacing: -.04em;
+    }
+    .hero p.lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0 0 24px;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      background: white;
+      box-shadow: var(--shadow);
+    }
+    .btn.primary {
+      background: var(--accent);
+      color: white;
+      border-color: transparent;
+    }
+    .btn.secondary {
+      background: transparent;
+      box-shadow: none;
+    }
+    .confidence {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .confidence span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.75);
+      border: 1px solid var(--line);
+    }
+    .hero-card {
+      background: linear-gradient(180deg, rgba(255,250,245,.98), rgba(245,234,221,.98));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 26px;
+      position: relative;
+      overflow: hidden;
+      min-height: 540px;
+    }
+    .crate {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .good {
+      aspect-ratio: 1;
+      border-radius: 18px;
+      padding: 14px;
+      color: white;
+      font-weight: 700;
+      display: flex;
+      align-items: flex-end;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+    }
+    .g1 { background: linear-gradient(135deg, #d35e43, #6b1f13); }
+    .g2 { background: linear-gradient(135deg, #4664d9, #1f2b79); }
+    .g3 { background: linear-gradient(135deg, #e4a53e, #8a4f09); }
+    .g4 { background: linear-gradient(135deg, #276d66, #123b36); }
+    .g5 { background: linear-gradient(135deg, #cb5a75, #6f1f33); }
+    .g6 { background: linear-gradient(135deg, #6f63d7, #2d2578); }
+    .phone {
+      margin: 10px auto 0;
+      width: min(100%, 290px);
+      background: #111;
+      border-radius: 30px;
+      padding: 12px;
+      box-shadow: 0 22px 40px rgba(0,0,0,.18);
+    }
+    .phone-screen {
+      background: linear-gradient(180deg, #1c1b23 0%, #0f0e13 100%);
+      border-radius: 22px;
+      padding: 18px;
+      color: #fff;
+      min-height: 290px;
+    }
+    .playlist-cover {
+      width: 100%;
+      aspect-ratio: 1.2;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f3b1a3, #5c1d12 70%);
+      margin-bottom: 14px;
+    }
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      background: rgba(255,255,255,.10);
+      border-radius: 999px;
+      font-size: 12px;
+      color: rgba(255,255,255,.88);
+      margin-bottom: 10px;
+    }
+    .phone h3 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+    }
+    .muted-light { color: rgba(255,255,255,.68); }
+    .tracklist {
+      margin-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+    .track {
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.06);
+      font-size: 14px;
+    }
+    section {
+      margin-top: 28px;
+    }
+    .section-card {
+      background: rgba(255,250,245,.82);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+      letter-spacing: -.03em;
+    }
+    .sub {
+      color: var(--muted);
+      margin-bottom: 22px;
+      max-width: 760px;
+    }
+    .steps, .cards, .faq-grid {
+      display: grid;
+      gap: 16px;
+    }
+    .steps { grid-template-columns: repeat(3, 1fr); }
+    .cards { grid-template-columns: repeat(3, 1fr); }
+    .faq-grid { grid-template-columns: repeat(2, 1fr); }
+    .box {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px;
+    }
+    .num {
+      width: 34px;
+      height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: rgba(213,92,61,.12);
+      color: var(--accent-dark);
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+    }
+    p { margin: 0; }
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .spotify-mock {
+      background: linear-gradient(180deg, #1f3022, #101914);
+      color: white;
+      border-radius: 20px;
+      padding: 22px;
+      min-height: 100%;
+    }
+    .spotify-list {
+      margin-top: 14px;
+      display: grid;
+      gap: 10px;
+    }
+    .spotify-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.08);
+    }
+    .cover {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #efbc4f, #b35a1f);
+      flex: 0 0 42px;
+    }
+    .quote {
+      font-size: 1.1rem;
+      color: var(--ink);
+    }
+    .footer-cta {
+      text-align: center;
+      padding: 36px 24px;
+      background: linear-gradient(135deg, #231714, #5c271c);
+      color: white;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+    .footer-cta p { color: rgba(255,255,255,.78); margin-top: 10px; }
+    .mini-note {
+      margin-top: 10px;
+      font-size: 13px;
+      color: rgba(255,255,255,.64);
+    }
+    @media (max-width: 920px) {
+      .hero, .split, .steps, .cards, .faq-grid { grid-template-columns: 1fr; }
+      .hero-card { min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">GOODZ</div>
+      <div>Concept: B2C Mixtape Gift Landing Page v1</div>
+    </div>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">A modern mixtape gift for the streaming era</div>
+        <h1>Build them a mixtape they can hold</h1>
+        <p class="lead">Create a personalized set of music cards loaded with playlists, albums, and songs that mean something — a more thoughtful gift for music lovers, partners, best friends, and anyone who deserves more than a texted link.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#personalize">Create your mixtape</a>
+          <a class="btn secondary" href="#how-it-works">See how it works</a>
+        </div>
+        <div class="confidence">
+          <span>No app required</span>
+          <span>Works with Spotify / Apple Music</span>
+          <span>Ships in a few days</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="crate">
+          <div class="good g1">Road trip</div>
+          <div class="good g2">For us</div>
+          <div class="good g3">Late nights</div>
+          <div class="good g4">Kitchen songs</div>
+          <div class="good g5">Your favorites</div>
+          <div class="good g6">Spring mix</div>
+        </div>
+
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="pill">Preview the recipient experience</div>
+            <div class="playlist-cover"></div>
+            <h3>A mix tape for you</h3>
+            <div class="muted-light">A playlist gift they can tap, keep, and come back to.</div>
+            <div class="tracklist">
+              <div class="track">Fade Into You — Mazzy Star</div>
+              <div class="track">This Must Be the Place — Talking Heads</div>
+              <div class="track">Dreams — Fleetwood Mac</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section-card">
+      <h2>How it works</h2>
+      <p class="sub">Simple enough to make in minutes. Personal enough to feel like a real gift.</p>
+      <div class="steps">
+        <div class="box">
+          <div class="num">1</div>
+          <h3>Choose your set</h3>
+          <p>Pick a crate of Goodz that becomes your modern mixtape — a physical set of music cards they can keep and display.</p>
+        </div>
+        <div class="box">
+          <div class="num">2</div>
+          <h3>Pick the music</h3>
+          <p>Choose playlists, albums, or songs that mean something. Paste links manually or import favorites to make it faster.</p>
+        </div>
+        <div class="box">
+          <div class="num">3</div>
+          <h3>Give a gift they can tap and play</h3>
+          <p>They tap a Good, see the music you chose, and jump straight into the soundtrack you made for them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Why it feels special</h2>
+      <p class="sub">This is not just a playlist link. It’s a way to make taste, memory, and care feel tangible.</p>
+      <div class="cards">
+        <div class="box">
+          <h3>More personal than sending a link</h3>
+          <p>Anyone can text a playlist. This turns your music taste into something they can actually hold onto.</p>
+        </div>
+        <div class="box">
+          <h3>Made for streaming-era music lovers</h3>
+          <p>All the convenience of streaming, with some of the feeling physical music used to have.</p>
+        </div>
+        <div class="box">
+          <h3>A gift that stays out in the real world</h3>
+          <p>Display it on a desk, shelf, nightstand, or crate — not buried in another inbox or playlist folder.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="personalize" class="section-card">
+      <h2>Personalize the set before you buy</h2>
+      <p class="sub">The old flow may have worked operationally, but this purchase experience should feel magical. This section teases the creation step we’d build into the real sales flow.</p>
+      <div class="split">
+        <div class="box">
+          <h3>Choose what arrives on each Good</h3>
+          <p style="margin-bottom:14px; color: var(--muted);">Make the gift feel real before checkout.</p>
+          <div class="steps" style="grid-template-columns:1fr; gap:12px;">
+            <div class="box" style="padding:16px;">
+              <strong>Card 1</strong><br />
+              <span style="color: var(--muted);">Our songs</span>
+            </div>
+            <div class="box" style="padding:16px;">
+              <strong>Card 2</strong><br />
+              <span style="color: var(--muted);">Road trip playlist</span>
+            </div>
+            <div class="box" style="padding:16px;">
+              <strong>Card 3</strong><br />
+              <span style="color: var(--muted);">Songs you showed me</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="spotify-mock">
+          <div class="pill">Optional Spotify import</div>
+          <h3 style="margin:0 0 8px;">Pull in your favorite playlists faster</h3>
+          <p class="muted-light">Don’t make this a requirement — just a smoother path for people who already have the perfect soundtrack in mind.</p>
+          <div class="spotify-list">
+            <div class="spotify-item">
+              <div class="cover"></div>
+              <div>
+                <strong>For You</strong><br />
+                <span class="muted-light">42 songs</span>
+              </div>
+            </div>
+            <div class="spotify-item">
+              <div class="cover" style="background: linear-gradient(135deg, #5c77df, #29357c);"></div>
+              <div>
+                <strong>Driving at Night</strong><br />
+                <span class="muted-light">28 songs</span>
+              </div>
+            </div>
+            <div class="spotify-item">
+              <div class="cover" style="background: linear-gradient(135deg, #d66f8c, #6a2236);"></div>
+              <div>
+                <strong>Shared Favorites</strong><br />
+                <span class="muted-light">17 songs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Gift ideas people instantly understand</h2>
+      <p class="sub">This helps cold traffic picture themselves buying it for someone specific.</p>
+      <div class="cards">
+        <div class="box">
+          <h3>For your partner</h3>
+          <p>Create a set of songs that mean something to your relationship — first dates, road trips, kitchen songs, heartbreaks survived, all of it.</p>
+        </div>
+        <div class="box">
+          <h3>For your best friend</h3>
+          <p>Turn your shared taste into a real object instead of another playlist link that disappears into the feed.</p>
+        </div>
+        <div class="box">
+          <h3>For the music person in your life</h3>
+          <p>A more thoughtful gift than generic merch and more personal than just sending an album recommendation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Questions people will have</h2>
+      <div class="faq-grid">
+        <div class="box">
+          <h3>Do I need an app?</h3>
+          <p>No. The idea should stay lightweight: tap with a phone, open the music experience, enjoy it.</p>
+        </div>
+        <div class="box">
+          <h3>Do I need Spotify?</h3>
+          <p>No. Spotify import should be optional. Manual links should still work so we do not create conversion friction.</p>
+        </div>
+        <div class="box">
+          <h3>Do they come preloaded?</h3>
+          <p>The new sales flow should let buyers choose what they want on each Good before purchase, even if the backend setup remains flexible.</p>
+        </div>
+        <div class="box">
+          <h3>How fast do they ship?</h3>
+          <p>Current ops suggest a few days for normal D2C fulfillment, which is an important confidence-builder to keep visible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-cta">
+      <h2 style="margin:0; font-size:2.2rem;">Make them something they’ll actually keep</h2>
+      <p>A physical mixtape gift built for streaming-era music lovers.</p>
+      <div class="cta-row" style="justify-content:center; margin-top:22px;">
+        <a class="btn primary" href="#">Create your mixtape</a>
+        <a class="btn secondary" href="#how-it-works" style="color:white; border-color: rgba(255,255,255,.2);">See how it works</a>
+      </div>
+      <div class="mini-note">Concept direction: broad meaningful gift framing with warm romantic undertones, optimized for cold paid social traffic.</div>
+    </section>
+  </div>
+</body>
+</html>

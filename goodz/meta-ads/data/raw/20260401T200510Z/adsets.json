@@ -1,0 +1,2888 @@
+[
+  {
+    "id": "120236623914760180",
+    "name": "Traffic Ad Set 1",
+    "status": "ACTIVE",
+    "campaign_id": "120236623914750180",
+    "optimization_goal": "LANDING_PAGE_VIEWS",
+    "billing_event": "IMPRESSIONS",
+    "start_time": "2025-10-31T13:01:03-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        65
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "targeting_automation": {
+        "advantage_audience": 1
+      },
+      "publisher_platforms": [
+        "instagram"
+      ],
+      "instagram_positions": [
+        "profile_reels",
+        "story",
+        "reels"
+      ],
+      "device_platforms": [
+        "mobile",
+        "desktop"
+      ]
+    },
+    "created_time": "2025-10-31T13:01:03-0400",
+    "updated_time": "2025-10-31T13:01:21-0400"
+  },
+  {
+    "id": "120217256877980180",
+    "name": "DOD | ASC | NEW  Ad set",
+    "status": "ACTIVE",
+    "campaign_id": "120217256878000180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "0",
+    "lifetime_budget": "60000",
+    "start_time": "2025-02-23T19:13:23-0500",
+    "end_time": "2025-03-31T20:08:00-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      }
+    },
+    "created_time": "2025-02-23T19:13:23-0500",
+    "updated_time": "2025-03-27T03:34:35-0400"
+  },
+  {
+    "id": "120214027846030180",
+    "name": "18+ | ALL | US | WEB L30 | OP(PUR)",
+    "status": "ACTIVE",
+    "campaign_id": "120214027846010180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1200",
+    "lifetime_budget": "0",
+    "start_time": "2024-11-29T13:03:20-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "excluded_custom_audiences": [
+        {
+          "id": "120214025209220180",
+          "name": "PUR L180"
+        }
+      ],
+      "custom_audiences": [
+        {
+          "id": "120214027853720180",
+          "name": "WEB L30"
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_relaxation_types": {
+        "lookalike": 0,
+        "custom_audience": 0
+      },
+      "targeting_automation": {
+        "advantage_audience": 0
+      }
+    },
+    "created_time": "2024-11-29T13:03:20-0500",
+    "updated_time": "2024-12-09T15:13:53-0500"
+  },
+  {
+    "id": "120214025202150180",
+    "name": "DOD | ASC | 2024 | WC  Ad set",
+    "status": "ACTIVE",
+    "campaign_id": "120214025202170180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1500",
+    "lifetime_budget": "0",
+    "start_time": "2024-11-29T12:40:09-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      }
+    },
+    "created_time": "2024-11-29T12:40:09-0500",
+    "updated_time": "2025-02-14T03:17:32-0500"
+  },
+  {
+    "id": "120213829048070180",
+    "name": "Advantage+ Audience | 30-60",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1200",
+    "lifetime_budget": "0",
+    "start_time": "2024-11-21T12:13:58-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        30,
+        60
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-21T12:13:58-0500",
+    "updated_time": "2024-11-21T12:18:34-0500"
+  },
+  {
+    "id": "120213713591520180",
+    "name": "Amazon Music (streaming service)",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1202",
+    "lifetime_budget": "0",
+    "start_time": "2024-11-17T00:51:57-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "569202086550452",
+              "name": "Amazon Music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-17T00:51:57-0500",
+    "updated_time": "2024-11-22T10:14:11-0500"
+  },
+  {
+    "id": "120213713106540180",
+    "name": "Concerts (music event)",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "start_time": "2024-11-17T00:45:37-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6002970406974",
+              "name": "Concerts"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-17T00:45:37-0500",
+    "updated_time": "2024-11-17T00:45:37-0500"
+  },
+  {
+    "id": "120213713078120180",
+    "name": "SoundCloud",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "start_time": "2024-11-17T00:43:41-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003253526111",
+              "name": "SoundCloud"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-17T00:43:41-0500",
+    "updated_time": "2024-11-17T00:43:41-0500"
+  },
+  {
+    "id": "120213630331460180",
+    "name": "Apple Music",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1202",
+    "lifetime_budget": "0",
+    "start_time": "2024-11-13T12:42:44-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "937077532996593",
+              "name": "Apple Music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-13T12:42:44-0500",
+    "updated_time": "2024-11-22T10:14:11-0500"
+  },
+  {
+    "id": "120213630275960180",
+    "name": "Blues, Jazz",
+    "status": "PAUSED",
+    "campaign_id": "120213630275970180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "start_time": "2024-11-13T12:41:20-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003146442552",
+              "name": "Jazz music"
+            },
+            {
+              "id": "6003257757682",
+              "name": "Blues music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-13T12:41:19-0500",
+    "updated_time": "2024-11-17T00:42:58-0500"
+  },
+  {
+    "id": "120213630275930180",
+    "name": "Country music (music)",
+    "status": "PAUSED",
+    "campaign_id": "120213630275970180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "start_time": "2024-11-13T12:41:20-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003493980595",
+              "name": "Country music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-13T12:41:19-0500",
+    "updated_time": "2024-11-17T00:42:53-0500"
+  },
+  {
+    "id": "120213630275910180",
+    "name": "Spotify (streaming service)",
+    "status": "ACTIVE",
+    "campaign_id": "120213630275970180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "start_time": "2024-11-13T12:41:19-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6002969794329",
+              "name": "Spotify"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-13T12:41:19-0500",
+    "updated_time": "2024-11-13T12:41:19-0500"
+  },
+  {
+    "id": "120213436527860180",
+    "name": "Blues, Jazz",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1202",
+    "lifetime_budget": "0",
+    "start_time": "2024-11-06T03:48:30-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003146442552",
+              "name": "Jazz music"
+            },
+            {
+              "id": "6003257757682",
+              "name": "Blues music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-06T03:48:30-0500",
+    "updated_time": "2024-11-22T10:14:11-0500"
+  },
+  {
+    "id": "120213436488900180",
+    "name": "Country music (music)",
+    "status": "PAUSED",
+    "campaign_id": "120213342003480180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1202",
+    "lifetime_budget": "0",
+    "start_time": "2024-11-06T03:47:10-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003493980595",
+              "name": "Country music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-06T03:47:10-0500",
+    "updated_time": "2024-11-17T00:51:08-0500"
+  },
+  {
+    "id": "120213436433260180",
+    "name": "Pop music (music)",
+    "status": "PAUSED",
+    "campaign_id": "120213342003480180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1202",
+    "lifetime_budget": "0",
+    "start_time": "2024-11-06T03:46:23-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003341579196",
+              "name": "Pop music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-06T03:46:23-0500",
+    "updated_time": "2024-11-17T00:51:00-0500"
+  },
+  {
+    "id": "120213436415050180",
+    "name": "Spotify (streaming service)",
+    "status": "ACTIVE",
+    "campaign_id": "120213342003480180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1202",
+    "lifetime_budget": "0",
+    "start_time": "2024-11-06T03:45:43-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        60
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6002969794329",
+              "name": "Spotify"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-11-06T03:45:43-0500",
+    "updated_time": "2024-11-08T22:38:09-0500"
+  },
+  {
+    "id": "120211202597220180",
+    "name": "River Jams - Real World Keepsakes",
+    "status": "ACTIVE",
+    "campaign_id": "120210745414070180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1000",
+    "lifetime_budget": "0",
+    "start_time": "2024-08-14T13:05:13-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-08-14T13:05:13-0400",
+    "updated_time": "2024-08-14T13:05:13-0400"
+  },
+  {
+    "id": "120211202552660180",
+    "name": "River Jams - Hold in Your Hands",
+    "status": "ACTIVE",
+    "campaign_id": "120210745414070180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1000",
+    "lifetime_budget": "0",
+    "start_time": "2024-08-14T13:05:19-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-08-14T13:05:19-0400",
+    "updated_time": "2024-08-14T13:05:19-0400"
+  },
+  {
+    "id": "120211202521830180",
+    "name": "River Jams - Hold, Collect, & Share",
+    "status": "ACTIVE",
+    "campaign_id": "120210745414070180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1000",
+    "lifetime_budget": "0",
+    "start_time": "2024-08-14T13:05:13-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-08-14T13:05:13-0400",
+    "updated_time": "2024-08-14T13:05:13-0400"
+  },
+  {
+    "id": "120211201657070180",
+    "name": "River Jams - No Caption",
+    "status": "ACTIVE",
+    "campaign_id": "120210745414070180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1000",
+    "lifetime_budget": "0",
+    "start_time": "2024-08-14T13:05:13-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-08-14T13:05:13-0400",
+    "updated_time": "2024-08-14T13:05:13-0400"
+  },
+  {
+    "id": "120211019789160180",
+    "name": "Streaming Interests",
+    "status": "ACTIVE",
+    "campaign_id": "120211019683530180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1000",
+    "lifetime_budget": "0",
+    "start_time": "2024-08-07T09:47:13-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "569202086550452",
+              "name": "Amazon Music"
+            },
+            {
+              "id": "6002969794329",
+              "name": "Spotify"
+            },
+            {
+              "id": "6002985278723",
+              "name": "ITunes"
+            },
+            {
+              "id": "6003240910010",
+              "name": "Pandora Radio"
+            },
+            {
+              "id": "6003253526111",
+              "name": "SoundCloud"
+            },
+            {
+              "id": "6003478011165",
+              "name": "ITunes Store"
+            },
+            {
+              "id": "937077532996593",
+              "name": "Apple Music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-08-07T09:47:13-0400",
+    "updated_time": "2024-08-13T10:11:21-0400"
+  },
+  {
+    "id": "120211019683510180",
+    "name": "Streaming Interests",
+    "status": "ACTIVE",
+    "campaign_id": "120211019683530180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1000",
+    "lifetime_budget": "0",
+    "start_time": "2024-08-07T09:47:13-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "569202086550452",
+              "name": "Amazon Music"
+            },
+            {
+              "id": "6002969794329",
+              "name": "Spotify"
+            },
+            {
+              "id": "6002985278723",
+              "name": "ITunes"
+            },
+            {
+              "id": "6003240910010",
+              "name": "Pandora Radio"
+            },
+            {
+              "id": "6003253526111",
+              "name": "SoundCloud"
+            },
+            {
+              "id": "6003478011165",
+              "name": "ITunes Store"
+            },
+            {
+              "id": "937077532996593",
+              "name": "Apple Music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-08-07T09:47:13-0400",
+    "updated_time": "2024-08-13T10:11:27-0400"
+  },
+  {
+    "id": "120211018678420180",
+    "name": "Streaming Interests",
+    "status": "ACTIVE",
+    "campaign_id": "120211018678040180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2024-08-07T09:38:52-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "569202086550452",
+              "name": "Amazon Music"
+            },
+            {
+              "id": "6002969794329",
+              "name": "Spotify"
+            },
+            {
+              "id": "6002985278723",
+              "name": "ITunes"
+            },
+            {
+              "id": "6003240910010",
+              "name": "Pandora Radio"
+            },
+            {
+              "id": "6003253526111",
+              "name": "SoundCloud"
+            },
+            {
+              "id": "6003478011165",
+              "name": "ITunes Store"
+            },
+            {
+              "id": "937077532996593",
+              "name": "Apple Music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-08-07T09:38:52-0400",
+    "updated_time": "2024-08-13T10:11:35-0400"
+  },
+  {
+    "id": "120210745693590180",
+    "name": "General 18+",
+    "status": "ACTIVE",
+    "campaign_id": "120210745693580180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2024-07-26T17:23:02-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-07-26T17:23:02-0400",
+    "updated_time": "2024-08-02T11:13:01-0400"
+  },
+  {
+    "id": "120210745414160180",
+    "name": "General 18+",
+    "status": "PAUSED",
+    "campaign_id": "120210745414070180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2024-07-26T17:07:24-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-07-26T17:07:23-0400",
+    "updated_time": "2024-08-14T13:06:10-0400"
+  },
+  {
+    "id": "120210132589190180",
+    "name": "General 18+",
+    "status": "ACTIVE",
+    "campaign_id": "120209793699190180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2024-07-01T09:18:55-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        65
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-07-01T09:18:55-0400",
+    "updated_time": "2024-07-30T11:11:54-0400"
+  },
+  {
+    "id": "120209793699360180",
+    "name": "35+ w/ Jazz Artist Interest",
+    "status": "PAUSED",
+    "campaign_id": "120209793699190180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "4250",
+    "lifetime_budget": "0",
+    "start_time": "2024-06-13T00:01:00-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        35,
+        65
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6002988461794",
+              "name": "John Coltrane"
+            },
+            {
+              "id": "6003129655917",
+              "name": "Charlie Parker"
+            },
+            {
+              "id": "6003146442552",
+              "name": "Jazz music"
+            },
+            {
+              "id": "6003290621856",
+              "name": "Thelonious Monk"
+            },
+            {
+              "id": "6003459557703",
+              "name": "Miles Davis"
+            },
+            {
+              "id": "6003484372798",
+              "name": "Sonny Rollins"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      }
+    },
+    "created_time": "2024-06-12T17:10:05-0400",
+    "updated_time": "2024-07-15T16:20:49-0400"
+  },
+  {
+    "id": "120209746418780180",
+    "name": "Gifting",
+    "status": "ACTIVE",
+    "campaign_id": "120209530536800180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "4000",
+    "lifetime_budget": "0",
+    "start_time": "2024-06-10T15:34:42-0400",
+    "end_time": "2024-06-12T23:59:00-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        21,
+        55
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003019539929",
+              "name": "Gift"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      }
+    },
+    "created_time": "2024-06-10T15:34:42-0400",
+    "updated_time": "2024-06-12T16:56:36-0400"
+  },
+  {
+    "id": "120209531393020180",
+    "name": "Retargeting",
+    "status": "PAUSED",
+    "campaign_id": "120209530536800180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2024-06-03T03:38:00-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        65
+      ],
+      "custom_audiences": [
+        {
+          "id": "120209531414000180",
+          "name": "Site Visitors"
+        },
+        {
+          "id": "120209531424200180",
+          "name": "Facebook Page Engagers"
+        },
+        {
+          "id": "120209531427490180",
+          "name": "Instagram Page Engagers"
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_relaxation_types": {
+        "lookalike": 0,
+        "custom_audience": 0
+      },
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      }
+    },
+    "created_time": "2024-05-31T15:11:17-0400",
+    "updated_time": "2024-06-09T09:02:57-0400"
+  },
+  {
+    "id": "120209531365450180",
+    "name": "Father's Day + Jazz Artists",
+    "status": "ACTIVE",
+    "campaign_id": "120209530536800180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "5000",
+    "lifetime_budget": "0",
+    "start_time": "2024-06-03T03:38:00-0400",
+    "end_time": "2024-06-12T23:59:00-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        21,
+        55
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003341719023",
+              "name": "Father's Day"
+            },
+            {
+              "id": "6017801571911",
+              "name": "Father's Day (United States)"
+            }
+          ]
+        },
+        {
+          "interests": [
+            {
+              "id": "6002988461794",
+              "name": "John Coltrane"
+            },
+            {
+              "id": "6003129655917",
+              "name": "Charlie Parker"
+            },
+            {
+              "id": "6003146442552",
+              "name": "Jazz music"
+            },
+            {
+              "id": "6003290621856",
+              "name": "Thelonious Monk"
+            },
+            {
+              "id": "6003459557703",
+              "name": "Miles Davis"
+            },
+            {
+              "id": "6003484372798",
+              "name": "Sonny Rollins"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      }
+    },
+    "created_time": "2024-05-31T15:11:09-0400",
+    "updated_time": "2024-06-12T16:56:14-0400"
+  },
+  {
+    "id": "120209530536810180",
+    "name": "Gifting + Jazz Artists",
+    "status": "PAUSED",
+    "campaign_id": "120209530536800180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "5500",
+    "lifetime_budget": "0",
+    "start_time": "2024-06-03T03:38:00-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        21,
+        55
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003019539929",
+              "name": "Gift"
+            }
+          ]
+        },
+        {
+          "interests": [
+            {
+              "id": "6002988461794",
+              "name": "John Coltrane"
+            },
+            {
+              "id": "6003129655917",
+              "name": "Charlie Parker"
+            },
+            {
+              "id": "6003146442552",
+              "name": "Jazz music"
+            },
+            {
+              "id": "6003290621856",
+              "name": "Thelonious Monk"
+            },
+            {
+              "id": "6003459557703",
+              "name": "Miles Davis"
+            },
+            {
+              "id": "6003484372798",
+              "name": "Sonny Rollins"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      }
+    },
+    "created_time": "2024-05-31T15:11:09-0400",
+    "updated_time": "2024-06-10T15:34:01-0400"
+  },
+  {
+    "id": "120209115257130180",
+    "name": "Broad_IG only",
+    "status": "ACTIVE",
+    "campaign_id": "120209115257120180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1500",
+    "lifetime_budget": "0",
+    "start_time": "2024-05-17T12:07:06-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        65
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      },
+      "publisher_platforms": [
+        "instagram"
+      ],
+      "instagram_positions": [
+        "stream",
+        "ig_search",
+        "story",
+        "explore",
+        "reels",
+        "reels_overlay",
+        "explore_home",
+        "profile_feed"
+      ],
+      "device_platforms": [
+        "mobile",
+        "desktop"
+      ]
+    },
+    "created_time": "2024-05-17T12:07:06-0400",
+    "updated_time": "2024-05-23T15:05:24-0400"
+  },
+  {
+    "id": "120209114745630180",
+    "name": "Broad_IG only",
+    "status": "ACTIVE",
+    "campaign_id": "120209114745420180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "3500",
+    "lifetime_budget": "0",
+    "start_time": "2024-05-17T12:05:57-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        65
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      },
+      "publisher_platforms": [
+        "instagram"
+      ],
+      "instagram_positions": [
+        "stream",
+        "ig_search",
+        "story",
+        "explore",
+        "reels",
+        "reels_overlay",
+        "explore_home",
+        "profile_feed"
+      ],
+      "device_platforms": [
+        "mobile",
+        "desktop"
+      ]
+    },
+    "created_time": "2024-05-17T12:05:57-0400",
+    "updated_time": "2024-05-27T22:09:20-0400"
+  },
+  {
+    "id": "120208553045070180",
+    "name": "05022024_Mother's Day/Gifting Interests",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1500",
+    "lifetime_budget": "0",
+    "start_time": "2024-05-02T11:52:09-0400",
+    "end_time": "2024-05-09T00:00:00-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        30,
+        64
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003019539929",
+              "name": "Gift"
+            },
+            {
+              "id": "6003106645378",
+              "name": "Gift shop"
+            },
+            {
+              "id": "6003220634758",
+              "name": "Discount stores"
+            },
+            {
+              "id": "6003346592981",
+              "name": "Online shopping"
+            },
+            {
+              "id": "6003395917803",
+              "name": "Mother's Day"
+            }
+          ],
+          "behaviors": [
+            {
+              "id": "6071631541183",
+              "name": "Engaged Shoppers"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      },
+      "publisher_platforms": [
+        "facebook",
+        "instagram",
+        "messenger"
+      ],
+      "facebook_positions": [
+        "feed",
+        "biz_disco_feed",
+        "facebook_reels",
+        "right_hand_column",
+        "video_feeds",
+        "marketplace",
+        "story"
+      ],
+      "instagram_positions": [
+        "stream",
+        "story",
+        "explore",
+        "reels",
+        "explore_home",
+        "profile_feed"
+      ],
+      "device_platforms": [
+        "mobile",
+        "desktop"
+      ],
+      "messenger_positions": [
+        "story"
+      ]
+    },
+    "created_time": "2024-05-02T11:52:09-0400",
+    "updated_time": "2024-05-08T12:42:48-0400"
+  },
+  {
+    "id": "120208396665080180",
+    "name": "Copy - 04262024_Retro/music interest_30-64",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1000",
+    "lifetime_budget": "0",
+    "start_time": "2024-04-26T13:42:47-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        30,
+        64
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "1678169319091840",
+              "name": "Radio station"
+            },
+            {
+              "id": "6002970406974",
+              "name": "Concerts"
+            },
+            {
+              "id": "6003020834693",
+              "name": "Music"
+            },
+            {
+              "id": "6003146442552",
+              "name": "Jazz music"
+            },
+            {
+              "id": "6003302629453",
+              "name": "Retro style"
+            },
+            {
+              "id": "6003341579196",
+              "name": "Pop music"
+            },
+            {
+              "id": "6003346592981",
+              "name": "Online shopping"
+            },
+            {
+              "id": "6003493980595",
+              "name": "Country music"
+            },
+            {
+              "id": "6003582732907",
+              "name": "Rock music"
+            },
+            {
+              "id": "6003715920062",
+              "name": "Retrogaming"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      }
+    },
+    "created_time": "2024-04-26T13:42:46-0400",
+    "updated_time": "2024-05-02T11:45:33-0400"
+  },
+  {
+    "id": "120208396623400180",
+    "name": "04262024_Retro/music interest_30-64",
+    "status": "ACTIVE",
+    "campaign_id": "120204380338100180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "500",
+    "lifetime_budget": "0",
+    "start_time": "2024-04-26T13:42:36-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        30,
+        64
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "1678169319091840",
+              "name": "Radio station"
+            },
+            {
+              "id": "6002970406974",
+              "name": "Concerts"
+            },
+            {
+              "id": "6003020834693",
+              "name": "Music"
+            },
+            {
+              "id": "6003146442552",
+              "name": "Jazz music"
+            },
+            {
+              "id": "6003302629453",
+              "name": "Retro style"
+            },
+            {
+              "id": "6003341579196",
+              "name": "Pop music"
+            },
+            {
+              "id": "6003346592981",
+              "name": "Online shopping"
+            },
+            {
+              "id": "6003493980595",
+              "name": "Country music"
+            },
+            {
+              "id": "6003582732907",
+              "name": "Rock music"
+            },
+            {
+              "id": "6003715920062",
+              "name": "Retrogaming"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      },
+      "publisher_platforms": [
+        "facebook",
+        "instagram",
+        "messenger"
+      ],
+      "facebook_positions": [
+        "feed",
+        "biz_disco_feed",
+        "facebook_reels",
+        "right_hand_column",
+        "video_feeds",
+        "marketplace",
+        "story"
+      ],
+      "instagram_positions": [
+        "stream",
+        "story",
+        "explore",
+        "reels",
+        "explore_home",
+        "profile_feed"
+      ],
+      "device_platforms": [
+        "mobile",
+        "desktop"
+      ],
+      "messenger_positions": [
+        "story"
+      ]
+    },
+    "created_time": "2024-04-26T13:42:36-0400",
+    "updated_time": "2024-05-10T11:32:32-0400"
+  },
+  {
+    "id": "120208242028900180",
+    "name": "Advantage+ shopping campaign_new static creatives",
+    "status": "ACTIVE",
+    "campaign_id": "120208242028910180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "start_time": "2024-04-22T11:18:12-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        65
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      },
+      "publisher_platforms": [
+        "facebook",
+        "instagram",
+        "messenger"
+      ],
+      "facebook_positions": [
+        "feed",
+        "biz_disco_feed",
+        "facebook_reels",
+        "facebook_reels_overlay",
+        "right_hand_column",
+        "video_feeds",
+        "instream_video",
+        "marketplace",
+        "story"
+      ],
+      "instagram_positions": [
+        "stream",
+        "story",
+        "explore",
+        "reels",
+        "reels_overlay",
+        "explore_home",
+        "profile_feed"
+      ],
+      "device_platforms": [
+        "mobile",
+        "desktop"
+      ],
+      "messenger_positions": [
+        "story"
+      ]
+    },
+    "created_time": "2024-04-22T11:18:12-0400",
+    "updated_time": "2024-04-23T11:31:00-0400"
+  },
+  {
+    "id": "120207909277780180",
+    "name": "04122024_Gifting Interest audience",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1000",
+    "lifetime_budget": "0",
+    "start_time": "2024-04-12T13:45:43-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        21,
+        45
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003019539929",
+              "name": "Gift"
+            },
+            {
+              "id": "6003147868152",
+              "name": "Parties"
+            },
+            {
+              "id": "6003220634758",
+              "name": "Discount stores"
+            },
+            {
+              "id": "6003263791114",
+              "name": "Shopping"
+            },
+            {
+              "id": "6003311804999",
+              "name": "1-800-Flowers"
+            },
+            {
+              "id": "6003346592981",
+              "name": "Online shopping"
+            },
+            {
+              "id": "6003702917491",
+              "name": "Harry & David"
+            }
+          ],
+          "behaviors": [
+            {
+              "id": "6071631541183",
+              "name": "Engaged Shoppers"
+            }
+          ],
+          "family_statuses": [
+            {
+              "id": "6023080302983",
+              "name": "Parents with preteens (09-12 years)"
+            }
+          ],
+          "work_employers": [
+            {
+              "id": "48386889767",
+              "name": "1-800-Flowers.com"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "targeting_automation": {
+        "advantage_audience": 0,
+        "individual_setting": {
+          "age": 1,
+          "gender": 1
+        }
+      },
+      "publisher_platforms": [
+        "facebook",
+        "instagram",
+        "messenger"
+      ],
+      "facebook_positions": [
+        "feed",
+        "biz_disco_feed",
+        "facebook_reels",
+        "right_hand_column",
+        "video_feeds",
+        "marketplace",
+        "story"
+      ],
+      "instagram_positions": [
+        "stream",
+        "story",
+        "explore",
+        "reels",
+        "explore_home",
+        "profile_feed"
+      ],
+      "device_platforms": [
+        "mobile",
+        "desktop"
+      ],
+      "messenger_positions": [
+        "story"
+      ]
+    },
+    "created_time": "2024-04-12T13:45:42-0400",
+    "updated_time": "2024-04-29T12:30:14-0400"
+  },
+  {
+    "id": "120207588446550180",
+    "name": "04012024_Broad_IG Only",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1000",
+    "lifetime_budget": "0",
+    "start_time": "2024-04-01T13:58:44-0400",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        21,
+        45
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      },
+      "publisher_platforms": [
+        "instagram"
+      ],
+      "instagram_positions": [
+        "stream",
+        "ig_search",
+        "story",
+        "explore",
+        "reels",
+        "reels_overlay",
+        "explore_home",
+        "profile_feed"
+      ],
+      "device_platforms": [
+        "mobile",
+        "desktop"
+      ]
+    },
+    "created_time": "2024-04-01T13:58:44-0400",
+    "updated_time": "2024-05-08T12:43:16-0400"
+  },
+  {
+    "id": "120205883485380180",
+    "name": "04102024_streaming interest audience",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "500",
+    "lifetime_budget": "0",
+    "start_time": "2024-02-24T10:57:58-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        21,
+        45
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003019539929",
+              "name": "Gift"
+            }
+          ]
+        },
+        {
+          "interests": [
+            {
+              "id": "6002969794329",
+              "name": "Spotify"
+            },
+            {
+              "id": "6002985278723",
+              "name": "ITunes"
+            },
+            {
+              "id": "6003277780179",
+              "name": "YouTube Music"
+            },
+            {
+              "id": "937077532996593",
+              "name": "Apple Music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-02-24T10:57:58-0500",
+    "updated_time": "2024-04-12T13:42:36-0400"
+  },
+  {
+    "id": "120204692181000180",
+    "name": "Parties (event)",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "710",
+    "lifetime_budget": "0",
+    "start_time": "2024-01-31T01:22:20-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        21,
+        45
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003147868152",
+              "name": "Parties"
+            },
+            {
+              "id": "6003240626610",
+              "name": "Love & Sex"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-01-31T01:22:20-0500",
+    "updated_time": "2024-02-06T09:50:58-0500"
+  },
+  {
+    "id": "120204384328880180",
+    "name": "Gift, Love",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "710",
+    "lifetime_budget": "0",
+    "start_time": "2024-01-26T10:03:04-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        21,
+        45
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003019539929",
+              "name": "Gift"
+            },
+            {
+              "id": "6003186556105",
+              "name": "Love"
+            }
+          ]
+        },
+        {
+          "interests": [
+            {
+              "id": "6003020834693",
+              "name": "Music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-01-26T10:03:04-0500",
+    "updated_time": "2024-02-14T11:45:18-0500"
+  },
+  {
+    "id": "120204384304080180",
+    "name": "Valentine's Day",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2024-01-26T10:00:50-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        21,
+        45
+      ],
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003310766888",
+              "name": "Valentine's Day"
+            }
+          ]
+        },
+        {
+          "interests": [
+            {
+              "id": "6002969794329",
+              "name": "Spotify"
+            },
+            {
+              "id": "6002985278723",
+              "name": "ITunes"
+            },
+            {
+              "id": "937077532996593",
+              "name": "Apple Music"
+            }
+          ]
+        }
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-01-26T10:00:49-0500",
+    "updated_time": "2024-02-14T11:45:05-0500"
+  },
+  {
+    "id": "120204380338180180",
+    "name": "Broad",
+    "status": "PAUSED",
+    "campaign_id": "120204380338100180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2010",
+    "lifetime_budget": "0",
+    "start_time": "2024-01-26T09:54:32-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        21,
+        45
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
+    },
+    "created_time": "2024-01-26T09:54:32-0500",
+    "updated_time": "2024-02-24T10:58:32-0500"
+  },
+  {
+    "id": "120204142182120180",
+    "name": "First Ad Set",
+    "status": "ACTIVE",
+    "campaign_id": "120204142182080180",
+    "optimization_goal": "LINK_CLICKS",
+    "billing_event": "IMPRESSIONS",
+    "start_time": "2024-01-18T16:06:22-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "targeting_automation": {
+        "advantage_audience": 1
+      },
+      "publisher_platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "facebook_positions": [
+        "facebook_reels",
+        "story"
+      ],
+      "instagram_positions": [
+        "story",
+        "reels"
+      ],
+      "device_platforms": [
+        "mobile"
+      ]
+    },
+    "created_time": "2024-01-18T16:06:22-0500",
+    "updated_time": "2024-01-18T16:06:22-0500"
+  },
+  {
+    "id": "120204099754200180",
+    "name": "First Ad Set",
+    "status": "ACTIVE",
+    "campaign_id": "120204099753870180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "start_time": "2024-01-17T09:50:29-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "targeting_automation": {
+        "advantage_audience": 1
+      },
+      "publisher_platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "facebook_positions": [
+        "facebook_reels",
+        "story"
+      ],
+      "instagram_positions": [
+        "story",
+        "reels"
+      ],
+      "device_platforms": [
+        "mobile",
+        "desktop"
+      ]
+    },
+    "created_time": "2024-01-17T09:50:29-0500",
+    "updated_time": "2024-01-17T09:50:29-0500"
+  },
+  {
+    "id": "120202053404560180",
+    "name": "Hip Hop",
+    "status": "PAUSED",
+    "campaign_id": "120201721354540180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2023-12-09T15:37:40-0500",
+    "targeting": {
+      "age_max": 50,
+      "age_min": 24,
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003134679647",
+              "name": "Vinyl Records"
+            },
+            {
+              "id": "6003225556345",
+              "name": "Hip hop music"
+            }
+          ]
+        },
+        {
+          "interests": [
+            {
+              "id": "6002969794329",
+              "name": "Spotify"
+            },
+            {
+              "id": "6003420646631",
+              "name": "Home audio"
+            }
+          ]
+        }
+      ],
+      "genders": [
+        0
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ]
+    },
+    "created_time": "2023-12-09T15:37:40-0500",
+    "updated_time": "2023-12-11T07:19:11-0500"
+  },
+  {
+    "id": "120201721355260180",
+    "name": "Big Freedia and GD",
+    "status": "ACTIVE",
+    "campaign_id": "120201721354540180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2023-12-07T15:07:11-0500",
+    "targeting": {
+      "age_max": 50,
+      "age_min": 35,
+      "flexible_spec": [
+        {
+          "interests": [
+            {
+              "id": "6003704558313",
+              "name": "Grateful Dead"
+            }
+          ]
+        },
+        {
+          "interests": [
+            {
+              "id": "6002969794329",
+              "name": "Spotify"
+            },
+            {
+              "id": "6003134679647",
+              "name": "Vinyl Records"
+            },
+            {
+              "id": "6003420646631",
+              "name": "Home audio"
+            }
+          ]
+        }
+      ],
+      "genders": [
+        0
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ]
+    },
+    "created_time": "2023-12-07T15:07:11-0500",
+    "updated_time": "2023-12-11T14:11:41-0500"
+  },
+  {
+    "id": "120201181959620180",
+    "name": "Video Ad Set",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "optimization_goal": "LINK_CLICKS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2023-11-27T10:03:57-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        48
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD",
+        "AN_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      },
+      "publisher_platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "facebook_positions": [
+        "feed",
+        "biz_disco_feed",
+        "facebook_reels",
+        "facebook_reels_overlay",
+        "video_feeds",
+        "instream_video",
+        "marketplace",
+        "story",
+        "search"
+      ],
+      "instagram_positions": [
+        "stream",
+        "ig_search",
+        "story",
+        "explore",
+        "reels",
+        "explore_home"
+      ],
+      "device_platforms": [
+        "mobile"
+      ],
+      "messenger_positions": [
+        "story"
+      ],
+      "audience_network_positions": [
+        "classic",
+        "rewarded_video"
+      ]
+    },
+    "created_time": "2023-11-27T10:03:57-0500",
+    "updated_time": "2023-11-29T16:20:52-0500"
+  },
+  {
+    "id": "120201181241350180",
+    "name": "Instagram Ad Set",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "optimization_goal": "LINK_CLICKS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2023-11-27T09:49:51-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        48
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "targeting_automation": {
+        "advantage_audience": 1
+      },
+      "publisher_platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "facebook_positions": [
+        "feed",
+        "biz_disco_feed",
+        "facebook_reels",
+        "facebook_reels_overlay",
+        "video_feeds",
+        "instream_video",
+        "marketplace",
+        "story",
+        "search"
+      ],
+      "instagram_positions": [
+        "stream",
+        "ig_search",
+        "story",
+        "explore",
+        "reels",
+        "explore_home"
+      ],
+      "device_platforms": [
+        "mobile"
+      ],
+      "messenger_positions": [
+        "story"
+      ],
+      "audience_network_positions": [
+        "classic",
+        "rewarded_video"
+      ]
+    },
+    "created_time": "2023-11-27T09:49:51-0500",
+    "updated_time": "2023-11-29T16:21:23-0500"
+  },
+  {
+    "id": "120201179005170180",
+    "name": "Facebook Ad Set",
+    "status": "ACTIVE",
+    "campaign_id": "120201179005140180",
+    "optimization_goal": "LINK_CLICKS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "2000",
+    "lifetime_budget": "0",
+    "start_time": "2023-11-27T09:35:05-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+        18,
+        48
+      ],
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "brand_safety_content_filter_levels": [
+        "FACEBOOK_STANDARD"
+      ],
+      "targeting_automation": {
+        "advantage_audience": 1
+      },
+      "publisher_platforms": [
+        "facebook",
+        "instagram",
+        "audience_network",
+        "messenger"
+      ],
+      "facebook_positions": [
+        "feed",
+        "biz_disco_feed",
+        "facebook_reels",
+        "facebook_reels_overlay",
+        "video_feeds",
+        "instream_video",
+        "marketplace",
+        "story",
+        "search"
+      ],
+      "instagram_positions": [
+        "stream",
+        "ig_search",
+        "story",
+        "explore",
+        "reels",
+        "explore_home"
+      ],
+      "device_platforms": [
+        "mobile"
+      ],
+      "messenger_positions": [
+        "story"
+      ],
+      "audience_network_positions": [
+        "classic",
+        "rewarded_video"
+      ]
+    },
+    "created_time": "2023-11-27T09:35:05-0500",
+    "updated_time": "2023-11-29T16:21:49-0500"
+  },
+  {
+    "id": "120201166876280180",
+    "name": "Advantage+ shopping campaign 11/26/2023 Ad set",
+    "status": "ACTIVE",
+    "campaign_id": "120201166876270180",
+    "optimization_goal": "OFFSITE_CONVERSIONS",
+    "billing_event": "IMPRESSIONS",
+    "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+    "daily_budget": "1000",
+    "lifetime_budget": "0",
+    "start_time": "2023-11-26T21:00:31-0500",
+    "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "geo_locations": {
+        "countries": [
+          "US"
+        ],
+        "location_types": [
+          "home",
+          "recent"
+        ]
+      },
+      "targeting_relaxation_types": {
+        "lookalike": 0,
+        "custom_audience": 0
+      }
+    },
+    "created_time": "2023-11-26T21:00:31-0500",
+    "updated_time": "2023-11-26T21:00:31-0500"
+  }
+]

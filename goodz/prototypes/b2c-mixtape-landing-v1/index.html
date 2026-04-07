@@ -3,126 +3,191 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Goodz — Build them a mixtape they can hold</title>
+  <title>Mixtape Goodz — Build them a mixtape they can hold</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #f7f0e8;
-      --paper: #fffaf5;
-      --ink: #1d1b1a;
-      --muted: #6e625a;
-      --line: rgba(29,27,26,.10);
+      --black: #1d1b1a;
+      --white: #ffffff;
+      --cream: #faf8f5;
+      --warm-gray: #6e625a;
+      --line: rgba(29,27,26,0.10);
       --accent: #d55c3d;
       --accent-dark: #a53c21;
-      --gold: #c58b2d;
-      --shadow: 0 16px 40px rgba(0,0,0,.08);
-      --radius: 20px;
+      --shadow: 0 8px 32px rgba(0,0,0,0.08);
+      --shadow-lg: 0 20px 60px rgba(0,0,0,0.12);
+      --radius: 14px;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(180deg, #fbf5ef 0%, #f2e6d8 100%);
-      color: var(--ink);
-      line-height: 1.55;
+      font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--black);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3 {
+      font-family: 'Exo', ui-sans-serif, sans-serif;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
     }
     a { color: inherit; text-decoration: none; }
+
+    /* ── Navigation ── */
+    .nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 28px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .nav-logo img {
+      height: 38px;
+      width: auto;
+      display: block;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--warm-gray);
+      border-radius: 8px;
+      transition: color 0.15s, background 0.15s;
+    }
+    .nav-links a:hover {
+      color: var(--black);
+      background: rgba(29,27,26,0.05);
+    }
+    .nav-links .nav-cta {
+      background: var(--black);
+      color: var(--white) !important;
+      font-weight: 600;
+      padding: 9px 18px;
+      border-radius: 999px;
+      margin-left: 6px;
+    }
+    .nav-links .nav-cta:hover {
+      background: #333;
+    }
+
+    /* ── Wrap ── */
     .wrap {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 0 20px 80px;
+      padding: 0 28px 80px;
     }
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 0;
-      font-size: 14px;
-      color: var(--muted);
-    }
-    .brand {
-      font-weight: 800;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--ink);
-    }
+
+    /* ── Hero ── */
     .hero {
       display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 34px;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
       align-items: center;
-      padding: 36px 0 28px;
+      padding: 72px 0 64px;
     }
     .eyebrow {
       display: inline-block;
-      padding: 8px 12px;
+      padding: 7px 14px;
       border-radius: 999px;
-      background: rgba(213,92,61,.10);
+      background: rgba(213,92,61,0.10);
       color: var(--accent-dark);
       font-weight: 700;
       font-size: 13px;
-      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
     }
-    h1 {
-      font-size: clamp(2.4rem, 5vw, 4.5rem);
-      line-height: .97;
-      margin: 0 0 16px;
-      letter-spacing: -.04em;
+    h1.hero-headline {
+      font-size: clamp(2.6rem, 4.5vw, 4.2rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px;
+      color: var(--black);
     }
     .hero p.lead {
-      font-size: 1.15rem;
-      color: var(--muted);
-      max-width: 640px;
-      margin: 0 0 24px;
+      font-size: 1.1rem;
+      color: var(--warm-gray);
+      max-width: 560px;
+      margin: 0 0 28px;
+      line-height: 1.65;
     }
     .cta-row {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 14px;
+      margin-bottom: 20px;
     }
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       min-height: 52px;
-      padding: 0 20px;
+      padding: 0 24px;
       border-radius: 999px;
       font-weight: 700;
-      border: 1px solid var(--line);
-      background: white;
-      box-shadow: var(--shadow);
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
     }
+    .btn:hover { transform: translateY(-1px); }
     .btn.primary {
       background: var(--accent);
       color: white;
-      border-color: transparent;
+      box-shadow: 0 4px 16px rgba(213,92,61,0.35);
     }
+    .btn.primary:hover { box-shadow: 0 8px 24px rgba(213,92,61,0.45); }
     .btn.secondary {
-      background: transparent;
-      box-shadow: none;
+      background: var(--white);
+      color: var(--black);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
     }
     .confidence {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      color: var(--muted);
+      gap: 8px;
+      color: var(--warm-gray);
       font-size: 14px;
     }
     .confidence span {
-      padding: 8px 12px;
+      padding: 6px 12px;
       border-radius: 999px;
-      background: rgba(255,255,255,.75);
+      background: var(--white);
       border: 1px solid var(--line);
     }
-    .hero-card {
-      background: linear-gradient(180deg, rgba(255,250,245,.98), rgba(245,234,221,.98));
+
+    /* ── Hero Visual ── */
+    .hero-visual {
+      background: var(--white);
       border: 1px solid var(--line);
-      border-radius: 28px;
-      box-shadow: var(--shadow);
-      padding: 26px;
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+      padding: 28px;
       position: relative;
       overflow: hidden;
-      min-height: 540px;
     }
     .crate {
       display: grid;
@@ -132,13 +197,14 @@
     }
     .good {
       aspect-ratio: 1;
-      border-radius: 18px;
+      border-radius: 14px;
       padding: 14px;
       color: white;
       font-weight: 700;
+      font-size: 13px;
       display: flex;
       align-items: flex-end;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
     }
     .g1 { background: linear-gradient(135deg, #d35e43, #6b1f13); }
     .g2 { background: linear-gradient(135deg, #4664d9, #1f2b79); }
@@ -146,85 +212,83 @@
     .g4 { background: linear-gradient(135deg, #276d66, #123b36); }
     .g5 { background: linear-gradient(135deg, #cb5a75, #6f1f33); }
     .g6 { background: linear-gradient(135deg, #6f63d7, #2d2578); }
+
     .phone {
       margin: 10px auto 0;
-      width: min(100%, 290px);
+      width: min(100%, 270px);
       background: #111;
-      border-radius: 30px;
-      padding: 12px;
-      box-shadow: 0 22px 40px rgba(0,0,0,.18);
+      border-radius: 28px;
+      padding: 10px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
     }
     .phone-screen {
-      background: linear-gradient(180deg, #1c1b23 0%, #0f0e13 100%);
+      background: linear-gradient(180deg, #1c1b23, #0f0e13);
       border-radius: 22px;
       padding: 18px;
       color: #fff;
-      min-height: 290px;
+      min-height: 270px;
     }
     .playlist-cover {
       width: 100%;
       aspect-ratio: 1.2;
-      border-radius: 18px;
+      border-radius: 14px;
       background: linear-gradient(135deg, #f3b1a3, #5c1d12 70%);
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
     .pill {
       display: inline-block;
-      padding: 6px 10px;
-      background: rgba(255,255,255,.10);
+      padding: 5px 10px;
+      background: rgba(255,255,255,0.10);
       border-radius: 999px;
-      font-size: 12px;
-      color: rgba(255,255,255,.88);
-      margin-bottom: 10px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 8px;
+      font-weight: 600;
     }
-    .phone h3 {
-      margin: 0 0 8px;
-      font-size: 1.1rem;
-    }
-    .muted-light { color: rgba(255,255,255,.68); }
-    .tracklist {
-      margin-top: 12px;
-      display: grid;
-      gap: 8px;
-    }
+    .phone h3 { margin: 0 0 6px; font-size: 1rem; font-family: 'DM Sans', sans-serif; }
+    .muted-light { color: rgba(255,255,255,0.6); font-size: 13px; }
+    .tracklist { margin-top: 10px; display: grid; gap: 7px; }
     .track {
-      padding: 10px 12px;
-      border-radius: 12px;
-      background: rgba(255,255,255,.06);
-      font-size: 14px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.07);
+      font-size: 12px;
     }
-    section {
-      margin-top: 28px;
-    }
+
+    /* ── Sections ── */
+    section { margin-top: 20px; }
     .section-card {
-      background: rgba(255,250,245,.82);
+      background: var(--white);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 28px;
+      padding: 36px;
     }
     h2 {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       font-size: 2rem;
-      letter-spacing: -.03em;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.03em;
     }
     .sub {
-      color: var(--muted);
-      margin-bottom: 22px;
-      max-width: 760px;
+      color: var(--warm-gray);
+      margin-bottom: 28px;
+      max-width: 680px;
+      font-size: 1rem;
+      line-height: 1.65;
     }
     .steps, .cards, .faq-grid {
       display: grid;
       gap: 16px;
     }
-    .steps { grid-template-columns: repeat(3, 1fr); }
-    .cards { grid-template-columns: repeat(3, 1fr); }
+    .steps, .cards { grid-template-columns: repeat(3, 1fr); }
     .faq-grid { grid-template-columns: repeat(2, 1fr); }
     .box {
-      background: white;
+      background: var(--cream);
       border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 20px;
+      border-radius: 14px;
+      padding: 22px;
     }
     .num {
       width: 34px;
@@ -233,41 +297,36 @@
       align-items: center;
       justify-content: center;
       border-radius: 999px;
-      background: rgba(213,92,61,.12);
+      background: rgba(213,92,61,0.12);
       color: var(--accent-dark);
       font-weight: 800;
-      margin-bottom: 10px;
+      font-family: 'Exo', sans-serif;
+      margin-bottom: 12px;
     }
-    h3 {
-      margin: 0 0 8px;
-      font-size: 1.08rem;
-    }
-    p { margin: 0; }
+    h3 { margin: 0 0 8px; font-size: 1.05rem; font-weight: 700; font-family: 'Exo', sans-serif; }
+    .box p { margin: 0; color: var(--warm-gray); font-size: 0.95rem; }
+
+    /* ── Personalize split ── */
     .split {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      gap: 20px;
       align-items: start;
     }
     .spotify-mock {
       background: linear-gradient(180deg, #1f3022, #101914);
       color: white;
-      border-radius: 20px;
-      padding: 22px;
-      min-height: 100%;
+      border-radius: 16px;
+      padding: 24px;
     }
-    .spotify-list {
-      margin-top: 14px;
-      display: grid;
-      gap: 10px;
-    }
+    .spotify-list { margin-top: 14px; display: grid; gap: 9px; }
     .spotify-item {
       display: flex;
       align-items: center;
       gap: 12px;
       padding: 10px;
-      border-radius: 14px;
-      background: rgba(255,255,255,.08);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.07);
     }
     .cover {
       width: 42px;
@@ -276,42 +335,84 @@
       background: linear-gradient(135deg, #efbc4f, #b35a1f);
       flex: 0 0 42px;
     }
-    .quote {
-      font-size: 1.1rem;
-      color: var(--ink);
-    }
+    .muted-dark { color: rgba(255,255,255,0.55); font-size: 13px; }
+    .spotify-mock h3 { font-size: 1rem; margin: 0 0 6px; }
+    .spotify-mock p { color: rgba(255,255,255,0.6); font-size: 13px; margin: 0; }
+
+    /* ── Footer CTA ── */
     .footer-cta {
       text-align: center;
-      padding: 36px 24px;
-      background: linear-gradient(135deg, #231714, #5c271c);
+      padding: 52px 32px;
+      background: var(--black);
       color: white;
-      border-radius: 24px;
-      box-shadow: var(--shadow);
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
+      margin-top: 20px;
     }
-    .footer-cta p { color: rgba(255,255,255,.78); margin-top: 10px; }
-    .mini-note {
-      margin-top: 10px;
-      font-size: 13px;
-      color: rgba(255,255,255,.64);
+    .footer-cta h2 {
+      margin: 0 0 12px;
+      color: white;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      text-transform: uppercase;
     }
-    @media (max-width: 920px) {
-      .hero, .split, .steps, .cards, .faq-grid { grid-template-columns: 1fr; }
-      .hero-card { min-height: auto; }
+    .footer-cta p {
+      color: rgba(255,255,255,0.65);
+      margin: 0 0 24px;
+      font-size: 1.05rem;
+    }
+    .footer-cta .btn.secondary {
+      color: var(--black);
+      background: white;
+      border-color: transparent;
+    }
+    .footer-note {
+      margin-top: 18px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; padding: 48px 0 40px; }
+      .hero-visual { max-width: 520px; }
+      .steps, .cards, .faq-grid, .split { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 0 16px 60px; }
+      .nav-inner { padding: 0 16px; }
+      .section-card { padding: 24px 20px; }
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="nav">
-      <div class="brand">GOODZ</div>
-      <div>Concept: B2C Mixtape Gift Landing Page v1</div>
-    </div>
 
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="https://cdn.prod.website-files.com/654d45c59db76623f5f1a2b8/65568b11f91e8d11ccd581d2_Goodz-logo-Black-5x.png" alt="Goodz" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/custom">Custom</a></li>
+        <li><a href="/artist-goodz">Artist</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/support">Support</a></li>
+        <li><a href="https://shop.getthegoodz.com/collections/frontpage" class="nav-cta">Shop</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap">
+
+    <!-- Hero -->
     <section class="hero">
       <div>
-        <div class="eyebrow">A modern mixtape gift for the streaming era</div>
-        <h1>Build them a mixtape they can hold</h1>
-        <p class="lead">Create a personalized set of music cards loaded with playlists, albums, and songs that mean something — a more thoughtful gift for music lovers, partners, best friends, and anyone who deserves more than a texted link.</p>
+        <div class="eyebrow">Mixtape Goodz — Now available</div>
+        <h1 class="hero-headline">Build them a mixtape they can hold</h1>
+        <p class="lead">Create a personalized set of music cards loaded with playlists, albums, and songs that mean something. A more thoughtful gift for music lovers — not just a texted link.</p>
         <div class="cta-row">
           <a class="btn primary" href="#personalize">Create your mixtape</a>
           <a class="btn secondary" href="#how-it-works">See how it works</a>
@@ -323,7 +424,7 @@
         </div>
       </div>
 
-      <div class="hero-card">
+      <div class="hero-visual">
         <div class="crate">
           <div class="good g1">Road trip</div>
           <div class="good g2">For us</div>
@@ -332,13 +433,12 @@
           <div class="good g5">Your favorites</div>
           <div class="good g6">Spring mix</div>
         </div>
-
         <div class="phone">
           <div class="phone-screen">
-            <div class="pill">Preview the recipient experience</div>
+            <div class="pill">Tap to play</div>
             <div class="playlist-cover"></div>
-            <h3>A mix tape for you</h3>
-            <div class="muted-light">A playlist gift they can tap, keep, and come back to.</div>
+            <h3>A mixtape for you</h3>
+            <div class="muted-light">A gift they can tap, keep, and come back to.</div>
             <div class="tracklist">
               <div class="track">Fade Into You — Mazzy Star</div>
               <div class="track">This Must Be the Place — Talking Heads</div>
@@ -349,6 +449,7 @@
       </div>
     </section>
 
+    <!-- How it works -->
     <section id="how-it-works" class="section-card">
       <h2>How it works</h2>
       <p class="sub">Simple enough to make in minutes. Personal enough to feel like a real gift.</p>
@@ -361,7 +462,7 @@
         <div class="box">
           <div class="num">2</div>
           <h3>Pick the music</h3>
-          <p>Choose playlists, albums, or songs that mean something. Paste links manually or import favorites to make it faster.</p>
+          <p>Choose playlists, albums, or songs that mean something. Paste links manually or import from Spotify to make it faster.</p>
         </div>
         <div class="box">
           <div class="num">3</div>
@@ -371,9 +472,10 @@
       </div>
     </section>
 
+    <!-- Why it feels special -->
     <section class="section-card">
       <h2>Why it feels special</h2>
-      <p class="sub">This is not just a playlist link. It’s a way to make taste, memory, and care feel tangible.</p>
+      <p class="sub">This is not just a playlist link. It's a way to make taste, memory, and care feel tangible.</p>
       <div class="cards">
         <div class="box">
           <h3>More personal than sending a link</h3>
@@ -390,53 +492,49 @@
       </div>
     </section>
 
+    <!-- Personalize -->
     <section id="personalize" class="section-card">
-      <h2>Personalize the set before you buy</h2>
-      <p class="sub">The old flow may have worked operationally, but this purchase experience should feel magical. This section teases the creation step we’d build into the real sales flow.</p>
+      <h2>Personalize before you buy</h2>
+      <p class="sub">The purchase experience should feel magical — not like filling out a form.</p>
       <div class="split">
-        <div class="box">
-          <h3>Choose what arrives on each Good</h3>
-          <p style="margin-bottom:14px; color: var(--muted);">Make the gift feel real before checkout.</p>
+        <div>
           <div class="steps" style="grid-template-columns:1fr; gap:12px;">
-            <div class="box" style="padding:16px;">
-              <strong>Card 1</strong><br />
-              <span style="color: var(--muted);">Our songs</span>
+            <div class="box">
+              <h3>Card 1 — Our songs</h3>
+              <p>The tracks that are yours alone.</p>
             </div>
-            <div class="box" style="padding:16px;">
-              <strong>Card 2</strong><br />
-              <span style="color: var(--muted);">Road trip playlist</span>
+            <div class="box">
+              <h3>Card 2 — Road trip playlist</h3>
+              <p>The soundtrack of your best drives together.</p>
             </div>
-            <div class="box" style="padding:16px;">
-              <strong>Card 3</strong><br />
-              <span style="color: var(--muted);">Songs you showed me</span>
+            <div class="box">
+              <h3>Card 3 — Songs you showed me</h3>
+              <p>Music they turned you on to that mattered.</p>
             </div>
           </div>
         </div>
 
         <div class="spotify-mock">
           <div class="pill">Optional Spotify import</div>
-          <h3 style="margin:0 0 8px;">Pull in your favorite playlists faster</h3>
-          <p class="muted-light">Don’t make this a requirement — just a smoother path for people who already have the perfect soundtrack in mind.</p>
+          <h3>Pull in your playlists faster</h3>
+          <p>Don't make this required — just a smoother path for people who already have the perfect soundtrack in mind.</p>
           <div class="spotify-list">
             <div class="spotify-item">
               <div class="cover"></div>
               <div>
-                <strong>For You</strong><br />
-                <span class="muted-light">42 songs</span>
+                <strong>For You</strong><br /><span class="muted-dark">42 songs</span>
               </div>
             </div>
             <div class="spotify-item">
               <div class="cover" style="background: linear-gradient(135deg, #5c77df, #29357c);"></div>
               <div>
-                <strong>Driving at Night</strong><br />
-                <span class="muted-light">28 songs</span>
+                <strong>Driving at Night</strong><br /><span class="muted-dark">28 songs</span>
               </div>
             </div>
             <div class="spotify-item">
               <div class="cover" style="background: linear-gradient(135deg, #d66f8c, #6a2236);"></div>
               <div>
-                <strong>Shared Favorites</strong><br />
-                <span class="muted-light">17 songs</span>
+                <strong>Shared Favorites</strong><br /><span class="muted-dark">17 songs</span>
               </div>
             </div>
           </div>
@@ -444,56 +542,60 @@
       </div>
     </section>
 
+    <!-- Gift ideas -->
     <section class="section-card">
       <h2>Gift ideas people instantly understand</h2>
       <p class="sub">This helps cold traffic picture themselves buying it for someone specific.</p>
       <div class="cards">
         <div class="box">
           <h3>For your partner</h3>
-          <p>Create a set of songs that mean something to your relationship — first dates, road trips, kitchen songs, heartbreaks survived, all of it.</p>
+          <p>Create a set of songs that mean something to your relationship — first dates, road trips, kitchen songs, heartbreaks survived.</p>
         </div>
         <div class="box">
           <h3>For your best friend</h3>
           <p>Turn your shared taste into a real object instead of another playlist link that disappears into the feed.</p>
         </div>
         <div class="box">
-          <h3>For the music person in your life</h3>
+          <h3>For the music lover</h3>
           <p>A more thoughtful gift than generic merch and more personal than just sending an album recommendation.</p>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section class="section-card">
       <h2>Questions people will have</h2>
       <div class="faq-grid">
         <div class="box">
           <h3>Do I need an app?</h3>
-          <p>No. The idea should stay lightweight: tap with a phone, open the music experience, enjoy it.</p>
+          <p>No. Tap with a phone, open the music experience, enjoy it. No app, no friction.</p>
         </div>
         <div class="box">
           <h3>Do I need Spotify?</h3>
-          <p>No. Spotify import should be optional. Manual links should still work so we do not create conversion friction.</p>
+          <p>No. Spotify import is optional — manual links work too so there's no conversion friction.</p>
         </div>
         <div class="box">
-          <h3>Do they come preloaded?</h3>
-          <p>The new sales flow should let buyers choose what they want on each Good before purchase, even if the backend setup remains flexible.</p>
+          <h3>Can I choose what goes on each Good?</h3>
+          <p>Yes. You pick the playlists, albums, or songs for each card before you purchase.</p>
         </div>
         <div class="box">
           <h3>How fast do they ship?</h3>
-          <p>Current ops suggest a few days for normal D2C fulfillment, which is an important confidence-builder to keep visible.</p>
+          <p>A few days for normal D2C fulfillment — which we'll keep visible to build confidence at checkout.</p>
         </div>
       </div>
     </section>
 
+    <!-- Footer CTA -->
     <section class="footer-cta">
-      <h2 style="margin:0; font-size:2.2rem;">Make them something they’ll actually keep</h2>
+      <h2>Make them something they'll actually keep</h2>
       <p>A physical mixtape gift built for streaming-era music lovers.</p>
-      <div class="cta-row" style="justify-content:center; margin-top:22px;">
+      <div class="cta-row" style="justify-content:center;">
         <a class="btn primary" href="#">Create your mixtape</a>
-        <a class="btn secondary" href="#how-it-works" style="color:white; border-color: rgba(255,255,255,.2);">See how it works</a>
+        <a class="btn secondary" href="#how-it-works">See how it works</a>
       </div>
-      <div class="mini-note">Concept direction: broad meaningful gift framing with warm romantic undertones, optimized for cold paid social traffic.</div>
+      <div class="footer-note">Goodz — Eco-friendly NFC-enabled physical collectibles that link to your favorite music.</div>
     </section>
+
   </div>
 </body>
 </html>

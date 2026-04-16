@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Goodz — Creative Brief | April 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --yellow: #ffc852;
+    --yellow-dark: #b8860b;
+    --bg: #efefe2;
+    --white: #fff;
+    --border: #1a1a1a;
+    --text: #1a1a1a;
+    --mid: #555;
+    --light: #888;
+    --green: #2e7d32;
+    --red: #c0392b;
+  }
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; font-size: 15px; }
+  html { scroll-behavior: smooth; }
+
+  /* PRINT-FRIENDLY HEADER */
+  .page-header {
+    background: var(--border);
+    color: var(--white);
+    padding: 3rem 5%;
+    border-bottom: 6px solid var(--yellow);
+  }
+  .page-header .inner { max-width: 1000px; margin: 0 auto; }
+  .doc-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--yellow); margin-bottom: 0.5rem; }
+  h1 { font-family: 'Poppins', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.05; margin-bottom: 1rem; }
+  h1 em { color: var(--yellow); font-style: normal; }
+  .meta { display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.85rem; color: #aaa; }
+  .meta span { display: flex; align-items: center; gap: 0.4rem; }
+  .meta .val { color: var(--white); font-weight: 600; }
+  .warning { display: inline-block; background: var(--red); color: #fff; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.3rem 0.75rem; margin-top: 1rem; }
+
+  /* SECTIONS */
+  section { max-width: 1000px; margin: 0 auto; padding: 2.5rem 5%; border-bottom: 2px solid #ddd; }
+  section:last-child { border-bottom: none; }
+  .section-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--yellow-dark); margin-bottom: 0.75rem; }
+  h2 { font-family: 'Poppins', sans-serif; font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1.5rem; color: var(--text); }
+
+  /* TWO COLUMN */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  @media(max-width:700px){ .two-col { grid-template-columns: 1fr; } }
+
+  /* PRODUCT CARD */
+  .product-card { background: var(--white); border: 2px solid var(--border); padding: 1.5rem; }
+  .product-name { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.1rem; margin-bottom: 1rem; color: var(--text); }
+  .spec-row { display: flex; gap: 0; border-bottom: 1px solid #eee; }
+  .spec-row:last-child { border-bottom: none; }
+  .spec-k { font-size: 0.8rem; font-weight: 700; color: var(--light); min-width: 140px; padding: 0.5rem 0; text-transform: uppercase; letter-spacing: 0.04em; }
+  .spec-v { font-size: 0.85rem; color: var(--text); padding: 0.5rem 0; flex: 1; }
+
+  /* PERSONA */
+  .persona { background: var(--white); border: 2px solid var(--border); overflow: hidden; }
+  .persona-header { background: var(--border); padding: 1rem 1.5rem; }
+  .persona-name { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1rem; color: var(--yellow); }
+  .persona-sub { font-size: 0.75rem; color: #aaa; margin-top: 0.2rem; }
+  .persona-body { padding: 1.25rem 1.5rem; }
+  .trait { display: flex; gap: 0; border-bottom: 1px solid #f0f0ee; padding: 0.4rem 0; font-size: 0.82rem; }
+  .trait:last-child { border-bottom: none; }
+  .trait-k { font-weight: 700; color: var(--light); min-width: 100px; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.7rem; }
+  .trait-v { color: var(--text); flex: 1; }
+
+  /* CHANNELS */
+  .channel-table { width: 100%; border-collapse: collapse; }
+  .channel-table th { background: var(--border); color: var(--yellow); font-family: 'Poppins', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.6rem 1rem; text-align: left; }
+  .channel-table td { padding: 0.75rem 1rem; border-bottom: 1px solid #eee; font-size: 0.85rem; vertical-align: top; }
+  .channel-table tr:nth-child(even) td { background: var(--white); }
+  .channel-table tr:nth-child(odd) td { background: var(--bg); }
+  .priority { display: inline-block; font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.15rem 0.5rem; }
+  .priority.qw { background: var(--yellow); color: #1a1a1a; }
+  .priority.lg { background: #ddd; color: #555; }
+  .budget { font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--text); }
+
+  /* CREATIVE CAMPAIGNS */
+  .campaign { background: var(--white); border: 2px solid var(--border); margin-bottom: 1.5rem; overflow: hidden; }
+  .campaign-header { background: var(--border); padding: 1rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .campaign-name { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1rem; color: var(--yellow); }
+  .campaign-badge { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.6rem; background: var(--yellow); color: #1a1a1a; }
+  .campaign-body { padding: 1.25rem 1.5rem; }
+  .campaign-tagline { font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.75rem; font-style: italic; }
+  .palette-bar { display: flex; gap: 0; height: 24px; margin-bottom: 0.75rem; }
+  .swatch { flex: 1; }
+  .campaign-meta { display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.8rem; }
+  .campaign-meta span { color: var(--mid); }
+  .campaign-meta strong { color: var(--text); font-weight: 700; }
+
+  /* BUDGET MODEL */
+  .budget-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  @media(max-width:700px){ .budget-grid { grid-template-columns: 1fr; } }
+  .budget-card { background: var(--white); border: 2px solid var(--border); overflow: hidden; }
+  .budget-header { padding: 0.75rem 1rem; background: var(--border); }
+  .budget-label { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  .budget-card:nth-child(1) .budget-label { color: #888; }
+  .budget-card:nth-child(2) .budget-label { color: var(--yellow); }
+  .budget-card:nth-child(3) .budget-label { color: var(--green); }
+  .budget-body { padding: 1rem; }
+  .budget-big { font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 900; color: var(--text); line-height: 1; }
+  .budget-sub { font-size: 0.75rem; color: var(--light); margin-bottom: 0.75rem; }
+  .budget-row { display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid #eee; font-size: 0.8rem; }
+  .budget-row:last-child { border-bottom: none; }
+  .budget-row .l { color: var(--light); }
+  .budget-row .v { font-weight: 700; color: var(--text); }
+
+  /* QUOTE BOX */
+  .quote-box { background: var(--white); border-left: 5px solid var(--yellow); padding: 1.25rem 1.5rem; margin: 1rem 0; font-family: 'Poppins', sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--text); line-height: 1.5; }
+  .quote-attribution { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; color: var(--light); font-weight: 400; margin-top: 0.5rem; }
+
+  /* NEXT STEPS */
+  .steps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+  .step-card { background: var(--white); border: 2px solid var(--border); padding: 1.25rem; }
+  .step-num { font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 0.65rem; background: var(--yellow); color: #1a1a1a; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.75rem; text-transform: uppercase; }
+  .step-title { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 0.9rem; color: var(--text); margin-bottom: 0.5rem; line-height: 1.3; }
+  .step-body { font-size: 0.82rem; color: var(--mid); line-height: 1.5; }
+  .step-card.urgent { border-color: var(--red); }
+  .step-card.urgent .step-title { color: var(--red); }
+
+  /* ASSETS */
+  .asset-strip { display: flex; gap: 0; overflow: hidden; border: 2px solid var(--border); }
+  .asset-strip img { width: 25%; aspect-ratio: 1/1; object-fit: cover; border-right: 1px solid var(--border); display: block; }
+  .asset-strip img:last-child { border-right: none; }
+
+  /* WARNINGS */
+  .warn-box { background: #fff3cd; border: 2px solid var(--yellow); padding: 1rem 1.25rem; font-size: 0.85rem; color: #7a6000; margin: 1rem 0; }
+  .warn-box strong { font-family: 'Poppins', sans-serif; font-weight: 800; }
+
+  /* FOOTER */
+  footer { background: var(--border); padding: 1.5rem 5%; text-align: center; }
+  footer p { color: #666; font-size: 0.75rem; }
+  footer a { color: var(--yellow); text-decoration: none; }
+
+  /* PRINT */
+  @media print {
+    .page-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .warn-box, .campaign, .budget-card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="page-header">
+  <div class="inner">
+    <div class="doc-label">Goodz — Internal Planning Document</div>
+    <h1>Custom Goodz<br><em>Creative Brief</em></h1>
+    <div class="meta">
+      <span>Prepared for: <span class="val">Mike Rosenthal</span></span>
+      <span>Date: <span class="val">April 2026</span></span>
+      <span>Status: <span class="val">INTERNAL DRAFT</span></span>
+    </div>
+    <div class="warning">⚠️ CHECKOUT NOT LIVE — DO NOT ACTIVATE PAID TRAFFIC</div>
+  </div>
+</div>
+
+<!-- SECTION 1: PRODUCT -->
+<section>
+  <div class="section-label">01 — The Product</div>
+  <h2>What We're Selling</h2>
+
+  <div class="two-col">
+    <div class="product-card">
+      <div class="product-name">Custom Goodz — The Core Product</div>
+      <div class="spec-row"><div class="spec-k">Minimum Order</div><div class="spec-v" style="font-weight:700">50 units</div></div>
+      <div class="spec-row"><div class="spec-k">Unit Price</div><div class="spec-v">$3.44 at 50 units → $2.52 at 3,000+</div></div>
+      <div class="spec-row"><div class="spec-k">Sleeve Add-On</div><div class="spec-v">+$0.20/unit (optional)</div></div>
+      <div class="spec-row"><div class="spec-k">Material</div><div class="spec-v">Basswood, VOC-free UV print, 65mm square</div></div>
+      <div class="spec-row"><div class="spec-k">NFC Chip</div><div class="spec-v">NTAG213 — tap with any modern phone, no app required</div></div>
+      <div class="spec-row"><div class="spec-k">Link Option</div><div class="spec-v">Bandcamp CSV (unique URL per card) or single URL</div></div>
+      <div class="spec-row"><div class="spec-k">Lead Time</div><div class="spec-v">4–5 weeks from order confirmation</div></div>
+      <div class="spec-row"><div class="spec-k">URL Update</div><div class="spec-v">Dashboard-accessible, change anytime</div></div>
+    </div>
+
+    <div>
+      <div class="quote-box">
+        "The mixtape is back and better than ever."
+        <div class="quote-attribution">— Primary brand tagline</div>
+      </div>
+      <div class="warn-box">
+        <strong>⚠️ Checkout is TBC.</strong> All campaign URLs point to getthegoodz.com/custom-goodz — confirm checkout is live before activating any paid traffic.
+      </div>
+      <div style="margin-top:1rem; font-size:0.82rem; color:var(--mid); line-height:1.6;">
+        <strong style="color:var(--text)">Positioning:</strong> NOT tech. NOT NFC. Nostalgia + collector + merch-table differentiator. The fan experience is the product — the wooden card is the vessel.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: AUDIENCE -->
+<section>
+  <div class="section-label">02 — Target Audience</div>
+  <h2>Who Buys Custom Goodz</h2>
+
+  <div class="two-col">
+    <div class="persona">
+      <div class="persona-header">
+        <div class="persona-name">Persona A: The Touring Indie Band</div>
+        <div class="persona-sub">Primary buyer — 60% of addressable market</div>
+      </div>
+      <div class="persona-body">
+        <div class="trait"><div class="trait-k">Profile</div><div class="trait-v">2–5 members, 500–10K monthly Spotify listeners</div></div>
+        <div class="trait"><div class="trait-k">Touring</div><div class="trait-v">15–50 shows/year, 100–500-cap rooms</div></div>
+        <div class="trait"><div class="trait-k">Merch</div><div class="trait-v">Self-managed or boutique management; self-run via Bandcamp + Venmo/ShopPay</div></div>
+        <div class="trait"><div class="trait-k">Pain</div><div class="trait-v">Merch table looks like everyone else's. Fans walk past. Nothing stands out.</div></div>
+        <div class="trait"><div class="trait-k">Want</div><div class="trait-v">Something fans actually keep and use. Revenue that justifies table space.</div></div>
+        <div class="trait"><div class="trait-k">Price Sens.</div><div class="trait-v">$172 upfront (50 units) is accessible — can't afford $2K+ runs</div></div>
+      </div>
+    </div>
+
+    <div class="persona">
+      <div class="persona-header">
+        <div class="persona-name">Persona B: Bedroom-to-Bandcamp Artist</div>
+        <div class="persona-sub">Secondary buyer — emerging artists, digital audiences</div>
+      </div>
+      <div class="persona-body">
+        <div class="trait"><div class="trait-k">Profile</div><div class="trait-v">Solo or small group, primarily digital, 1K–50K Bandcamp listeners</div></div>
+        <div class="trait"><div class="trait-k">Touring</div><div class="trait-v">Occasional shows, no formal merch operation yet</div></div>
+        <div class="trait"><div class="trait-k">Merch</div><div class="trait-v">Bandcamp storefront + occasional local shows</div></div>
+        <div class="trait"><div class="trait-k">Pain</div><div class="trait-v">Wants to give super-fans something physical but doesn't know what to produce</div></div>
+        <div class="trait"><div class="trait-k">Want</div><div class="trait-v">Low-risk way to test physical merch. Something fans actually value.</div></div>
+        <div class="trait"><div class="trait-k">Price Sens.</div><div class="trait-v">Highly sensitive — $172 is the minimum viable test</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: CAMPAIGNS -->
+<section>
+  <div class="section-label">03 — Creative Campaigns</div>
+  <h2>Three Flagship Campaigns</h2>
+
+  <div class="campaign">
+    <div class="campaign-header">
+      <div class="campaign-name">Campaign 1: Merch Table Differentiator</div>
+      <div class="campaign-badge">Primary — Direct Response</div>
+    </div>
+    <div class="campaign-body">
+      <div class="campaign-tagline">"Your fans deserve more than a t-shirt."</div>
+      <div class="palette-bar">
+        <div class="swatch" style="background:#1a1a1a;"></div>
+        <div class="swatch" style="background:#ffc852;"></div>
+        <div class="swatch" style="background:#f4f1e8;"></div>
+        <div class="swatch" style="background:#d4c5b0;"></div>
+        <div class="swatch" style="background:#b8860b;"></div>
+      </div>
+      <div class="campaign-meta">
+        <span><strong>Platform:</strong> Facebook/Instagram Feed</span>
+        <span><strong>Format:</strong> Photo + Video</span>
+        <span><strong>CTA:</strong> See How It Works</span>
+      </div>
+      <div style="margin-top:0.75rem; font-size:0.82rem; color:var(--mid);">
+        <strong style="color:var(--text)">Hook:</strong> Visual contrast — generic merch table vs. Custom Goodz as centerpiece. The known pain, directly addressed.
+      </div>
+    </div>
+  </div>
+
+  <div class="campaign">
+    <div class="campaign-header">
+      <div class="campaign-name">Campaign 2: Mixtape Revival</div>
+      <div class="campaign-badge">Awareness — Cultural</div>
+    </div>
+    <div class="campaign-body">
+      <div class="campaign-tagline">"The mixtape is back and better than ever."</div>
+      <div class="palette-bar">
+        <div class="swatch" style="background:#2a2520;"></div>
+        <div class="swatch" style="background:#ffc852;"></div>
+        <div class="swatch" style="background:#8b7355;"></div>
+        <div class="swatch" style="background:#e2c48a;"></div>
+        <div class="swatch" style="background:#c4963a;"></div>
+      </div>
+      <div class="campaign-meta">
+        <span><strong>Platform:</strong> TikTok / Instagram Reels</span>
+        <span><strong>Format:</strong> Video / Carousel</span>
+        <span><strong>CTA:</strong> Tap to Listen</span>
+      </div>
+      <div style="margin-top:0.75rem; font-size:0.82rem; color:var(--mid);">
+        <strong style="color:var(--text)">Hook:</strong> Nostalgia + modern NFC. Nobody has claimed this territory in physical merch. Makes people feel before they click.
+      </div>
+    </div>
+  </div>
+
+  <div class="campaign">
+    <div class="campaign-header">
+      <div class="campaign-name">Campaign 3: Tour Anchor</div>
+      <div class="campaign-badge">Consideration — Aspirational</div>
+    </div>
+    <div class="campaign-body">
+      <div class="campaign-tagline">"The one thing your merch table is missing this tour."</div>
+      <div class="palette-bar">
+        <div class="swatch" style="background:#1a1a1a;"></div>
+        <div class="swatch" style="background:#ffc852;"></div>
+        <div class="swatch" style="background:#efefe2;"></div>
+        <div class="swatch" style="background:#ffffff;"></div>
+        <div class="swatch" style="background:#f97316;"></div>
+      </div>
+      <div class="campaign-meta">
+        <span><strong>Platform:</strong> Facebook / Instagram</span>
+        <span><strong>Format:</strong> Photo / Video</span>
+        <span><strong>CTA:</strong> Get a Quote</span>
+      </div>
+      <div style="margin-top:0.75rem; font-size:0.82rem; color:var(--mid);">
+        <strong style="color:var(--text)">Hook:</strong> Touring band context. Van backstage, string lights, fully loaded merch table. Positions Custom Goodz as essential touring kit.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: CHANNELS -->
+<section>
+  <div class="section-label">04 — Channel Strategy</div>
+  <h2>Eight Channels. Three Priorities.</h2>
+
+  <table class="channel-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Channel</th>
+        <th>Budget</th>
+        <th>Type</th>
+        <th>Primary Goal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1</strong></td>
+        <td><strong>Meta Ads</strong> — IG-forward, ASC + Broad split</td>
+        <td class="budget">$275/wk</td>
+        <td><span class="priority qw">Quick Win</span></td>
+        <td>Revenue, ROAS signal</td>
+      </tr>
+      <tr>
+        <td><strong>2</strong></td>
+        <td><strong>Band Partner Program</strong> — Cold outreach, free samples, UTM-tracked</td>
+        <td class="budget">Product only</td>
+        <td><span class="priority qw">Quick Win</span></td>
+        <td>Peer endorsement, referrals</td>
+      </tr>
+      <tr>
+        <td><strong>3</strong></td>
+        <td><strong>Reddit Community</strong> — Organic + Reddit Ads</td>
+        <td class="budget">$50/wk</td>
+        <td><span class="priority qw">Quick Win</span></td>
+        <td>Community trust, awareness</td>
+      </tr>
+      <tr>
+        <td><strong>4</strong></td>
+        <td><strong>Email Marketing</strong> — Cold outreach + website visitor nurture</td>
+        <td class="budget">~$10/wk</td>
+        <td><span class="priority qw">Quick Win</span></td>
+        <td>Lead capture, conversion</td>
+      </tr>
+      <tr>
+        <td><strong>5</strong></td>
+        <td><strong>TikTok UGC</strong> — Organic + band-partner UGC incentive</td>
+        <td class="budget">Time only</td>
+        <td><span class="priority lg">Long Game</span></td>
+        <td>Organic discovery</td>
+      </tr>
+      <tr>
+        <td><strong>6</strong></td>
+        <td><strong>SEO / Content</strong> — "Merch Table" keyword guide</td>
+        <td class="budget">Time only</td>
+        <td><span class="priority lg">Long Game</span></td>
+        <td>Organic search compounding</td>
+      </tr>
+      <tr>
+        <td><strong>7</strong></td>
+        <td><strong>Festival Partnerships</strong> — SXSW, Treefort, Hopscotch, Hulaween</td>
+        <td class="budget">$200/event</td>
+        <td><span class="priority lg">Long Game</span></td>
+        <td>High-visibility activation</td>
+      </tr>
+      <tr>
+        <td><strong>8</strong></td>
+        <td><strong>Referral Program</strong> — 10% off when referred band orders 50+</td>
+        <td class="budget">Margin only</td>
+        <td><span class="priority qw">Quick Win</span></td>
+        <td>Customer network effect</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- SECTION 5: BUDGET -->
+<section>
+  <div class="section-label">05 — Budget & ROAS Model</div>
+  <h2>The Math. What We Need.</h2>
+
+  <div class="budget-grid">
+    <div class="budget-card">
+      <div class="budget-header"><div class="budget-label">Conservative — 2x ROAS</div></div>
+      <div class="budget-body">
+        <div class="budget-big">2x</div>
+        <div class="budget-sub">This is the floor. Pause and regroup.</div>
+        <div class="budget-row"><span class="l">Weekly spend</span><span class="v">$200</span></div>
+        <div class="budget-row"><span class="l">Weekly revenue</span><span class="v">$400</span></div>
+        <div class="budget-row"><span class="l">Units sold</span><span class="v">~116 units</span></div>
+        <div class="budget-row"><span class="l">Margin (COGS $2.50)</span><span class="v">$109 net</span></div>
+      </div>
+    </div>
+
+    <div class="budget-card">
+      <div class="budget-header"><div class="budget-label">Target — 3x ROAS ✓</div></div>
+      <div class="budget-body">
+        <div class="budget-big" style="color:var(--yellow-dark)">3x</div>
+        <div class="budget-sub">This is the goal. Keep running.</div>
+        <div class="budget-row"><span class="l">Weekly spend</span><span class="v">$300</span></div>
+        <div class="budget-row"><span class="l">Weekly revenue</span><span class="v">$900</span></div>
+        <div class="budget-row"><span class="l">Units sold</span><span class="v">~262 units</span></div>
+        <div class="budget-row"><span class="l">Margin (COGS $2.50)</span><span class="v">$247 net</span></div>
+      </div>
+    </div>
+
+    <div class="budget-card">
+      <div class="budget-header"><div class="budget-label">Stretch — 4x ROAS</div></div>
+      <div class="budget-body">
+        <div class="budget-big" style="color:var(--green)">4x</div>
+        <div class="budget-sub">Scale immediately. Double down.</div>
+        <div class="budget-row"><span class="l">Weekly spend</span><span class="v">$400</span></div>
+        <div class="budget-row"><span class="l">Weekly revenue</span><span class="v">$1,600</span></div>
+        <div class="budget-row"><span class="l">Units sold</span><span class="v">~465 units</span></div>
+        <div class="budget-row"><span class="l">Margin (COGS $2.50)</span><span class="v">$698 net</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="warn-box" style="margin-top:1.5rem;">
+    <strong>Break-even ROAS is approximately 2.5–3x.</strong> COGS is ~$2.50/unit at 50 units. A 3x ROAS covers COGS + ad spend with healthy margin. Below 2.5x means burning cash. Above 4x means double the budget immediately.
+  </div>
+</section>
+
+<!-- SECTION 6: TOP COPY -->
+<section>
+  <div class="section-label">06 — Top Copy</div>
+  <h2>The Lines That Should Make Bands Stop Scrolling</h2>
+
+  <div class="two-col">
+    <div>
+      <div style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--light); margin-bottom:0.75rem;">Meta Ad Headlines</div>
+      <div class="quote-box">"Your fans deserve more than a t-shirt."</div>
+      <div class="quote-box">"The mixtape is back and better than ever. 📼"</div>
+      <div class="quote-box">"You're touring — your merch table should keep up."</div>
+    </div>
+    <div>
+      <div style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--light); margin-bottom:0.75rem;">Reddit Post Titles</div>
+      <div class="quote-box">"Artists of indieheads: what's the one merch item that actually sells at your shows?"</div>
+      <div class="quote-box">"How do you bridge your digital audience to physical merch?"</div>
+    </div>
+  </div>
+
+  <div style="margin-top:1.5rem;">
+    <div style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--light); margin-bottom:0.75rem;">Cold Email Subject Lines</div>
+    <div class="quote-box">"A custom Goodz for [Band Name] fans"</div>
+    <div class="quote-box">"What if your merch table had something no one else does?"</div>
+  </div>
+</section>
+
+<!-- SECTION 7: ASSETS -->
+<section>
+  <div class="section-label">07 — Visual Assets</div>
+  <h2>56 Images + 2 Videos — Live on Cloudinary</h2>
+
+  <p style="font-size:0.9rem; color:var(--mid); margin-bottom:1.5rem; line-height:1.7;">
+    All generated with MiniMax Image-01 + OpenAI. Hosted on Cloudinary CDN (dg6kjrhid). Full prompt library in <code style="background:#eee;padding:0.2rem 0.4rem;">CREATIVE-ASSETS.md</code>.
+  </p>
+
+  <div class="asset-strip">
+    <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224163/marketing-plan/hero/z0dq218br48abjdulloy.jpg" alt="Merch table">
+    <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224164/marketing-plan/hero/fee9bbw6layou6gydoe5.jpg" alt="Mixtape">
+    <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224165/marketing-plan/hero/vajspfnkzi1k2lhdqwyi.jpg" alt="Tour van">
+    <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224249/marketing-plan/social/dlklbjgriftc0of7iki0.jpg" alt="TikTok">
+  </div>
+
+  <div style="margin-top:1rem; font-size:0.85rem; color:var(--mid);">
+    <strong style="color:var(--text)">Asset showcase:</strong>
+    <a href="https://marketing-assets-three.vercel.app" style="color:#1e56a0;">https://marketing-assets-three.vercel.app</a>
+    — 56 images + 2 videos across all campaigns and formats.
+  </div>
+</section>
+
+<!-- SECTION 8: NEXT STEPS -->
+<section>
+  <div class="section-label">08 — Next Steps</div>
+  <h2>Day 1 Priorities</h2>
+
+  <div class="steps-grid">
+    <div class="step-card urgent">
+      <div class="step-num">1</div>
+      <div class="step-title">Rotate GitHub + Vercel tokens</div>
+      <div class="step-body">Both tokens were exposed via subagent error last night. Revoke at github.com/settings/tokens and vercel.com/account/tokens. Update ~/.config/janet/secrets.env.</div>
+    </div>
+    <div class="step-card urgent">
+      <div class="step-num">2</div>
+      <div class="step-title">Confirm budget with Chris</div>
+      <div class="step-body">Final go/no-go on $200–300/week Meta budget. Confirm checkout funnel is ready before any spend fires.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-title">Wire Meta Pixel to custom-goodz</div>
+      <div class="step-body">Install pixel on getthegoodz.com/custom-goodz. Verify InitiateCheckout event fires. Without this, Meta can't optimize.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <div class="step-title">Brief designer on 3 campaigns</div>
+      <div class="step-body">Send CREATIVE.md to your designer. Priority briefs: Merch Table Differentiator, Mixtape Is Back, Tour Anchor. Each needs 3–5 ad creative variants.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">5</div>
+      <div class="step-title">Build outreach list of 50 bands</div>
+      <div class="step-body">Criteria: 1K–50K Spotify monthly listeners, active touring, Bandcamp presence, Instagram/TikTok. Use Bandcamp discovery + Discogs from RESEARCH.md.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9: LIVE DOCS -->
+<section>
+  <div class="section-label">09 — All Documents</div>
+  <h2>Full Source Materials</h2>
+
+  <div class="two-col">
+    <div>
+      <div style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--light); margin-bottom:0.75rem;">Strategy & Planning</div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem;">
+        <li>📋 <a href="https://marketing-plan-beryl.vercel.app" style="color:#1e56a0;">Marketing Plan Presentation (live)</a></li>
+        <li>📄 <code style="background:#eee;padding:0.1rem 0.3rem;">goodz/marketing-plan/STRATEGY.md</code></li>
+        <li>📄 <code style="background:#eee;padding:0.1rem 0.3rem;">goodz/marketing-plan/RESEARCH.md</code></li>
+        <li>📄 <code style="background:#eee;padding:0.1rem 0.3rem;">goodz/marketing-plan/CREATIVE.md</code></li>
+        <li>📄 <code style="background:#eee;padding:0.1rem 0.3rem;">goodz/marketing-plan/BRIEF.md</code></li>
+      </ul>
+    </div>
+    <div>
+      <div style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--light); margin-bottom:0.75rem;">Creative Assets</div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.85rem;">
+        <li>🎨 <a href="https://marketing-assets-three.vercel.app" style="color:#1e56a0;">Asset Showcase (56 images + 2 videos)</a></li>
+        <li>📄 <code style="background:#eee;padding:0.1rem 0.3rem;">goodz/marketing-plan/CREATIVE-ASSETS.md</code></li>
+        <li>📄 <code style="background:#eee;padding:0.1rem 0.3rem;">goodz/marketing-plan/HOURS.md</code></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Custom Goodz Creative Brief — Internal Draft — Prepared by Janet (OpenClaw) — April 2026</p>
+</footer>
+
+</body>
+</html>

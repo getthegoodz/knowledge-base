@@ -57,10 +57,11 @@ module.exports = async (req, res) => {
     const {
       units,          // exact number of units (e.g. 76)
       sleeve,         // 'yes' or 'no'
-      albumArtUrl,    // URL to uploaded album art
+      albumArtUrl,    // Cloudinary URL for uploaded album art
       musicType,      // 'url' or 'csv'
       musicUrl,       // if musicType === 'url': the URL
-      csvUrl,         // if musicType === 'csv': URL to uploaded CSV
+      csvUrl,         // if musicType === 'csv': Cloudinary URL for uploaded CSV
+      csvCount,       // if musicType === 'csv': number of codes in the CSV
       buyerEmail,     // optional, for cart email attribute
     } = req.body || {};
 
@@ -82,16 +83,16 @@ module.exports = async (req, res) => {
       { key: 'sleeve', value: isSleeve ? 'yes' : (isCardOnly ? 'card_only' : 'no') },
     ];
     if (albumArtUrl) {
-      // Strip data: URL prefix — store just the metadata note
+      // Underscore prefix = admin-only, not shown to customer on checkout
       const isDataUrl = albumArtUrl.startsWith('data:');
-      lineAttributes.push({ key: 'album_art_url', value: isDataUrl ? '[uploaded - see order]' : albumArtUrl });
+      lineAttributes.push({ key: '_album_art_url', value: isDataUrl ? '[uploaded - see order]' : albumArtUrl });
     }
     if (musicType === 'url' && musicUrl) {
       lineAttributes.push({ key: 'music_url', value: musicUrl });
     } else if (musicType === 'csv' && csvUrl) {
-      // csvUrl is comma-separated URL string — truncate if too long for Shopify attribute
-      const shortCsv = csvUrl.length > 500 ? csvUrl.substring(0, 500) + '...' : csvUrl;
-      lineAttributes.push({ key: 'csv_url', value: shortCsv });
+      // Underscore prefix = admin-only
+      lineAttributes.push({ key: '_csv_url', value: csvUrl });
+      if (csvCount) lineAttributes.push({ key: '_csv_code_count', value: String(csvCount) });
     }
     lineAttributes.push({ key: 'source', value: 'custom-goodz-configurator' });
 
@@ -103,13 +104,13 @@ module.exports = async (req, res) => {
     ];
     if (albumArtUrl) {
       const isDataUrl = albumArtUrl.startsWith('data:');
-      cartAttributes.push({ key: 'album_art_url', value: isDataUrl ? '[uploaded - see order]' : albumArtUrl });
+      cartAttributes.push({ key: '_album_art_url', value: isDataUrl ? '[uploaded - see order]' : albumArtUrl });
     }
     if (musicType === 'url' && musicUrl) {
       cartAttributes.push({ key: 'music_url', value: musicUrl });
     } else if (musicType === 'csv' && csvUrl) {
-      const shortCsv = csvUrl.length > 500 ? csvUrl.substring(0, 500) + '...' : csvUrl;
-      cartAttributes.push({ key: 'csv_url', value: shortCsv });
+      cartAttributes.push({ key: '_csv_url', value: csvUrl });
+      if (csvCount) cartAttributes.push({ key: '_csv_code_count', value: String(csvCount) });
     }
 
     const cartInput = {

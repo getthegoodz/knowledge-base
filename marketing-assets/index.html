@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Goodz — Visual Assets | April 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', sans-serif; background: #efefe2; color: #1a1a1a; line-height: 1.6; }
+  :root { --yellow: #ffc852; --bg: #efefe2; --border: #1a1a1a; --white: #fff; --text: #1a1a1a; --mid: #555; --light: #888; }
+  nav { background: #1a1a1a; border-bottom: 3px solid var(--yellow); padding: 0 5%; position: sticky; top: 0; z-index: 100; }
+  nav .inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+  nav .logo { font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 1rem; color: var(--yellow); text-decoration: none; }
+  nav .logo span { color: #fff; }
+  nav .badge { background: var(--yellow); color: #1a1a1a; font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.6rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .status-ready { background: #f0fff0; border-left: 4px solid #4CAF50; padding: 0.75rem 1.25rem; font-size: 0.85rem; color: #2e7d32; max-width: 1200px; margin: 1.5rem auto 0; }
+  section { padding: 3rem 5%; max-width: 1200px; margin: 0 auto; }
+  .section-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #b8860b; margin-bottom: 0.5rem; }
+  h2 { font-family: 'Poppins', sans-serif; font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 2rem; }
+  h2 .accent { color: var(--yellow); }
+  .section-intro { font-size: 1rem; color: var(--mid); max-width: 700px; margin-bottom: 2.5rem; line-height: 1.8; }
+  .asset-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.5rem; }
+  .asset-card { border: 2px solid var(--border); background: var(--white); overflow: hidden; }
+  .asset-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #eee; }
+  .asset-img.square { aspect-ratio: 1/1; }
+  .asset-body { padding: 1rem 1.25rem; }
+  .asset-name { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 0.9rem; color: var(--text); margin-bottom: 0.35rem; }
+  .asset-caption { font-size: 0.8rem; color: var(--mid); line-height: 1.5; }
+  .asset-url { display: inline-block; margin-top: 0.5rem; font-size: 0.7rem; color: #1e56a0; word-break: break-all; text-decoration: none; }
+  .asset-url:hover { text-decoration: underline; }
+  .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+  .video-card { border: 2px solid var(--border); background: var(--white); overflow: hidden; }
+  video { width: 100%; aspect-ratio: 9/16; object-fit: cover; display: block; background: #000; }
+  .video-note { padding: 0.75rem 1rem; font-size: 0.8rem; color: var(--mid); }
+  footer { background: #1a1a1a; padding: 1.5rem 5%; margin-top: 3rem; }
+  footer p { color: #666; font-size: 0.75rem; text-align: center; }
+
+  /* ALL DOCUMENTS SECTION */
+  .docs-section { background: #1a1a1a; color: #fff; padding: 3rem 5%; margin-top: 0; }
+  .docs-section .inner { max-width: 1200px; margin: 0 auto; }
+  .docs-section .label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: #ffc852; margin-bottom: 0.5rem; }
+  .docs-section h2 { font-family: 'Poppins', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; margin-bottom: 1.5rem; }
+  .docs-section .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+  .docs-section .card { background: #ffc852; color: #1a1a1a; padding: 1rem 1.25rem; text-decoration: none; display: block; }
+  .docs-section .card.dark { background: #2d2d2d; color: #fff; border: 1px solid #444; }
+  .docs-section .card .title { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 0.9rem; margin-bottom: 0.3rem; }
+  .docs-section .card .sub { font-size: 0.78rem; color: #555; }
+  .docs-section .card.dark .sub { color: #aaa; }
+  .docs-section .note { font-size: 0.75rem; color: #666; margin-top: 1.25rem; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a href="#" class="logo">Goodz <span>Visual Assets</span></a>
+    <span class="badge">57 IMAGES + 2 VIDEOS</span>
+  </div>
+</nav>
+
+<div class="status-ready" style="margin: 1.5rem 5% 0; max-width: 100%;">
+  ✓ 57 visual assets generated. All served from Cloudinary CDN.
+</div>
+
+<!-- HERO IMAGES -->
+<section>
+  <div class="section-label">Category 01 — Hero / Lifestyle</div>
+  <h2>Hero & Lifestyle <span class="accent">Photography</span></h2>
+  <p class="section-intro">MiniMax-generated lifestyle and hero images for each creative campaign concept. All images are brand-aligned with the Goodz yellow (#ffc852) accent, warm cream tones, and authentic indie music atmosphere.</p>
+  <div class="asset-grid">
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224163/marketing-plan/hero/z0dq218br48abjdulloy.jpg" alt="Merch Table Hero" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Merch Table Hero</div>
+        <div class="asset-caption">Lifestyle: Merch table at a music festival. Fan tapping a Custom Goodz card.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224164/marketing-plan/hero/fee9bbw6layou6gydoe5.jpg" alt="Mixtape Revival" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Mixtape Revival</div>
+        <div class="asset-caption">Nostalgia: Vintage mixtapes + modern Custom Goodz card, moody lighting.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224165/marketing-plan/hero/vajspfnkzi1k2lhdqwyi.jpg" alt="Tour Van" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Tour Van</div>
+        <div class="asset-caption">Touring: Band van backstage, Custom Goodz crates unloaded as merch.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224165/marketing-plan/hero/smqpu6rjgopovllvhf9m.jpg" alt="Collectors Detail" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Collectors Detail</div>
+        <div class="asset-caption">Ad creative: Close-up of Custom Goodz card being examined.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224249/marketing-plan/hero/jfok4mryiwnwhpb1ltti.jpg" alt="Touring Band Persona" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Touring Band Persona</div>
+        <div class="asset-caption">Persona A: Two band members looking at the configurator backstage.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224636/marketing-plan/hero/yjobpa5k5wvmvu8ty75r.jpg" alt="Bedroom Producer" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Bedroom Producer</div>
+        <div class="asset-caption">Persona B: Bedroom producer holding a Custom Goodz card.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224636/marketing-plan/hero/aphyqv08wcscszbwe7z8.jpg" alt="Facebook Comparison" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Facebook Comparison</div>
+        <div class="asset-caption">Ad creative: Side-by-side merch table comparison.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224638/marketing-plan/hero/njzoq9owa00kedkquslh.jpg" alt="Unboxing Delight" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Unboxing Delight</div>
+        <div class="asset-caption">Fan unboxing: Genuine delight opening a Custom Goodz package.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225073/marketing-plan/hero/yieswqbcjryj70hzasgz.jpg" alt="Bandcamp Bridge" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Bandcamp Bridge</div>
+        <div class="asset-caption">Ad creative: Phone + physical card, digital-physical bridge.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225139/marketing-plan/hero/dbien4menfxtauatx9fq.jpg" alt="Collectors Case" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Collectors Case</div>
+        <div class="asset-caption">Collector's edition: Display case of Custom Goodz cards, premium feel.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225140/marketing-plan/social/jmpshlebntijqnp2texc.jpg" alt="Reddit Post" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Reddit Post</div>
+        <div class="asset-caption">Reddit: Two cards showing front/back, vintage cassette comparison.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225187/marketing-plan/social/a7wu2tlojrdpgzez474q.jpg" alt="TikTok Tour Van" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Tour Van</div>
+        <div class="asset-caption">TikTok: Band van, Custom Goodz crates, tour aesthetic.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224250/marketing-plan/social/jabvpowz1bixlk4vl1mi.jpg" alt="Hands on Merch" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Hands on Merch</div>
+        <div class="asset-caption">Social: Musician's hands placing card on merch table.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224249/marketing-plan/social/dlklbjgriftc0of7iki0.jpg" alt="TikTok Merch Tap" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Merch Tap</div>
+        <div class="asset-caption">TikTok: Fan tapping card at concert merch table, vertical format.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776224898/marketing-plan/social/hce1hx2nxcrrowykvudr.jpg" alt="TikTok Mixtape" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Mixtape</div>
+        <div class="asset-caption">TikTok: Mixtape aesthetic, vintage meets modern, vertical.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225558/marketing-plan/social/v8twdbzh7si1qpfhvz1l.jpg" alt="TikTok Fan Reaction" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Fan Reaction</div>
+        <div class="asset-caption">TikTok: Fan reaction at merch table, surprise and delight.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225559/marketing-plan/social/uf5iuplbrhn6ilczofcx.jpg" alt="Pinterest Mixtape" class="asset-img square" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Pinterest Mixtape</div>
+        <div class="asset-caption">Pinterest: Infographic — How Custom Goodz Works in 5 steps.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225619/marketing-plan/hero/ijjjv0mfaaayvbzxdrme.jpg" alt="Jam Bands Hero" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Jam Bands Hero</div>
+        <div class="asset-caption">Lifestyle: Jam band outdoor festival scene with Custom Goodz.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225620/marketing-plan/social/wn0tizbercqj4nukb79m.jpg" alt="Carousel Before/After" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Carousel Before/After</div>
+        <div class="asset-caption">Social carousel: Side-by-side generic merch vs Custom Goodz.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225559/marketing-plan/social/shyqaw731uinupy4cjwb.jpg" alt="TikTok Band Confirm" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Band Confirm</div>
+        <div class="asset-caption">TikTok: Band confirms Custom Goodz on merch table.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225318/marketing-plan/hero/szdydmdbi006swldowns.jpg" alt="Local Show Hero" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Local Show Hero</div>
+        <div class="asset-caption">Lifestyle: Intimate local show venue, merch table in frame.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225318/marketing-plan/social/veewjvdhuwip0dd5q7q4.jpg" alt="Sleeve Detail" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Sleeve Detail</div>
+        <div class="asset-caption">Social: Custom Goodz card sliding into protective sleeve.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225320/marketing-plan/social/iglwtr6u0lz8by202zxp.jpg" alt="IG Story" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">IG Story</div>
+        <div class="asset-caption">Instagram Story: Quick reveal of Custom Goodz card.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225778/marketing-plan/hero/tlml6s2d05qbfd5iebsq.jpg" alt="Facebook Ad" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Facebook Ad</div>
+        <div class="asset-caption">Ad creative: Full merch table at a packed venue show.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225779/marketing-plan/hero/opynfbdohycxgjz2hgcb.jpg" alt="Electronic Festival" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Electronic Festival</div>
+        <div class="asset-caption">Lifestyle: Electronic music festival, neon lights, crowd energy.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225779/marketing-plan/hero/sekezvi9josi6erddver.jpg" alt="Artwork Detail" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Artwork Detail</div>
+        <div class="asset-caption">Close-up: Custom Goodz card artwork, printed design quality.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225856/marketing-plan/social/cboqbgncuu538bsywiiw.jpg" alt="TikTok Tap Moment" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Tap Moment</div>
+        <div class="asset-caption">TikTok: The moment of tap — fan discovers music, face lights up.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225857/marketing-plan/social/h1unhxdm1fpwic2btniw.jpg" alt="Carousel Whats Inside" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Carousel Whats Inside</div>
+        <div class="asset-caption">Social carousel: What's inside the Custom Goodz package.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776225865/marketing-plan/social/tiktok-mix-tape-v.jpg" alt="TikTok Mix Tape Vertical" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Mix Tape Vertical</div>
+        <div class="asset-caption">TikTok: Mixtape nostalgia vertical video format.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226027/marketing-plan/hero/lqr0zqnjp8bueq9txiwb.jpg" alt="Bedroom Full" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Bedroom Full</div>
+        <div class="asset-caption">Lifestyle: Bedroom producer's desk with Custom Goodz cards.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226028/marketing-plan/social/rzzlu1e3cgxbov9o7yd6.jpg" alt="Email Flat Lay" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Email Flat Lay</div>
+        <div class="asset-caption">Email: Newsletter header, crate on merch table at dusk.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226028/marketing-plan/social/ygjeti6twplamp253psf.jpg" alt="TikTok House Show" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok House Show</div>
+        <div class="asset-caption">TikTok: Intimate house show, Custom Goodz on merch table.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226120/marketing-plan/social/ebsos5ftyui0j4z9xgnr.jpg" alt="TikTok Card Detail" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Card Detail</div>
+        <div class="asset-caption">TikTok: Close-up of Custom Goodz card, tap in action.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226121/marketing-plan/hero/ih7segapgf4guizmkkwv.jpg" alt="Festival Crowd" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Festival Crowd</div>
+        <div class="asset-caption">Lifestyle: Festival crowd, energy, stage lights.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226259/marketing-plan/social/rpwtfsnguzgsd5q7qbuw.jpg" alt="TikTok Stop Scroll" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Stop Scroll</div>
+        <div class="asset-caption">TikTok: Stop-scroll creative, fan with Custom Goodz card.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226259/marketing-plan/hero/cdnv1wbfapiam55yjtui.jpg" alt="Jam Festival" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Jam Festival</div>
+        <div class="asset-caption">Lifestyle: Jam band festival setting, sunny afternoon.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226343/marketing-plan/hero/iycz1js642npg1qwobxq.jpg" alt="Fulfillment" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Fulfillment</div>
+        <div class="asset-caption">Custom Goodz shipment boxes ready for shipping.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226344/marketing-plan/social/kscl0jly5cmgux6tshxi.jpg" alt="IG Story Text" class="asset-img square" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">IG Story Text</div>
+        <div class="asset-caption">Instagram Story: Text overlay, bold statement about Custom Goodz.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226454/marketing-plan/hero/dixqctcqxrtjcpbgqogd.jpg" alt="Price Point" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Price Point</div>
+        <div class="asset-caption">Ad creative: $3.44/unit pricing, accessible for indie bands.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226454/marketing-plan/hero/yjesimebskzwlk9o6pyv.jpg" alt="Coffee Shop" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Coffee Shop</div>
+        <div class="asset-caption">Lifestyle: Coffee shop acoustic set, intimate vibe.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226541/marketing-plan/social/b0daon1duqi928tq2wqx.jpg" alt="TikTok Sold Out" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Sold Out</div>
+        <div class="asset-caption">TikTok: Band announces Custom Goodz sold out at show.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226542/marketing-plan/social/bn4gytcertryosthzhiy.jpg" alt="Bridge Flatlay" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Bridge Flatlay</div>
+        <div class="asset-caption">Social: Phone + Custom Goodz card + headphones, flatlay style.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226623/marketing-plan/hero/f24nvs4ozgbfp6qsflb5.jpg" alt="Surf Art" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Surf Art</div>
+        <div class="asset-caption">Lifestyle: Beach/surf indie band aesthetic.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226623/marketing-plan/hero/rvnwc3ago3iopibml17k.jpg" alt="TikTok POV Text" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok POV Text</div>
+        <div class="asset-caption">TikTok: POV merch table from fan perspective, text overlay.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226699/marketing-plan/hero/wm05rwb5sckzdrsb7hf6.jpg" alt="Folk Festival" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Folk Festival</div>
+        <div class="asset-caption">Lifestyle: Folk festival outdoor stage, golden hour light.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226794/marketing-plan/social/rwxjnrwnxfrx5bbeezbb.jpg" alt="Social Mixtape Bold" class="asset-img square" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Social Mixtape Bold</div>
+        <div class="asset-caption">Social: Bold mixtape statement, yellow/black color scheme.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776226794/marketing-plan/social/qfbyieijeqns1nyqii1o.jpg" alt="TikTok Unboxing Selfie" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Unboxing Selfie</div>
+        <div class="asset-caption">TikTok: Fan unboxing Custom Goodz, selfie style.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776227005/marketing-plan/hero/ok75cdkqj5lp9ipdc51n.png" alt="Metal Show" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Metal Show</div>
+        <div class="asset-caption">Lifestyle: Heavy metal or hardcore show, energetic crowd.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776227006/marketing-plan/hero/lh5xhnwwogs8rjwbb9js.png" alt="TikTok Sleeve Slide" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok Sleeve Slide</div>
+        <div class="asset-caption">TikTok: Custom Goodz card sliding into sleeve, satisfying ASMR-style.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776227369/marketing-plan/social/vq2b4q1lrw4uqz9fu3pe.png" alt="Social Mixtape V2" class="asset-img square" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Social Mixtape V2</div>
+        <div class="asset-caption">Social: Updated mixtape creative, bold typography.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776227567/marketing-plan/social/twfoda10g4ayvmivtz0j.png" alt="Social Bold Quote" class="asset-img square" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Social Bold Quote</div>
+        <div class="asset-caption">Social: Bold statement quote, high-contrast design.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776227685/marketing-plan/social/gznyb1qin3qllp7bmuds.png" alt="TikTok POV Yellow" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">TikTok POV Yellow</div>
+        <div class="asset-caption">TikTok: POV merch table, Goodz yellow brand color prominent.</div>
+      </div>
+    </div>
+    <div class="asset-card">
+      <img src="https://res.cloudinary.com/dg6kjrhid/image/upload/v1776227688/marketing-plan/social/eu3cfqmuvfdjy11somuu.png" alt="Hero City Artwork" class="asset-img" loading="lazy">
+      <div class="asset-body">
+        <div class="asset-name">Hero City Artwork</div>
+        <div class="asset-caption">Hero: City skyline backdrop with Custom Goodz cards displayed.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO CLIPS -->
+<section>
+  <div class="section-label">Category 02 — Video Clips</div>
+  <h2>Video <span class="accent">Clips</span></h2>
+  <p class="section-intro">Short-form vertical video clips generated with MiniMax video model. Ready for TikTok, Instagram Reels, and Stories. Each clip is 9:16 vertical format, 6–8 seconds.</p>
+  <div class="video-grid">
+    <div class="video-card">
+      <video controls playsinline>
+        <source src="https://res.cloudinary.com/dg6kjrhid/video/upload/v1776227269/marketing-plan/videos/rntur9rtyuvccygs04it.mp4" type="video/mp4">
+      </video>
+      <div class="video-note">✅ Video 1: Fan at merch table, 6s vertical. Fan taps card, face lights up, music plays.</div>
+    </div>
+    <div class="video-card">
+      <video controls playsinline>
+        <source src="https://res.cloudinary.com/dg6kjrhid/video/upload/v1776227476/marketing-plan/videos/vkryjyr04ldtw4v1eccd.mp4" type="video/mp4">
+      </video>
+      <div class="video-note">✅ Video 2: Merch table moment, 6s vertical, 480P. Musician watches fan reaction.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ALL DOCUMENTS -->
+<section class="docs-section">
+  <div class="inner">
+    <div class="label">Full Marketing Package</div>
+    <h2>Everything's Ready.<br>Nothing's Live Yet.</h2>
+    <div class="grid">
+      <a href="https://marketing-plan-beryl.vercel.app" class="card">
+        <div class="title">📋 Marketing Plan</div>
+        <div class="sub">Full presentation with strategy, channels, budget, ROAS model</div>
+      </a>
+      <a href="https://marketing-plan-beryl.vercel.app/REVISION.html" class="card dark">
+        <div class="title" style="color:#ffc852;">📝 Plan Revisions</div>
+        <div class="sub">10 changes from expert review — new viral campaign inside</div>
+      </a>
+      <a href="https://marketing-assets-three.vercel.app/CREATIVE-BRIEF.html" class="card dark">
+        <div class="title" style="color:#ffc852;">🎨 Creative Brief</div>
+        <div class="sub">One-page brief with campaigns, channels, copy, pricing</div>
+      </a>
+    </div>
+    <p class="note">⚠️ Checkout NOT live — do not activate paid traffic until funnel is confirmed</p>
+  </div>
+</section>
+
+<footer>
+  <p>Custom Goodz Visual Assets — 57 images + 2 videos — Internal Draft — April 2026</p>
+</footer>
+
+</body>
+</html>

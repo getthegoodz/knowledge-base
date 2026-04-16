@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyberdeck Influencer Outreach — Goodz Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --yellow: #ffc852;
+  --yellow-dark: #e6b044;
+  --cream: #efefe2;
+  --font-head: 'Poppins', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --max-w: 1100px;
+  --section-pad: 60px 24px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-body); background: var(--cream); color: var(--black); line-height: 1.6; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--yellow); border-radius: 3px; }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,200,82,0.2); padding: 0 24px; }
+nav-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; gap: 6px; height: 56px; }
+.nav-logo { font-family: var(--font-head); font-weight: 900; font-size: 0.85rem; color: var(--yellow); letter-spacing: 0.08em; text-transform: uppercase; margin-right: auto; text-decoration: none; }
+nav a { font-family: var(--font-head); font-size: 0.72rem; font-weight: 600; color: rgba(255,255,255,0.6); text-decoration: none; padding: 6px 12px; border-radius: 20px; white-space: nowrap; transition: all 0.2s; letter-spacing: 0.03em; text-transform: uppercase; }
+nav a:hover { color: var(--black); background: var(--yellow); }
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+section { padding: var(--section-pad); }
+h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; color: var(--black); margin-bottom: 12px; }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; margin-bottom: 24px; }
+h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+p { font-size: 1rem; color: #444; }
+.section-tag { font-family: var(--font-head); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--yellow-dark); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.section-tag::before { content: ''; display: block; width: 24px; height: 2px; background: var(--yellow); border-radius: 1px; }
+.tier-header { padding: 32px; border-radius: 16px; margin-bottom: 24px; }
+.tier-1 { background: var(--black); color: var(--white); }
+.tier-2 { background: var(--white); border: 1px solid rgba(0,0,0,0.08); }
+.tier-3 { background: var(--white); border: 1px solid rgba(0,0,0,0.08); }
+.tier-header h2 { color: var(--white); }
+.tier-header p { color: rgba(255,255,255,0.5); margin-bottom: 0; }
+.tier-2 h2, .tier-3 h2 { color: var(--black); }
+.tier-2 p, .tier-3 p { color: #666; }
+.creator-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.creator-card { background: var(--cream); border-radius: 12px; padding: 24px; border: 1px solid rgba(0,0,0,0.06); transition: all 0.2s; }
+.creator-card:hover { border-color: rgba(255,200,82,0.4); transform: translateY(-2px); }
+.creator-platform { font-family: var(--font-head); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin-bottom: 6px; }
+.creator-name { font-family: var(--font-head); font-size: 1.1rem; font-weight: 800; color: var(--black); margin-bottom: 4px; }
+.creator-name .emoji { margin-right: 6px; }
+.creator-stats { display: flex; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+.stat { font-family: var(--font-head); font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 10px; }
+.stat-views { background: rgba(255,200,82,0.15); color: #8a6000; }
+.stat-followers { background: rgba(100,150,255,0.12); color: #2244aa; }
+.creator-style { font-size: 0.88rem; color: #555; margin-bottom: 14px; line-height: 1.5; }
+.creator-detail { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
+.creator-detail-icon { width: 20px; text-align: center; flex-shrink: 0; }
+.creator-detail-text { font-size: 0.85rem; color: #555; flex: 1; }
+.creator-detail-text strong { color: var(--black); }
+.creator-why { background: #f0fff4; border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+.creator-why strong { color: #27ae60; font-size: 0.8rem; display: block; margin-bottom: 4px; font-family: var(--font-head); text-transform: uppercase; letter-spacing: 0.05em; }
+.creator-why p { font-size: 0.82rem; color: #555; }
+.creator-angle { background: rgba(255,200,82,0.08); border-left: 3px solid var(--yellow); padding: 10px 14px; border-radius: 0 8px 8px 0; margin-bottom: 12px; }
+.creator-angle strong { font-size: 0.75rem; color: #8a6000; display: block; margin-bottom: 4px; font-family: var(--font-head); text-transform: uppercase; letter-spacing: 0.05em; }
+.creator-angle p { font-size: 0.82rem; color: #555; font-style: italic; }
+.creator-contact { display: flex; gap: 8px; flex-wrap: wrap; }
+.contact-tag { font-family: var(--font-head); font-size: 0.68rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; background: var(--black); color: var(--yellow); text-decoration: none; }
+.contact-tag:hover { background: var(--yellow); color: var(--black); }
+.top-pick-badge { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-head); font-size: 0.65rem; font-weight: 800; padding: 4px 10px; border-radius: 12px; background: var(--yellow); color: var(--black); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,0,0.06); }
+th { font-family: var(--font-head); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #888; padding: 12px 16px; background: var(--cream); text-align: left; }
+td { padding: 12px 16px; font-size: 0.88rem; border-top: 1px solid rgba(0,0,0,0.05); }
+tr:hover td { background: rgba(255,200,82,0.05); }
+.badge { display: inline-block; font-family: var(--font-head); font-size: 0.65rem; font-weight: 700; padding: 3px 8px; border-radius: 10px; }
+.badge-tiktok { background: rgba(255,0,80,0.12); color: #c00050; }
+.badge-youtube { background: rgba(255,0,0,0.1); color: #c00000; }
+.priority-num { width: 24px; height: 24px; border-radius: 50%; background: var(--yellow); color: var(--black); display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 0.75rem; font-weight: 900; }
+.community-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.community-card { background: var(--white); border-radius: 12px; padding: 24px; border: 1px solid rgba(0,0,0,0.06); }
+.community-card h4 { font-size: 0.95rem; margin-bottom: 8px; }
+.community-card p { font-size: 0.82rem; color: #666; margin-bottom: 10px; }
+.credit-tracker { background: var(--black); color: var(--white); border-radius: 16px; padding: 32px; margin-top: 48px; }
+.credit-tracker h3 { color: var(--yellow); margin-bottom: 20px; font-family: var(--font-head); font-size: 1.2rem; }
+.credit-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 0.88rem; }
+.credit-row:last-child { border-bottom: none; }
+.credit-row .label { color: rgba(255,255,255,0.6); }
+.credit-row .val { font-family: var(--font-head); font-weight: 700; color: var(--yellow); }
+.credit-bar { height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; margin-top: 16px; overflow: hidden; }
+.credit-fill { height: 100%; background: var(--yellow); border-radius: 3px; transition: width 0.5s ease; }
+footer { background: var(--black); color: rgba(255,255,255,0.3); padding: 32px 24px; text-align: center; font-family: var(--font-head); font-size: 0.78rem; }
+footer a { color: var(--yellow); text-decoration: none; }
+@media (max-width: 600px) { .creator-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav>
+  <nav-inner>
+    <a href="https://goodz-planning-docs.vercel.app" class="nav-logo">GOODZ</a>
+    <a href="https://goodz-planning-docs.vercel.app">Research</a>
+    <a href="https://goodz-planning-docs.vercel.app/STRATEGY.html">Strategy</a>
+    <a href="https://marketing-plan-beryl.vercel.app">Plan</a>
+  </nav-inner>
+</nav>
+
+<div style="height:56px"></div>
+
+<!-- HERO -->
+<section style="background:var(--black);padding-top:80px;padding-bottom:80px;">
+  <div class="container">
+    <div class="section-tag">Partnership &amp; Collab Targeting</div>
+    <h1 style="color:var(--white);">Cyberdeck<br><em style="color:var(--yellow);font-style:normal;">Influencer</em> Outreach</h1>
+    <p style="font-size:1.1rem;color:rgba(255,255,255,0.5);max-width:600px;margin-bottom:32px;">Creators building DIY handheld computers who align culturally with Goodz — indie music, Bandcamp, physical-digital bridge, maker ethos.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <div class="hero-badge" style="background:rgba(255,200,82,0.15);color:var(--yellow);border:1px solid rgba(255,200,82,0.3);padding:6px 14px;border-radius:20px;font-family:var(--font-head);font-size:0.72rem;font-weight:700;">9 Creators Profiled</div>
+      <div class="hero-badge" style="background:rgba(255,200,82,0.15);color:var(--yellow);border:1px solid rgba(255,200,82,0.3);padding:6px 14px;border-radius:20px;font-family:var(--font-head);font-size:0.72rem;font-weight:700;">3 Platforms</div>
+      <div class="hero-badge" style="background:rgba(255,200,82,0.15);color:var(--yellow);border:1px solid rgba(255,200,82,0.3);padding:6px 14px;border-radius:20px;font-family:var(--font-head);font-size:0.72rem;font-weight:700;">5 Community Targets</div>
+    </div>
+  </div>
+</section>
+
+<!-- TIER 1 -->
+<section>
+  <div class="container">
+    <div class="tier-header tier-1">
+      <div class="section-tag" style="color:rgba(255,200,82,0.6);">Tier 1 — Large Reach</div>
+      <h2>Best for Awareness</h2>
+      <p>These creators have proven reach in the cyberdeck space. Best for building brand awareness and reaching large indie music audiences.</p>
+    </div>
+    <div class="creator-grid">
+
+      <!-- SECTOR 07 -->
+      <div class="creator-card">
+        <div class="creator-platform">🎬 YouTube</div>
+        <h3 class="creator-name">SECTOR 07</h3>
+        <div class="top-pick-badge">⭐ Top Target</div>
+        <div class="creator-stats">
+          <span class="stat stat-views">1.78M views</span>
+          <span class="stat stat-followers">Highly produced</span>
+        </div>
+        <p class="creator-style">Sleek 3D-printed cyberdecks, fully open source designs, cyberpunk aesthetic. Best-produced content in the space.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📺</span>
+          <span class="creator-detail-text"><strong>Best video:</strong> "DIY Dual-Screen Cyberdeck" — 1.78M views</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>Instagram:</strong> @sector_07_en</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🔗</span>
+          <span class="creator-detail-text"><strong>YouTube:</strong> youtube.com/c/SECTOR07</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Largest reach in the cyberdeck space. 1.78M views on a single video. Highly produced, clean aesthetic fits Goodz brand. Perfect for showcasing Goodz cards in a premium build.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"We'd love to send you a batch of Custom Goodz cards with your channel branding — could you install an NFC reader and feature them in a build?"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.youtube.com/c/SECTOR07" target="_blank" class="contact-tag">YouTube</a>
+          <a href="https://www.instagram.com/sector_07_en" target="_blank" class="contact-tag">Instagram DM</a>
+        </div>
+      </div>
+
+      <!-- DTeK -->
+      <div class="creator-card">
+        <div class="creator-platform">🎬 YouTube</div>
+        <h3 class="creator-name">DTeK</h3>
+        <div class="creator-stats">
+          <span class="stat stat-views">1.2M views</span>
+          <span class="stat stat-followers">570K subscribers</span>
+        </div>
+        <p class="creator-style">Multi-function portable computers — oscilloscope, radio, terminal builds. More technical, feature-rich. Strong music-tech overlap.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📺</span>
+          <span class="creator-detail-text"><strong>Best video:</strong> "DIY: Cyberdeck Evolution" — 1.2M views</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>Instagram:</strong> @dtek_official</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🔗</span>
+          <span class="creator-detail-text"><strong>YouTube:</strong> youtube.com/@DTeK</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Second-largest creator in space. 570K subscribers with consistent high-view content. More technical audience maps well to maker/musician overlap. DTeK's music-adjacent tech builds = natural Goodz fit.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Your builds feature music-adjacent tech — the overlap with Goodz is strong. We'd love to send you Custom Goodz cards to feature in your next build."</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.youtube.com/@DTeK" target="_blank" class="contact-tag">YouTube</a>
+          <a href="https://www.instagram.com/dtek_official" target="_blank" class="contact-tag">Instagram DM</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TIER 2 -->
+<section style="background:var(--white);">
+  <div class="container">
+    <div class="tier-header tier-2">
+      <div class="section-tag">Tier 2 — Growing Mid-Size</div>
+      <h2>Best for Engagement</h2>
+      <p>Smaller but growing creators with highly engaged audiences. Good for product seeding, grassroots reach, and authentic community building.</p>
+    </div>
+    <div class="creator-grid">
+
+      <!-- @leeyuht -->
+      <div class="creator-card">
+        <div class="creator-platform">📱 TikTok</div>
+        <h3 class="creator-name">@leeyuht</h3>
+        <div class="creator-stats">
+          <span class="stat stat-followers">543 IG followers</span>
+        </div>
+        <p class="creator-style">Neo-futurism. Raspberry Pi Zero 2 builds, solar-powered cyberdecks. Vietnamese creator. Indie/independent maker vibe.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🔧</span>
+          <span class="creator-detail-text"><strong>Products:</strong> PiSugar S+, Dollartech screen, 8ohm speakers, solar panels</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>Instagram:</strong> @leeyuht._</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Active, consistent creator. Solar-powered angle is interesting — very indie/independent maker vibe. Smaller following but genuinely passionate cyberdeck community.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Love your solar-powered builds — we'd love to send you some Custom Goodz cards to add to your next cyberdeck. The card becomes the album selector."</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.instagram.com/leeyuht._" target="_blank" class="contact-tag">Instagram</a>
+        </div>
+      </div>
+
+      <!-- Time Expander -->
+      <div class="creator-card">
+        <div class="creator-platform">🎬 YouTube</div>
+        <h3 class="creator-name">Time Expander</h3>
+        <div class="creator-stats">
+          <span class="stat stat-views">50K views</span>
+          <span class="stat stat-followers">Retro-hacker aesthetic</span>
+        </div>
+        <p class="creator-style">Infosec/hacker aesthetic. Kali Linux hacking rigs. Vintage 1953 NOS enclosure builds. Technical audience, retro-futurism vibe.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🌐</span>
+          <span class="creator-detail-text"><strong>Website:</strong> timeexpander.com</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🔗</span>
+          <span class="creator-detail-text"><strong>YouTube:</strong> youtube.com/@TimeExpander</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Retro-tech meets modern hacking. Culturally adjacent to Goodz's "mixtape meets digital" positioning. Smaller but highly engaged technical audience.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Your audience would appreciate what we're doing — we'd love to send you some Custom Goodz cards to feature in a build."</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://timeexpander.com/" target="_blank" class="contact-tag">Website</a>
+          <a href="https://www.youtube.com/@TimeExpander" target="_blank" class="contact-tag">YouTube</a>
+        </div>
+      </div>
+
+      <!-- Man in the Mayhem -->
+      <div class="creator-card">
+        <div class="creator-platform">🎬 YouTube</div>
+        <h3 class="creator-name">Man in the Mayhem</h3>
+        <div class="creator-stats">
+          <span class="stat stat-views">4.4K views</span>
+          <span class="stat stat-followers">Clockwork Pi focus</span>
+        </div>
+        <p class="creator-style">Clockwork Pi UConsole builds, maker aesthetic. Adafruit/MAKE community adjacent. Growing creator.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🔗</span>
+          <span class="creator-detail-text"><strong>YouTube:</strong> youtube.com/@ManintheMayhem</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Growing creator focused on the Clockwork Pi ecosystem. Good for product seeding at low cost. Adafruit community is a natural fit.</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.youtube.com/@ManintheMayhem" target="_blank" class="contact-tag">YouTube</a>
+        </div>
+      </div>
+
+      <!-- Random Alley Cat -->
+      <div class="creator-card">
+        <div class="creator-platform">🎬 YouTube</div>
+        <h3 class="creator-name">Random Alley Cat</h3>
+        <div class="creator-stats">
+          <span class="stat stat-views">10.8K views</span>
+          <span class="stat stat-followers">Junk drawer aesthetic</span>
+        </div>
+        <p class="creator-style">More accessible, junk drawer aesthetic. Lower budget, higher relatability. Making cyberdecks for everyone.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🔗</span>
+          <span class="creator-detail-text"><strong>YouTube:</strong> youtube.com/@RandomAlleyCat</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>This creator is making cyberdecks accessible — maps perfectly to Goodz's "anyone can do this" energy. Good grassroots seeding.</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.youtube.com/@RandomAlleyCat" target="_blank" class="contact-tag">YouTube</a>
+        </div>
+      </div>
+
+      <!-- Nicholas LaBonte -->
+      <div class="creator-card">
+        <div class="creator-platform">🎬 YouTube</div>
+        <h3 class="creator-name">Nicholas LaBonte</h3>
+        <div class="creator-stats">
+          <span class="stat stat-followers">Premium CNC builds</span>
+          <span class="stat stat-views">Press featured</span>
+        </div>
+        <p class="creator-style">CNC-milled wood enclosures, custom keyboards, premium materials. Sepele hardwood + bronze heatsink aesthetic. Featured on Tom's Hardware, Hackaday, RTL-SDR. Making cyberdecks as fine objects.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🔗</span>
+          <span class="creator-detail-text"><strong>YouTube:</strong> youtube.com/@Nicholas_LaBonte</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🌐</span>
+          <span class="creator-detail-text"><strong>Hackaday:</strong> hackaday.io/project/202522</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Most elevated aesthetic in the cyberdeck space. His audience is maker-elite. Goodz as album selector in a premium build would be a stunning content piece.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Your CNC builds are the most elevated work in the cyberdeck space — we'd love to send you some Custom Goodz cards for a feature in your next build."</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.youtube.com/@Nicholas_LaBonte" target="_blank" class="contact-tag">YouTube</a>
+          <a href="https://hackaday.io/project/202522" target="_blank" class="contact-tag">Hackaday</a>
+        </div>
+      </div>
+
+      <!-- The Cyberdeck Cafe -->
+      <div class="creator-card">
+        <div class="creator-platform">🎬 YouTube</div>
+        <h3 class="creator-name">The Cyberdeck Cafe</h3>
+        <div class="creator-stats">
+          <span class="stat stat-followers">Build guides + tutorials</span>
+          <span class="stat stat-views">cyberdeck.cafe</span>
+        </div>
+        <p class="creator-style">Build guides, tutorials, and project showcases. Making cyberdecks accessible. Strong blog presence at cyberdeck.cafe with project writeups and build guides.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🌐</span>
+          <span class="creator-detail-text"><strong>Website:</strong> cyberdeck.cafe</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Build tutorial audience is primed to actually build something with Goodz cards. A "how to add NFC album playback to your cyberdeck" guide would be a perfect tie-in.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Love your build guides — we'd love to contribute some Custom Goodz cards as the album playback component for a future tutorial!"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://cyberdeck.cafe" target="_blank" class="contact-tag">Website</a>
+          <a href="https://www.youtube.com/@TheCyberdeckCafe" target="_blank" class="contact-tag">YouTube</a>
+        </div>
+      </div>
+
+      <!-- MakerSam / samcervantes -->
+      <div class="creator-card">
+        <div class="creator-platform">🎬 YouTube + GitHub</div>
+        <h3 class="creator-name">MakerSam / samcervantes</h3>
+        <div class="creator-stats">
+          <span class="stat stat-followers">Adafruit featured</span>
+          <span class="stat stat-views">Open source projects</span>
+        </div>
+        <p class="creator-style">Bumble Berry Pi — a cheap, easy-to-build Raspberry Pi handheld cyberdeck. 4.3" touchscreen, QWERTY keypad, 37Wh battery. Fully open source on GitHub. Featured on Adafruit blog.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🔗</span>
+          <span class="creator-detail-text"><strong>GitHub:</strong> github.com/samcervantes</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🖨️</span>
+          <span class="creator-detail-text"><strong>STLs:</strong> thingiverse.com/thing:7223874</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Open source + accessible price point = large maker audience. Adafruit co-sign means his audience trusts his recommendations. Goodz as album selector is a natural add-on component.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Love the Bumble Berry Pi — we'd love to send you some Custom Goodz cards to include as the album playback module. Could be a great tutorial!"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://github.com/samcervantes" target="_blank" class="contact-tag">GitHub</a>
+          <a href="https://blog.adafruit.com/2025/11/10/bumble-berry-pi-a-cheap-easy-to-build-raspberry-pi-handheld-cyberdeck/" target="_blank" class="contact-tag">Adafruit Feature</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TIER 3 — TikTok Viral -->
+<section>
+  <div class="container">
+    <div class="tier-header tier-1" style="background:linear-gradient(135deg,#1a0a0a,#0a0a0a);">
+      <div class="section-tag" style="color:rgba(255,80,120,0.7);">Tier 3 — TikTok Creators</div>
+      <h2>Best for Viral</h2>
+      <p>TikTok creators driving the cultural moment. "Hot Girl Cyberdeck" trend. Extremely filmable content that could showcase Goodz cards virally.</p>
+    </div>
+    <div class="creator-grid">
+
+      <!-- @ubeboobey -->
+      <div class="creator-card" style="border:2px solid var(--yellow);">
+        <div class="creator-platform">📱 TikTok</div>
+        <h3 class="creator-name">@ubeboobey</h3>
+        <div class="top-pick-badge">⭐ Top Pick — Viral Cultural Moment</div>
+        <div class="creator-stats">
+          <span class="stat stat-views">426K likes</span>
+          <span class="stat stat-followers">Hot Girl Cyberdeck</span>
+        </div>
+        <p class="creator-style">"Hot Girl Cyberdecks" — turning Polly Pocket cases, mermaid purses into cyberdecks. Extremely visual, highly shareable, girly-punk aesthetic.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📰</span>
+          <span class="creator-detail-text"><strong>Press:</strong> Featured in Substack, Daily Dot, CNN Shorts</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Coined "Hot Girl Cyberdecks." The concept went genuinely viral. She's the cultural bridge between cyberdeck makers and mainstream TikTok. Extremely Goodz-compatible aesthetic — nostalgia-girl-meets-tech.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"We're obsessed with your Hot Girl Cyberdeck series. We'd love to send you a custom batch of cards for an upcoming build — could we collaborate?"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.tiktok.com/@ubeboobey" target="_blank" class="contact-tag">TikTok DM</a>
+        </div>
+      </div>
+
+      <!-- @geo.kash -->
+      <div class="creator-card" style="border:2px solid var(--yellow);">
+        <div class="creator-platform">📱 TikTok + Instagram</div>
+        <h3 class="creator-name">@geo.kash</h3>
+        <div class="top-pick-badge">⭐ Mike's Pick</div>
+        <div class="creator-stats">
+          <span class="stat stat-views">34.3K likes</span>
+          <span class="stat stat-followers">2,627 TT + 3,881 IG</span>
+        </div>
+        <p class="creator-style">"Creator of things, software & hardware." Hard-shelled portable computers, typeface work, outdoors-meets-tech. Real maker, genuinely in the space.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📰</span>
+          <span class="creator-detail-text"><strong>Interview:</strong> Outsiders Store UK blog</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>Instagram:</strong> @geo.kash (3,881 followers)</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Genuine maker who posted one cyberdeck video that hit 34K likes. Smaller but highly engaged and growing. The "software & hardware" positioning maps perfectly to Goodz's music-tech DNA.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Your cyberdeck build blew up — we'd love to send you some Custom Goodz cards to load into your next build. Card becomes the album selector."</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.tiktok.com/@geo.kash" target="_blank" class="contact-tag">TikTok DM</a>
+          <a href="https://www.instagram.com/geo.kash" target="_blank" class="contact-tag">Instagram</a>
+        </div>
+      </div>
+
+      <!-- @stellar_sk8board -->
+      <div class="creator-card">
+        <div class="creator-platform">📱 TikTok</div>
+        <h3 class="creator-name">@stellar_sk8board</h3>
+        <div class="creator-stats">
+          <span class="stat stat-followers">51.3K TikTok followers</span>
+        </div>
+        <p class="creator-style">Shoebox cyberdeck builds. "Granny square of computing" angle — accessible, relatable, highly shareable. Dorky/fun energy. Strong follower count for the space.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>TikTok:</strong> @stellar_sk8board</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Highest TikTok follower count found in this space. The "shoebox as cyberdeck" content is extremely relatable and shareable. Goodz cards as album selectors fit naturally in this accessible, DIY-focused aesthetic.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Your shoebox cyberdeck videos are the most accessible content in this space — we'd love to send you some Custom Goodz cards to try in your next build!"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.tiktok.com/@stellar_sk8board" target="_blank" class="contact-tag">TikTok DM</a>
+        </div>
+      </div>
+
+      <!-- @caitlinjordan_ -->
+      <div class="creator-card">
+        <div class="creator-platform">📱 TikTok</div>
+        <h3 class="creator-name">@caitlinjordan_</h3>
+        <div class="creator-stats">
+          <span class="stat stat-views">7.6K likes</span>
+          <span class="stat stat-followers">Beginner builder</span>
+        </div>
+        <p class="creator-style">Building her first cyberdeck with zero prior knowledge. "Follow along as I discover new tech" energy. Knitting/craft background, cybertech crossover. Extremely relatable creator.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>TikTok:</strong> @caitlinjordan_</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>The beginner journey is highly engaging content. Her knitting/craft audience overlaps with Goodz's indie aesthetic. "First cyberdeck + first Goodz card" could be a beautiful piece of content.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Following your cyberdeck journey — we'd love to send you some Custom Goodz cards to add to your build. Could be a great next step in the journey!"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.tiktok.com/@caitlinjordan_" target="_blank" class="contact-tag">TikTok DM</a>
+        </div>
+      </div>
+
+      <!-- @moonstreetkits -->
+      <div class="creator-card">
+        <div class="creator-platform">📱 TikTok + Etsy</div>
+        <h3 class="creator-name">@moonstreetkits</h3>
+        <div class="creator-stats">
+          <span class="stat stat-views">2.2K likes (cybermancy video)</span>
+          <span class="stat stat-followers">64K IG followers</span>
+        </div>
+        <p class="creator-style">Andrea — witchy aesthetic creator. "Cybermancy" + Raspberry Pi builds. Sells witchy kits on Etsy. Perfect intersection of witchtok + maker + indie music aesthetic.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">🛍️</span>
+          <span class="creator-detail-text"><strong>Etsy:</strong> moonstreetkits</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>Instagram:</strong> @moonstreetkits (64K followers)</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Witchtok + maker crossover is incredibly Goodz-coded. Her audience is already into alternative/indie aesthetics. Goodz cards as NFC album triggers fit perfectly in the witchy-tech intersection.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Love the cybermancy concept — we're a small team making physical cards that play albums when tapped. Would love to send you a batch for a collab!"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.tiktok.com/@moonstreetkits" target="_blank" class="contact-tag">TikTok</a>
+          <a href="https://www.instagram.com/moonstreetkits" target="_blank" class="contact-tag">Instagram</a>
+        </div>
+      </div>
+
+      <!-- @wnbadata -->
+      <div class="creator-card">
+        <div class="creator-platform">📱 TikTok + Instagram</div>
+        <h3 class="creator-name">@wnbadata</h3>
+        <div class="creator-stats">
+          <span class="stat stat-views">2.5K+ IG likes</span>
+          <span class="stat stat-followers">Cyberpunk aesthetic</span>
+        </div>
+        <p class="creator-style">Maddy — neon lighting, distressed finishes, intricate wiring. Cyberpunk aesthetic with 2.5K+ likes on Instagram reveal post. Active in the cyberdeck conversation.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>Instagram:</strong> @wnbadata</span>
+        </div>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>TikTok:</strong> @wnbadata</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Strong visual cyberpunk aesthetic. The neon/cyberpunk vibe maps well to Goodz cards as album selectors. Relatively small but active creator with good engagement.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Love your cyberdeck reveal — the neon aesthetic is stunning. We'd love to send you some Custom Goodz cards to integrate into your next setup!"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.tiktok.com/@wnbadata" target="_blank" class="contact-tag">TikTok</a>
+          <a href="https://www.instagram.com/wnbadata" target="_blank" class="contact-tag">Instagram</a>
+        </div>
+      </div>
+
+      <!-- @flame1300 -->
+      <div class="creator-card">
+        <div class="creator-platform">📱 TikTok</div>
+        <h3 class="creator-name">@flame1300</h3>
+        <div class="creator-stats">
+          <span class="stat stat-views">80K likes</span>
+          <span class="stat stat-followers">3,534 followers</span>
+        </div>
+        <p class="creator-style">Game dev / artist. Raspberry Pi tutorials and gaming-focused cyberdeck builds. Retrogaming setups, retro pie, custom enclosures. Gaming + tech crossover.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>TikTok:</strong> @flame1300</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Gaming + retro focus maps directly to Goodz's music/culture DNA. A "cyberdeck that plays game soundtracks from Bandcamp" angle is native to his content. Good crossover into gaming adjacent audiences.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Love the retro gaming cyberdeck content — we'd love to send you some Custom Goodz cards to load up with game soundtrack albums!"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.tiktok.com/@flame1300" target="_blank" class="contact-tag">TikTok DM</a>
+        </div>
+      </div>
+
+      <!-- @d.chillers -->
+      <div class="creator-card">
+        <div class="creator-platform">📱 TikTok</div>
+        <h3 class="creator-name">@d.chillers</h3>
+        <div class="creator-stats">
+          <span class="stat stat-views">Beginner guide format</span>
+          <span class="stat stat-followers">Cyberdeck beginner</span>
+        </div>
+        <p class="creator-style">"Build Your First Cyberdeck: A Beginner's Guide" — accessible entry-point content. Teaching the fundamentals of cyberdeck building from scratch.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>TikTok:</strong> @d.chillers</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Beginner audience is hungry for "what to do with your cyberdeck" content. Goodz cards as album selectors are a perfect next-step for new cyberdeck builders.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Your beginner guide is exactly what the community needs — we'd love to send you some Custom Goodz cards to feature as the album playback solution!"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.tiktok.com/@d.chillers" target="_blank" class="contact-tag">TikTok DM</a>
+        </div>
+      </div>
+
+      <!-- @ronniebeebee -->
+      <div class="creator-card">
+        <div class="creator-platform">📱 TikTok</div>
+        <h3 class="creator-name">@ronniebeebee</h3>
+        <div class="creator-stats">
+          <span class="stat stat-views">Raspberry Pi Zero W build</span>
+          <span class="stat stat-followers">Cyberpunk build aesthetic</span>
+        </div>
+        <p class="creator-style">Raspberry Pi Zero W-based cyberdeck builds. Electronics + creativity + personal style. Compact, functional, cyberpunk aesthetic.</p>
+        <div class="creator-detail">
+          <span class="creator-detail-icon">📸</span>
+          <span class="creator-detail-text"><strong>TikTok:</strong> @ronniebeebee</span>
+        </div>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Compact Pi Zero builds are a distinct sub-genre. Goodz cards as album selectors work especially well in small form factor builds where space is at a premium.</p>
+        </div>
+        <div class="creator-angle">
+          <strong>Outreach Angle</strong>
+          <p>"Love the compact cyberdeck builds — we'd love to send you some Custom Goodz cards to try in your next Pi Zero project!"</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.tiktok.com/@ronniebeebee" target="_blank" class="contact-tag">TikTok DM</a>
+        </div>
+      </div>
+
+      <!-- @rachel.diary -->
+      <div class="creator-card">
+        <div class="creator-platform">📱 TikTok</div>
+        <h3 class="creator-name">@rachel.diary</h3>
+        <div class="creator-stats">
+          <span class="stat stat-followers">2,140 TT followers</span>
+          <span class="stat stat-followers">250K lifetime likes</span>
+        </div>
+        <p class="creator-style">Knitting/slow fashion lifestyle creator. Occasionally posts cyberdeck content (44 likes). Very small but clearly interested in the space.</p>
+        <div class="creator-why">
+          <strong>Why Goodz?</strong>
+          <p>Very small right now but clearly interested in the space. Good for grassroots seeding if personally known to Mike.</p>
+        </div>
+        <div class="creator-contact">
+          <a href="https://www.tiktok.com/@rachel.diary" target="_blank" class="contact-tag">TikTok DM</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRIORITY TABLE -->
+<section style="background:var(--white);">
+  <div class="container">
+    <div class="section-tag">Outreach Priority</div>
+    <h2>Who to Reach First</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Creator</th>
+          <th>Platform</th>
+          <th>Why First</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="priority-num">1</span></td>
+          <td><strong>@ubeboobey</strong></td>
+          <td><span class="badge badge-tiktok">TikTok</span></td>
+          <td>Largest TikTok reach, viral "Hot Girl Cyberdeck" brand, culturally perfect fit</td>
+        </tr>
+        <tr>
+          <td><span class="priority-num">2</span></td>
+          <td><strong>SECTOR 07</strong></td>
+          <td><span class="badge badge-youtube">YouTube</span></td>
+          <td>1.78M views, highly produced, best visual showcase</td>
+        </tr>
+        <tr>
+          <td><span class="priority-num">3</span></td>
+          <td><strong>DTeK</strong></td>
+          <td><span class="badge badge-youtube">YouTube</span></td>
+          <td>570K subs, technical audience, music-tech overlap</td>
+        </tr>
+        <tr>
+          <td><span class="priority-num">4</span></td>
+          <td><strong>@geo.kash</strong></td>
+          <td><span class="badge badge-tiktok">TikTok</span></td>
+          <td>34.3K likes, real maker, software+hardware creator, Mike's pick</td>
+        </tr>
+        <tr>
+          <td><span class="priority-num">5</span></td>
+          <td><strong>@leeyuht</strong></td>
+          <td><span class="badge badge-tiktok">Instagram</span></td>
+          <td>Active creator, indie aesthetic, solar-powered builds</td>
+        </tr>
+        <tr>
+          <td><span class="priority-num">6</span></td>
+          <td><strong>Time Expander</strong></td>
+          <td><span class="badge badge-youtube">YouTube</span></td>
+          <td>Technical audience, retro aesthetic, retro-futurism vibe</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- COMMUNITY TARGETS -->
+<section>
+  <div class="container">
+    <div class="section-tag">Beyond Individual Creators</div>
+    <h2>Community &amp; Platform Targets</h2>
+    <div class="community-grid">
+      <div class="community-card">
+        <h4>🏷️ r/cyberdeck — Reddit</h4>
+        <p>Active community. Good place for an organic "we made a cyberdeck that plays albums when you tap a Goodz card" post. Not a person, but a channel.</p>
+        <a href="https://reddit.com/r/cyberdeck" target="_blank" class="contact-tag">r/cyberdeck</a>
+      </div>
+      <div class="community-card">
+        <h4>🌐 Clockwork Pi — Hardware Maker</h4>
+        <p>They make the UConsole CM5 — pre-built cyberdeck-style handheld. A partnership could mean Goodz cards pre-loaded into their OS. Worth an email.</p>
+        <a href="https://clockworkpi.com/" target="_blank" class="contact-tag">clockworkpi.com</a>
+      </div>
+      <div class="community-card">
+        <h4>📰 Hackaday / Adafruit — Press</h4>
+        <p>Both regularly cover Raspberry Pi/maker projects. A "Goodz cards bring NFC album playback to cyberdecks" story could get mainstream maker press.</p>
+        <a href="https://blog.adafruit.com/" target="_blank" class="contact-tag">Adafruit Blog</a>
+        <a href="https://hackaday.com/" target="_blank" class="contact-tag">Hackaday</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPADATA TRACKER -->
+<div class="container" style="padding-bottom:60px;">
+  <div class="credit-tracker">
+    <h3>📊 Supadata API Credit Usage</h3>
+    <div class="credit-row">
+      <span class="label">Plan</span>
+      <span class="val">Free — 100 credits/month</span>
+    </div>
+    <div class="credit-row">
+      <span class="label">Used so far</span>
+      <span class="val">~17 credits</span>
+    </div>
+    <div class="credit-row">
+      <span class="label">Remaining</span>
+      <span class="val">~83 credits</span>
+    </div>
+    <div class="credit-bar">
+      <div class="credit-fill" style="width:17%"></div>
+    </div>
+    <p style="font-size:0.78rem;color:rgba(255,255,255,0.4);margin-top:12px;">Credit costs: Metadata=1cr, Transcript=1cr, AI Extract=1cr, Transcript Generation=2cr/min</p>
+  </div>
+</div>
+
+<footer>
+  <p><a href="https://goodz-planning-docs.vercel.app">← Back to Goodz Research</a></p>
+  <p style="margin-top:8px;">Cyberdeck Influencer Outreach List · Compiled April 16, 2026 · Goodz Internal Research</p>
+</footer>
+</body>
+</html>

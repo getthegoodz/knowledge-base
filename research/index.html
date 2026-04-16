@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goodz Research — Index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --yellow: #ffc852;
+  --yellow-dark: #e6b044;
+  --cream: #efefe2;
+  --font-head: 'Poppins', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-body); background: var(--cream); color: var(--black); }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--yellow); border-radius: 3px; }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,200,82,0.2); padding: 0 24px; }
+nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 6px; height: 56px; }
+.nav-logo { font-family: var(--font-head); font-weight: 900; font-size: 0.85rem; color: var(--yellow); letter-spacing: 0.08em; text-transform: uppercase; margin-right: auto; text-decoration: none; }
+nav a { font-family: var(--font-head); font-size: 0.72rem; font-weight: 600; color: rgba(255,255,255,0.6); text-decoration: none; padding: 6px 12px; border-radius: 20px; white-space: nowrap; transition: all 0.2s; letter-spacing: 0.03em; text-transform: uppercase; }
+nav a:hover { color: var(--black); background: var(--yellow); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.hero { background: var(--black); padding: 100px 24px 80px; text-align: center; }
+.hero h1 { font-family: var(--font-head); font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 900; color: var(--white); margin-bottom: 16px; }
+.hero h1 em { color: var(--yellow); font-style: normal; }
+.hero p { font-size: 1.1rem; color: rgba(255,255,255,0.5); max-width: 500px; margin: 0 auto 32px; }
+.hero-badges { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.hero-badge { font-family: var(--font-head); font-size: 0.72rem; font-weight: 700; padding: 6px 14px; border-radius: 20px; background: rgba(255,200,82,0.15); color: var(--yellow); border: 1px solid rgba(255,200,82,0.3); }
+.section { padding: 60px 24px; }
+.section-tag { font-family: var(--font-head); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--yellow-dark); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.section-tag::before { content: ''; display: block; width: 24px; height: 2px; background: var(--yellow); border-radius: 1px; }
+h2 { font-family: var(--font-head); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; margin-bottom: 32px; }
+.doc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.doc-card { background: var(--white); border-radius: 12px; padding: 24px; border: 1px solid rgba(0,0,0,0.06); text-decoration: none; color: inherit; transition: all 0.2s; display: flex; flex-direction: column; gap: 8px; }
+.doc-card:hover { border-color: rgba(255,200,82,0.5); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.doc-card:hover .doc-arrow { color: var(--yellow); }
+.doc-icon { font-size: 1.5rem; margin-bottom: 4px; }
+.doc-category { font-family: var(--font-head); font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--yellow-dark); }
+.doc-title { font-family: var(--font-head); font-size: 1rem; font-weight: 700; color: var(--black); }
+.doc-desc { font-size: 0.82rem; color: #666; flex: 1; }
+.doc-meta { font-size: 0.72rem; color: #aaa; font-family: var(--font-head); }
+.doc-arrow { font-size: 1.2rem; color: #ccc; margin-top: auto; align-self: flex-end; transition: color 0.2s; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.two-col-card { background: var(--black); border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+.two-col-card h3 { font-family: var(--font-head); font-size: 1.1rem; font-weight: 800; color: var(--white); }
+.two-col-card p { font-size: 0.88rem; color: rgba(255,255,255,0.5); flex: 1; }
+.two-col-card .doc-link { font-family: var(--font-head); font-size: 0.78rem; font-weight: 700; color: var(--yellow); text-decoration: none; display: flex; align-items: center; gap: 6px; }
+.two-col-card .doc-link:hover { color: var(--white); }
+footer { background: var(--black); color: rgba(255,255,255,0.3); padding: 32px 24px; text-align: center; font-family: var(--font-head); font-size: 0.78rem; }
+footer a { color: var(--yellow); text-decoration: none; }
+@media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav>
+  <nav-inner>
+    <a href="https://goodz-planning-docs.vercel.app" class="nav-logo">GOODZ</a>
+    <a href="https://goodz-planning-docs.vercel.app">Research</a>
+    <a href="https://goodz-planning-docs.vercel.app/STRATEGY.html">Strategy</a>
+    <a href="https://marketing-plan-beryl.vercel.app">Plan</a>
+  </nav-inner>
+</nav>
+
+<div style="height:56px"></div>
+
+<div class="hero">
+  <div class="container" style="max-width:800px;margin:0 auto;">
+    <div class="hero-badges">
+      <span class="hero-badge">📊 8 Research Docs</span>
+      <span class="hero-badge">🎯 Strategy</span>
+      <span class="hero-badge">🤝 Outreach</span>
+    </div>
+    <h1 style="margin-top:24px;">Goodz <em>Research</em></h1>
+    <p>Market research, influencer targeting, cultural analysis, and strategic planning for Custom Goodz.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-tag">Cyberdeck Trend</div>
+    <h2>Cyberdeck + Maker Research</h2>
+    <div class="doc-grid">
+      <a href="cyberdeck-influencers.html" class="doc-card">
+        <div class="doc-icon">🤝</div>
+        <div class="doc-category">Influencer Outreach</div>
+        <div class="doc-title">Cyberdeck Influencer List</div>
+        <div class="doc-desc">9 TikTok + YouTube creators ranked by reach, engagement, and Goodz fit. Includes handles, outreach angles, and contact links.</div>
+        <div class="doc-meta">Compiled April 16, 2026</div>
+        <div class="doc-arrow">→</div>
+      </a>
+      <a href="cyberdeck-trend.html" class="doc-card">
+        <div class="doc-icon">📈</div>
+        <div class="doc-category">Trend Analysis</div>
+        <div class="doc-title">Cyberdeck Trend Research</div>
+        <div class="doc-desc">Full trend brief: what cyberdecks are, why they're growing, cultural overlap with Goodz, and the boombox cyberdeck concept.</div>
+        <div class="doc-meta">~8KB research brief</div>
+        <div class="doc-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white);">
+  <div class="container">
+    <div class="section-tag">Market Intelligence</div>
+    <h2>GTM &amp; Market Research</h2>
+    <div class="doc-grid">
+      <a href="indie-artist-gtm-map.html" class="doc-card">
+        <div class="doc-icon">🎸</div>
+        <div class="doc-category">GTM Strategy</div>
+        <div class="doc-title">Indie Artist GTM Map</div>
+        <div class="doc-desc">Go-to-market channels, acquisition flows, and activation ideas for indie artists and bands. Includes 5 buyer personas.</div>
+        <div class="doc-meta">March 31, 2026</div>
+        <div class="doc-arrow">→</div>
+      </a>
+      <a href="b2c-relaunch.html" class="doc-card">
+        <div class="doc-icon">🚀</div>
+        <div class="doc-category">Memo</div>
+        <div class="doc-title">B2C Relaunch Memo</div>
+        <div class="doc-desc">Strategic memo covering what happened in 2024, what to do next, and the path to $5K/month revenue.</div>
+        <div class="doc-meta">April 2, 2026</div>
+        <div class="doc-arrow">→</div>
+      </a>
+      <a href="../marketing-plan/RESEARCH.html" class="doc-card">
+        <div class="doc-icon">📊</div>
+        <div class="doc-category">Full Research Doc</div>
+        <div class="doc-title">Marketing Plan Research</div>
+        <div class="doc-desc">26KB audience + competitor research from the April 15 overnight sprint. Reddit communities, niche segments, market sizing.</div>
+        <div class="doc-meta">April 15, 2026 · Full Sprint Doc</div>
+        <div class="doc-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-tag">Infrastructure</div>
+    <h2>Tools &amp; Systems</h2>
+    <div class="two-col">
+      <div class="two-col-card">
+        <h3>📡 Supadata API</h3>
+        <p>Credit tracking for YouTube + TikTok metadata, transcripts, and AI extracts. ~17/100 credits used this month.</p>
+        <a href="supadata-usage.html" class="doc-link">View usage tracker →</a>
+      </div>
+      <div class="two-col-card">
+        <h3>🛠️ Qobuz Pipeline</h3>
+        <p>Automated album discovery from Substack + Pitchfork, run nightly at 22:00 ET. Results delivered via Telegram.</p>
+        <a href="../marketing-plan/STRATEGY.html" class="doc-link">See strategy doc →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white);">
+  <div class="container">
+    <div class="section-tag">Goodz Planning</div>
+    <h2>Marketing Sprint (April 15)</h2>
+    <div class="doc-grid">
+      <a href="../marketing-plan/STRATEGY.html" class="doc-card">
+        <div class="doc-icon">🎯</div>
+        <div class="doc-category">Strategy</div>
+        <div class="doc-title">Marketing Strategy</div>
+        <div class="doc-desc">Full channel strategy, budget allocation, ROAS model, 4-week roadmap. 34KB.</div>
+        <div class="doc-meta">April 15, 2026</div>
+        <div class="doc-arrow">→</div>
+      </a>
+      <a href="../marketing-plan/CREATIVE.html" class="doc-card">
+        <div class="doc-icon">💡</div>
+        <div class="doc-category">Creative</div>
+        <div class="doc-title">Creative Campaign</div>
+        <div class="doc-desc">Campaign concepts, ad creative briefs, TikTok moments, email sequence. 67KB.</div>
+        <div class="doc-meta">April 15, 2026</div>
+        <div class="doc-arrow">→</div>
+      </a>
+      <a href="../marketing-plan/REVISION.html" class="doc-card">
+        <div class="doc-icon">🔧</div>
+        <div class="doc-category">Revision</div>
+        <div class="doc-title">10 Revisions</div>
+        <div class="doc-desc">10 specific changes synthesized from all 3 expert reviews — Insider, Analyst, Influencer.</div>
+        <div class="doc-meta">April 15, 2026</div>
+        <div class="doc-arrow">→</div>
+      </a>
+      <a href="https://marketing-plan-beryl.vercel.app" class="doc-card">
+        <div class="doc-icon">🌐</div>
+        <div class="doc-category">Live Presentation</div>
+        <div class="doc-title">Marketing Plan Deck</div>
+        <div class="doc-desc">Full interactive presentation — all sections, ROAS calculator, timeline view. Live at vercel.app.</div>
+        <div class="doc-meta">marketing-plan-beryl.vercel.app</div>
+        <div class="doc-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><a href="https://goodz-planning-docs.vercel.app">← Goodz Planning Docs</a></p>
+  <p style="margin-top:8px;">Goodz Research Index · April 2026</p>
+</footer>
+</body>
+</html>

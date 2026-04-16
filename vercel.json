@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/research/(.*)", "destination": "/research/$1" },
+    { "source": "/marketing-plan/(.*)", "destination": "/marketing-plan/$1" }
+  ]
+}
